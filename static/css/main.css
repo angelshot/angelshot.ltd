@@ -1,16 +1,27 @@
 /*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  min-height: 100%;
+  background: rgb(194,222,228);
+  background: linear-gradient(180deg, rgba(194,222,228,1) 0%, rgba(188,188,216,1) 100%);
+}
+
+body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  color: #243645;
+  font-family: droid-serif, serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
 }
 
 ::-moz-selection {
@@ -42,29 +53,6 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-html {
-  min-height: 100%;
-  background: rgb(194,222,228);
-  background: linear-gradient(180deg, rgba(194,222,228,1) 0%, rgba(188,188,216,1) 100%);
-}
-body {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
-  text-align: center;
-  color: #243645;
-  font-family: droid-serif, serif, serif;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.2;
-}
 header {
   height: 30px;
   overflow: visible;
