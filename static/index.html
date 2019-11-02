@@ -32,8 +32,9 @@
       color: #fff;
       padding: 12px;
       bottom: -50px;
-      margin-top: -50px;
+      margin: -50px auto 0;
       position: relative;
+      max-width: 800px;
     }
     #intro h1 {
       font-weight: normal;
@@ -79,11 +80,12 @@
       background: #FEF8F8; /* 0 0 url("http://placekitten.com/g/320/130") no-repeat; */
       background-size: cover;
       text-align: center;
-      padding: 10px;
+      padding: 10px 60px;
     }
     #getApp h2 {
       font: normal 16px/19px mostra-nuova, sans-serif;
       color: #243645;
+      margin: 0 auto;
     }
     #getApp p {
       font: normal italic 10px/1.2 droid-serif, serif;
@@ -96,19 +98,92 @@
       border-radius: 5px;
     }
     .download-apple {
-      background: 0 0 url("img/download-apple.png");
+      background: 0 0 url("img/download-apple@2x.png") no-repeat;
+      background-size: contain;
       color: transparent;
     }
     .download-google {
-      background: 0 0 url("img/download-google.png");
+      background: 0 0 url("img/download-google@2x.png") no-repeat;
+      background-size: contain;
       color: transparent;
     }
+    #our_goals {
+      position: relative;
+      margin-top: 80px;
+    }
     #donate {
-      margin: 20px auto;
+      position: absolute;
+      top: -68px;
+      left: 0;
+      right: 0;
+      text-align: center;
     }
     #donate .button {
       padding-left: 60px;
       padding-right: 60px;
+    }
+    @media only screen and (min-width: 768px) {
+      #intro {
+        padding-top: 200px;
+      }
+      #intro .inset {
+        padding: 20px 65px 65px;
+      }
+      #ctas {
+        padding: 0;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        z-index: 1;
+        position: relative;
+      }
+      #ctas a {
+        font-size: 20px;
+        padding: 20px;
+        width: 300px;
+        margin: 0 10px;
+      }
+      #getApp {
+        padding: 70px 0 60px;
+        background: url("http://placekitten.com/g/1628/242");
+      }
+      #getApp h2 {
+        max-width: 100%;
+        font-size: 24px;
+      }
+      #getApp p {
+        max-width: 100%;
+        font-size: 12px;
+      }
+      .download {
+        width: 140px;
+        height: 50px;
+      }
+      #our_goals {
+        margin: 60px 20px 20px;
+      }
+      #donate {
+        position: relative;
+        top: auto;
+        bottom: -38px;
+        margin: 0 auto;
+      }
+      #stay_informed p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+      #mailingList {
+        width: 80%;
+        margin: auto;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      #intro {
+        font-size: 20px;
+        background: url("http://placekitten.com/1628/500");
+      }
+      #intro h1 {
+        font-size: 40px;
+      }
     }
   </style>
 </head>
@@ -151,69 +226,71 @@
       <a href="#" class="button">Register as a Haven</a>
     </div>
     <div id="getApp">
-      <h2>Ever needed an out?<br> Get the AngelShot app.</h2>
-      <p>Discreetly bails you out of bad dates,<br> rides, and everything else.™</p>
+      <h2>Ever needed an out? <span class="nowrap">Get the AngelShot app.</span></h2>
+      <p>Discreetly bails you out of bad dates, rides, and everything else.™</p>
       <div class="ctas">
         <a href="#" class="download download-apple">Download on the App Store</a>
         <a href="#" class="download download-google">Get it on Google Play</a>
       </div>
     </div>
-    <div id="donate">
-      <a href="/donate" class="button">Make a donation</a>
-    </div>
-    <div class="bordered">
+    <div class="bordered" id="our_goals">
       <h2>Our Goals</h2>
       <article>
-        <h3>Increase community engagement & accountability</h3>
-        <img src="http://placekitten.com/272/118" />
+        <h3>Increase community <span class="nowrap">engagement & accountability</span></h3>
+        <img src="http://placekitten.com/392/261" />
         <p>51% of student rape and sexual assault <strong>victimizations occurred while</strong> the victim was pursuing leisure activities <strong>away from home</strong>.</p>
         <p>89% of college campuses reported zero incidents of rape in 2016.</p>
       </article>
       <article>
-        <h3>Encourage victims to report incidents and seek help</h3>
-        <img src="http://placekitten.com/272/118" />
+        <h3>Encourage victims to report <span class="nowrap">incidents and seek help</span></h3>
+        <img src="http://placekitten.com/392/261" />
         <p>80% of rape and sexual assault victimizations of students and 67% of nonstudents go <strong>unreported to police</strong>.</p>
         <p><strong>Fewer than 1 in 5 female victims</strong> of rape and sexual assault <strong>received assistance</strong> from a victim services agency.</p>
       </article>
       <article>
-        <h3>Prevent violence and ending "Rape Culture"</h3>
-        <img src="http://placekitten.com/272/118" />
+        <h3>Prevent violence and ending <span class="nowrap">"Rape Culture"</span></h3>
+        <img src="http://placekitten.com/392/261" />
         <p>For both college students and nonstudents, <strong>the offender was known to the victim</strong> in about 80% of rape and sexual assault victimizations.</p>
         <p>About a quarter of victims who did not report to police believed the incident was a personal matter, and 1 in 5 stated a <strong>fear of reprisal</strong>.</p>
       </article>
+      <div id="donate">
+        <a href="/donate" class="button">Make a donation</a>
+      </div>
     </div>
-    <div class="bordered">
-      <h2>Research</h2>
-      <h4>Interested in helping us with our research?</h4>
-      <p>If you’re a woman aged 18-24 and would like to help us, sign up for one of our current studies.</p>
-      <p><a href="#">Campus Safety Sentiment</a> — Gauge overall feelings of safety and personal security at select college and university campuses.</p>
-      <p><a href="#">AngelShot Mobile App</a> — Determine what features of our mobile app you’d need/use for help during scenarios of varying degrees of threat/danger.</p>
-    </div>
-    <div class="bordered">
-      <h2>Resources</h2>
-      <ul class="no-bullets">
-        <li><a href="#/spread-the-word">Spread the word!</a></li>
-        <li><a href="#/women-share-their-stories">Women share their stories</a></li>
-        <li><a href="#/what-can-i-do-to-stay-safe">What can I do to stay safe?</a></li>
-        <li><a href="#/something-happened-now-what">Something happened, now what?</a></li>
-        <li><a href="#/where-do-we-get-our-statistics">Where do we get our statistics?</a></li>
-        <li><a href="#/knowledge-base" class="see-more">View our entire Knowledge Base</a></li>
-      </ul>
-    </div>
-    <div class="bordered">
-      <h2>Stay Informed</h2>
-      <p>Sign up for our mailing list.</p>
-      <form name="mailingList">
-        <fieldset>
-          <input type="text" placeholder="Name" name="name" id="name" required />
-          <label for="name">Name</label>
-        </fieldset>
-        <fieldset>
-          <input type="email" placeholder="Email" name="email" id="email" required />
-          <label for="email">Email</label>
-        </fieldset>
-        <input type="submit" name="mailingListSubmit" value="Sign Up" />
-      </form>
+    <div class="grouped">
+      <div class="bordered">
+        <h2>Research</h2>
+        <h4>Interested in helping us with our research?</h4>
+        <p>If you’re a woman aged 18-24 and would like to help us, sign up for one of our current studies.</p>
+        <p><a href="#">Campus Safety Sentiment</a> — Gauge overall feelings of safety and personal security at select college and university campuses.</p>
+        <p><a href="#">AngelShot Mobile App</a> — Determine what features of our mobile app you’d need/use for help during scenarios of varying degrees of threat/danger.</p>
+      </div>
+      <div class="bordered">
+        <h2>Resources</h2>
+        <ul class="no-bullets">
+          <li><a href="#/spread-the-word">Spread the word!</a></li>
+          <li><a href="#/women-share-their-stories">Women share their stories</a></li>
+          <li><a href="#/what-can-i-do-to-stay-safe">What can I do to stay safe?</a></li>
+          <li><a href="#/something-happened-now-what">Something happened, now what?</a></li>
+          <li><a href="#/where-do-we-get-our-statistics">Where do we get our statistics?</a></li>
+          <li><a href="#/knowledge-base" class="see-more">View our entire Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div class="bordered" id="stay_informed">
+        <h2>Stay Informed</h2>
+        <p>Sign up for our mailing list.</p>
+        <form name="mailingList" id="mailingList">
+          <fieldset>
+            <input type="text" placeholder="Name" name="name" id="name" required />
+            <label for="name">Name</label>
+          </fieldset>
+          <fieldset>
+            <input type="email" placeholder="Email" name="email" id="email" required />
+            <label for="email">Email</label>
+          </fieldset>
+          <input type="submit" name="mailingListSubmit" value="Sign Up" />
+        </form>
+      </div>
     </div>
   </section>
   <footer class="pad">

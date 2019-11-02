@@ -243,6 +243,10 @@ header nav a.active {
   color: #243645;
 }
 
+footer nav a {
+  margin: 6px 16px;
+}
+
 .pad {
   padding-left: 12px;
   padding-right: 12px;
@@ -264,6 +268,10 @@ header nav a.active {
   visibility: hidden;
   height: 0;
   display: block;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .no-bullets {
@@ -330,9 +338,11 @@ article {
 }
 article img {
   border-radius: 20px;
-  width: 100%;
+  max-width: 100%;
   margin: 10px auto;
   display: block;
+  max-height: 118px;
+  object-fit: contain;
 }
 article p {
   font-size: 11px;
@@ -344,27 +354,131 @@ article p {
     padding: 20px;
     margin: 0 auto;
   }
+  .main {
+    background: #fff;
+    border: 3px solid #000;
+    margin-top: -33px;
+    margin-bottom: 20px;
+    box-shadow: 0px 13px 20px #495d6d;
+  }
   #logo {
     max-width: 154px;
     margin: 0 auto;
+    top: 0;
     left: 0;
     right: 0;
     position: absolute;
     z-index: 1;
   }
+  header #menu_toggle,
+  header #menu_toggle::after,
+  header #menu_toggle::before {
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  header nav a {
+    line-height: 10px;
+    font-size: 0;
+    min-width: 60px;
+  }
+  header #menu_toggle:checked {
+    background: rgba(255,255,255,1);
+  }
+  #menu_toggle:checked ~ div a {
+    margin-right: 60px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+  }
+  footer nav {
+    text-align: left;
+  }
+  footer nav a {
+    margin-right: 16px;
+  }
+  footer p {
+    text-align: right;
+  }
+  .bordered {
+    max-width: 1256px;
+    margin: 60px auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .bordered h2 {
+    background: white;
+    break-after: always;
+    margin: -34px auto 14px;
+    padding: 0 14px;
+  }
+  .bordered h3 {
+    font-size: 16px;
+    min-height: 2em;
+  }
+  .grouped {
+    max-width: 1256px;
+    margin: auto auto 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .grouped .bordered {
+    flex: 1;
+    margin: 60px 10px 0;
+    align-content: flex-start;
+  }
+  .grouped .bordered h4 {
+    margin-top: 16px;
+    line-height: 16.8px;
+    margin-bottom: 0;
+  }
+  .grouped .bordered p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .grouped .bordered p + p{
+    margin-top: 0;
+  }
+
+  article {
+    max-width: 33.333%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+  article img {
+    max-height: 100%;
+  }
+  article p {
+    font-size: inherit;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #logo {
+    top: auto;
+  }
   header {
     height: auto;
     margin: auto;
+    width: 100%;
   }
   header nav {
     position: relative;
     background: #d9dcff;
     border: 3px solid #000;
-    margin-top: 62px;
+    margin: 62px auto 0;
     display: grid;
     grid-template-columns: 1fr 154px 1fr;
     grid-column-gap: 10px;
-    width: 90vw;
+    width: 90%;
   }
   .nav_items {
     display: flex;
@@ -382,12 +496,23 @@ article p {
   header nav a,
   #menu_toggle:checked ~ div a {
     line-height: 24px;
-    font-size: 20px;
+    font-size: 14px;
     background: none !important;
     color: #754995 !important;
     text-align: center;
     padding: 20px 0;
     margin: 0;
+  }
+
+  .bordered h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  header nav a,
+  #menu_toggle:checked ~ div a {
+    font-size: 20px;
   }
 }
 
