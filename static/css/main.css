@@ -423,6 +423,7 @@ article p {
     min-height: 2em;
   }
   .grouped {
+    width: 90vw;
     max-width: 1256px;
     margin: auto auto 20px;
     display: flex;
