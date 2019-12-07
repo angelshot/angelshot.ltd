@@ -413,9 +413,12 @@ article p {
     box-sizing: border-box;
   }
   .bordered h2 {
+    margin: -34px auto 14px;
+    flex-basis: 100%;
+  }
+  .bordered h2 span {
     background: white;
     break-after: always;
-    margin: -34px auto 14px;
     padding: 0 14px;
   }
   .bordered h3 {
