@@ -1,0 +1,21 @@
+{
+  "name": "angelshot-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "stylelint-config-recommended": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "stylelint": {
+      "extends": "stylelint-config-recommended",
+      "rules": {
+          "no-descending-specificity": null
+      }
+  }
+}
