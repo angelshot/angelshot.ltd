@@ -5,7 +5,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
   min-height: 100%;
-  background: rgb(194,222,228);
+  background: #c2dee4;
   background: linear-gradient(180deg, rgba(194,222,228,1) 0%, rgba(188,188,216,1) 100%);
 }
 
@@ -25,12 +25,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #BCBCD8;
+  background: #e31c60;
   text-shadow: none;
 }
 
 ::selection {
-  background: #BCBCD8;
+  background: #e31c60;
   text-shadow: none;
 }
 
