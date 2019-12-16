@@ -1,0 +1,278 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  min-height: 100%;
+  min-width: 320px;
+  background: #c2dee4;
+  background: linear-gradient(180deg, rgb(194,222,228) 0%, rgba(188,188,216,1) 100%);
+}
+
+body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  color: #243645;
+  font-family: droid-serif, serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+::-moz-selection {
+  background: #8F88A8;
+  color: #D9DCFF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #8F88A8;
+  color: #D9DCFF;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+header {
+  height: 30px;
+  overflow: visible;
+  z-index: 1;
+}
+
+.main {
+  flex: 1;
+}
+
+#logo {
+  max-width: 68px;
+  margin: 0px auto;
+}
+#logo img {
+  display: block;
+  width:100%;
+}
+a, a:active {
+  color: #754995;
+}
+a:visited {
+  color: #4D3C4A;
+}
+a:hover {
+  text-decoration: underline;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font: normal 14px/40px droid-serif, serif;
+  height: 40px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  color: #001f26;
+  border-radius: 7px;
+  background: #d0d5db;
+  border: 1px solid #9286a6;
+}
+
+::-webkit-input-placeholder,
+label {
+  display: block;
+  opacity: .5;
+  font: normal 14px/38px droid-serif, serif;
+  color: #67797F;
+  position: absolute;
+  top: 1px;
+  left: 9px;
+  background: #D0D5DB;
+}
+label {
+  opacity: 1;
+}
+
+input[type="email"]:focus + label,
+input[type="email"]:valid + label,
+input[type="email"]:invalid:not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+input[type="submit"] {
+  font: normal 20px/1 mostra-nuova, sans-serif;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  border-radius: 7px;
+  background: #243645;
+  padding: 8px 32px;
+  margin: auto;
+  display: block;
+}
+
+blockquote {
+  font: normal 20px/29px droid-serif, serif;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 1px 5px #1f3544;
+  margin: 20px;
+  padding: 0;
+}
+
+footer {
+  text-align: left;
+  margin: 0 20px 20px;
+  font: bold 12px/14px droid-serif, serif;
+  color: #243645;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer span {
+  display: block;
+  margin: 11px 0;
+}
+
+footer nav a {
+  color: #243645;
+  text-decoration: none;
+}
+
+#copyright {
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.inset {
+  margin: 0 20px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+  #logo {
+    max-width: 154px;
+  }
+  footer {
+    width: 100%;
+    margin: 60px 0 20px;
+    padding: 0 22px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  footer nav {
+    flex-direction: row;
+  }
+  footer nav span {
+    margin: 11px 20px;
+  }
+  footer nav span:first-child {
+    margin-left: 0;
+  }
+  #copyright {
+    font-size: unset;
+    flex: 1;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  footer {
+    width: 1268px;
+    margin: 60px auto 20px;
+  }
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
