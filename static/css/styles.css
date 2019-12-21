@@ -67,7 +67,7 @@ header {
 }
 
 #logo {
-  max-width: 68px;
+  max-width: 100px;
   margin: 0px auto;
 }
 #logo img {
@@ -216,6 +216,12 @@ footer nav a {
   footer {
     width: 1268px;
     margin: 60px auto 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #logo {
+    max-width: 200px;
   }
 }
 
