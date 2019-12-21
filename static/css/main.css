@@ -12,7 +12,7 @@ html {
 body {
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
@@ -66,7 +66,7 @@ header {
 
 #logo {
   max-width: 68px;
-  margin-left: 12px;
+  margin-left: 40px;
 }
 #logo img {
   display: block;
@@ -357,8 +357,6 @@ article p {
   .main {
     background: #fff;
     border: 3px solid #000;
-    margin-top: -33px;
-    margin-bottom: 20px;
     box-shadow: 0px 13px 20px #495d6d;
   }
   #logo {
@@ -397,9 +395,6 @@ article p {
   }
   footer nav {
     text-align: left;
-  }
-  footer nav a {
-    margin-right: 16px;
   }
   footer p {
     text-align: right;
@@ -469,11 +464,11 @@ article p {
   #logo {
     top: auto;
   }
-  header {
+  /* header {
     height: auto;
     margin: auto;
     width: 100%;
-  }
+  } */
   header nav {
     position: relative;
     background: #d9dcff;
