@@ -27,6 +27,18 @@
       padding-top: 90px;
       text-align: center;
       color: #fff;
+      position: relative;
+    }
+    #intro cite {
+      font-size: 6px;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      bottom: 6px;
+      z-index: 1;
+      color: #243644;
+    	writing-mode: vertical-rl;
+      text-align: right;
     }
     #intro .inset {
       display: inline-block;
@@ -166,6 +178,9 @@
         line-height: 1.15em;
         padding: 24px 70px;
       }
+      #intro cite {
+        font-size: 9px;
+      }
       #getApp {
         padding-top: 76px;
         margin: 0 40px;
@@ -203,6 +218,10 @@
       #intro {
         background-image: url("img/angelshot-intro@3x.jpg");
       }
+      #intro cite {
+        top: auto;
+      	writing-mode: unset;
+      }
       #our_goals section {
         margin: 100px 44px 0;
         grid-column-gap: 44px;
@@ -234,16 +253,28 @@
     @media only screen and (min-width: 1440px) {
       #intro {
         padding-top: 400px;
-        background-size: 2048px;
         background-image: url("img/angelshot-intro@4x.jpg");
         margin-left: auto;
         margin-right: auto;
-        background-color: #7b366a;
+        background-color: #684c77;
+      }
+      #intro cite {
+      	writing-mode: unset;
       }
       #getApp {
         width: 1268px;
         margin-left: auto;
         margin-right: auto;
+      }
+
+      @media only screen and (min-width: 2048px) {
+        #intro {
+          background-size: 2048px;
+        }
+        #intro cite {
+          right: calc(50vw - 1024px);
+          left: auto;
+        }
       }
     }
   </style>
@@ -260,6 +291,7 @@
       <div class="inset">
         <h1>Engaging communities<br> to help protect women.</h1>
       </div>
+      <cite>IMCBerea College [<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Berea_College_20110901_Campus_students_OA-19L_(20715121726).jpg">via Wikimedia Commons</a></cite>
     </div>
     <div id="getApp">
       <h2>Ever needed an out? <span class="nowrap">Get an Angel.</span></h2>
