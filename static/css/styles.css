@@ -50,7 +50,6 @@ fieldset {
   border: 0;
   padding: 0;
   margin: 0;
-  position: relative;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -97,6 +96,10 @@ input[type="password"] {
   border-radius: 7px;
   background: #d0d5db;
   border: 1px solid #9286a6;
+}
+
+.fieldset {
+  position: relative;
 }
 
 ::-webkit-input-placeholder,
