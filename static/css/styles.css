@@ -147,7 +147,7 @@ blockquote {
 footer {
   text-align: left;
   margin: 0 20px 20px;
-  font: bold 12px/14px droid-serif, serif;
+  font: normal 12px/14px droid-serif, serif;
   color: #243645;
 }
 
@@ -163,7 +163,7 @@ footer span {
 
 footer nav a {
   color: #243645;
-  text-decoration: none;
+  text-decoration: underline;
   margin: 10px 0;
 }
 
@@ -188,26 +188,27 @@ footer nav a {
     width: 100%;
     margin: 60px 0 20px;
     padding: 0 22px;
-    display: flex;
-    flex-direction: row;
     align-items: baseline;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  footer nav {
+  footer section {
+    display: flex;
     flex-direction: row;
+    justify-content: flex-end;
   }
   footer nav a {
     margin-right: 20px;
   }
   footer nav span {
-    margin: 11px 20px;
+    margin: 1em 20px;
   }
   footer nav span:first-child {
     margin-left: 0;
   }
   #copyright {
     font-size: unset;
-    flex: 1;
     text-align: right;
   }
 }
