@@ -6,36 +6,46 @@
 
   <title>AngelShot | Engaging communities to help protect women.</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="shortcut icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
 
   <meta name="description" content="AngelShot engages communities to help protect women. We provide tools and knowledge that empower women to safeguard themselves and encourage communities to act as havens for them.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="o-IxUxONLoA45N5dPU-gMnVWZKq8R_qj45-Du27E8Tk" />
-
-  <noscript><meta http-equiv="refresh" content="0;url=http://www.angelshot.ltd/static/" /></noscript>
+  <meta name="theme-color" content="#BECBDD">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://use.typekit.net/rtx2vjd.css">
   <link rel="stylesheet" href="css/styles.css">
 
-  <meta name="theme-color" content="#BECBDD">
 
   <style>
     #intro {
-      background: top center url("img/hcext_3266.jpg") no-repeat;
+      background: center center url("img/angelshot-intro.jpg") no-repeat;
       background-size: cover;
       padding-top: 90px;
-      margin-bottom: 50px;
       text-align: center;
       color: #fff;
+      position: relative;
+    }
+    #intro cite {
+      font-size: 6px;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      bottom: 6px;
+      z-index: 1;
+      color: #243644;
+    	writing-mode: vertical-rl;
+      text-align: right;
     }
     #intro .inset {
+      display: inline-block;
       background: #243645;
       color: #fff;
-      bottom: -40px;
+      bottom: -20px;
       margin: 0 40px -50px;
       position: relative;
       max-width: 800px;
@@ -46,20 +56,20 @@
       font-style: italic;
       font-size: 18px;
       line-height: 22px;
-      padding: 14px;
+      padding: 14px 20px;
       text-shadow: 0px 3px 6px #000;
     }
     #getApp {
       background: #fff;
       text-align: center;
-      padding: 40px 20px 30px;
+      padding: 40px 20px 20px;
       margin: 0 20px;
       position: relative;
     }
     #getApp:after {
       content: "";
       position: absolute;
-      background: url("img/istockphoto-9.png") 0 0 no-repeat;
+      background: url("img/flowers-bottom.png") 0 0 no-repeat;
       background-size: contain;
       margin: 0 auto;
       left: 0;
@@ -71,18 +81,19 @@
     #getApp h2 {
       font: normal 21px/21px mostra-nuova, sans-serif;
       color: #576877;
-      margin: 30px auto 14px;
+      margin: 14px auto;
     }
     #getApp p {
       font: normal italic 10px/1.2 droid-serif, serif;
       color: #576877;
     }
-    #beta_signup {
+    #mc-embedded-subscribe-form {
       position: relative;
       text-shadow: none;
-      margin: 26px 0 0;
+      max-width: 300px;
+      margin: 20px auto;
     }
-    #beta_signup input[type=submit] {
+    #mc-embedded-subscribe-form input[type=submit] {
       width: 124px;
       height: 40px;
       border-radius: 7px;
@@ -149,13 +160,18 @@
     }
 
     @media only screen and (min-width: 768px) {
+      .main {
+        margin-top: -33px;
+        margin-bottom: 20px;
+      }
       #intro {
         padding-top: 180px;
         margin-bottom: 0;
         background-size: cover;
+        margin-top: 50px;
+        background-image: url("img/angelshot-intro@2x.jpg");
       }
       #intro .inset {
-        display: inline-block;
         bottom: -27px;
       }
       #intro h1 {
@@ -163,17 +179,16 @@
         line-height: 1.15em;
         padding: 24px 70px;
       }
+      #intro cite {
+        font-size: 9px;
+      }
       #getApp {
-        padding-top: 60px;
+        padding-top: 76px;
         margin: 0 40px;
       }
       #getApp:after {
         width: 386px;
         bottom: -85px;
-      }
-      #beta_signup {
-        width: 300px;
-        margin: 40px auto 20px;
       }
       blockquote {
         max-width: 560px;
@@ -194,6 +209,7 @@
       }
       #our_goals article img {
         max-width: 100%;
+        max-height: unset;
       }
       #our_goals .nowrap {
         white-space: normal;
@@ -202,10 +218,11 @@
 
     @media only screen and (min-width: 1024px) {
       #intro {
-        background-image: url("img/hcext_3266@2x.jpg");
+        background-image: url("img/angelshot-intro@3x.jpg");
       }
-      #getApp:after {
-        background-image: url("img/istockphoto-9@2x.png");
+      #intro cite {
+        top: auto;
+      	writing-mode: unset;
       }
       #our_goals section {
         margin: 100px 44px 0;
@@ -217,6 +234,9 @@
     }
 
     @media only screen and (min-width: 1280px) {
+      #intro {
+        padding-top: 300px;
+      }
       #our_goals section {
         width: 1156px;
         margin-left: auto;
@@ -228,27 +248,42 @@
       #our_goals article p:last-child {
         margin-bottom: 0;
       }
-      #our_goals article img {
-        max-width: unset;
-        max-height: unset;
-        width: 100%;
-      }
     }
 
     @media only screen and (min-width: 1440px) {
+      #intro {
+        padding-top: 400px;
+        background-image: url("img/angelshot-intro@4x.jpg");
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #684c77;
+      }
+      #intro cite {
+      	writing-mode: unset;
+      }
       #getApp {
         width: 1268px;
         margin-left: auto;
         margin-right: auto;
       }
+
+      @media only screen and (min-width: 2048px) {
+        #intro {
+          background-size: 2048px;
+        }
+        #intro cite {
+          right: calc(50vw - 1024px);
+          left: auto;
+        }
+      }
     }
   </style>
 </head>
 
-<body onload="window.location = 'http://www.angelshot.ltd/static/'">
+<body>
   <header>
     <div id="logo">
-      <img src="img/logo.png" alt="AngelShot Ltd.">
+      <a href="https://www.angelshot.ltd"><img src="img/logo.png" alt="AngelShot Ltd."></a>
     </div>
   </header>
   <section class="main" id="home">
@@ -256,17 +291,34 @@
       <div class="inset">
         <h1>Engaging communities<br> to help protect women.</h1>
       </div>
+      <cite>IMCBerea College [<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Berea_College_20110901_Campus_students_OA-19L_(20715121726).jpg">via Wikimedia Commons</a></cite>
     </div>
     <div id="getApp">
       <h2>Ever needed an out? <span class="nowrap">Get an Angel.</span></h2>
       <p class="tagline">Discreetly bails you out of bad dates, rides, and everything else.™</p>
-      <form name="beta_signup" id="beta_signup">
-        <fieldset>
-          <input type="email" placeholder="Email" name="email" id="email" required />
-          <label for="email">Email</label>
-          <input type="submit" name="beta_signup_submit" value="Sign Up" />
-        </fieldset>
-      </form>
+      <!-- Begin Mailchimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="https://ltd.us4.list-manage.com/subscribe/post?u=091175bb199db49734caae8f1&amp;id=634f908f1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group fieldset">
+              <input type="email" value="" name="EMAIL" placeholder="Email" required class="required email" id="mce-EMAIL" />
+              <label for="mce-EMAIL">Email</label>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none" ></div>
+              <div class="response" id="mce-success-response" style="display:none" ></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_091175bb199db49734caae8f1_634f908f1b" tabindex="-1" value="" />
+            </div>
+            <div class="clear">
+              <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
     </div>
     <blockquote>
       <p>Our mission is to provide tools and knowledge that <strong class="nowrap">empower women</strong> to safeguard themselves and <strong class="nowrap">encourage communities</strong> to act as havens for them.</p>
@@ -275,37 +327,19 @@
       <h2><span>Our Goals</span></h2>
       <section>
         <article>
-          <img
-           srcset="
-            img/istockphoto-671080046-612x612@2x.png 480w,
-            img/istockphoto-671080046-612x612.png 240w
-           "
-           src="img/istockphoto-671080046-612x612.png"
-          >
+          <img srcset=" img/increase-community-engagement@2x.jpg 480w, img/increase-community-engagement.jpg 240w " src="img/increase-community-engagement.jpg" >
           <h3>Increase community <span class="nowrap">engagement & accountability</span></h3>
           <p>51% of student rape and sexual assault <strong>victimizations occurred while</strong> the victim was pursuing leisure activities <strong>away from home</strong>.</p>
           <p>89% of college campuses reported zero incidents of rape in 2016.</p>
         </article>
         <article>
-            <img
-             srcset="
-              img/istockphoto-1091887412-612x612@2x.png 480w,
-              img/istockphoto-1091887412-612x612.png 240w
-             "
-             src="img/istockphoto-1091887412-612x612.png"
-            >
+          <img srcset=" img/seek-help@2x.jpg 480w, img/seek-help.jpg 240w " src="img/seek-help.jpg" >
           <h3>Encourage victims to report <span class="nowrap">incidents and seek help</span></h3>
           <p>80% of rape and sexual assault victimizations of students and 67% of nonstudents go <strong>unreported to police</strong>.</p>
           <p><strong>Fewer than 1 in 5 female victims</strong> of rape and sexual assault <strong>received assistance</strong> from a victim services agency.</p>
         </article>
         <article>
-            <img
-             srcset="
-              img/istockphoto-498371758-612x612@2x.png 480w,
-              img/istockphoto-498371758-612x612.png 240w
-             "
-             src="img/istockphoto-498371758-612x612.png"
-            >
+          <img srcset=" img/end-rape-culture@2x.jpg 480w, img/end-rape-culture.jpg 240w " src="img/end-rape-culture.jpg" >
           <h3>Prevent violence and ending <span class="nowrap">"Rape Culture"</span></h3>
           <p>For both college students and nonstudents, <strong>the offender was known to the victim</strong> in about 80% of rape and sexual assault victimizations.</p>
           <p>About a quarter of victims who did not report to police believed the incident was a personal matter, and 1 in 5 stated a <strong>fear of reprisal</strong>.</p>
@@ -314,11 +348,13 @@
     </div>
   </section>
   <footer>
-    <nav>
-      <span><a href="#privacy-policy">Privacy Policy</a></span>
-      <span><a href="#terms-conditions">Terms & Conditions</a></span>
-    </nav>
-    <p id="copyright">&copy; 2019 AngelShot Ltd.</p>
+    <p>AngelShot Ltd. is a registered 501(c)(3) nonprofit charitable organization.</p>
+    <section>
+      <nav>
+        <span><a href="privacy.html">Privacy Policy</a></span>
+      </nav>
+      <p id="copyright">&copy; 2019 AngelShot Ltd.</p>
+    </section>
   </footer>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
