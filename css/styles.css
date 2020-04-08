@@ -260,6 +260,7 @@ footer nav a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0 10px;
 }
 .sectionHeader span {
   padding: 0 20px;
@@ -301,7 +302,7 @@ footer nav a {
   }
   footer {
     width: 100%;
-    margin: 60px 0 20px;
+    margin: 0 0 20px;
     padding: 0 22px;
     align-items: baseline;
     box-sizing: border-box;
@@ -325,6 +326,9 @@ footer nav a {
   #copyright {
     font-size: unset;
     text-align: right;
+  }
+  .sectionHeader {
+    margin: 0 20px;
   }
 }
 
