@@ -37,13 +37,13 @@
       right: 6px;
       bottom: 6px;
       z-index: 1;
-      color: #243644;
+      color: #2F4961;
     	writing-mode: vertical-rl;
       text-align: right;
     }
     #intro .inset {
       display: inline-block;
-      background: #243645;
+      background: #487194;
       color: #fff;
       bottom: -20px;
       margin: 0 40px -50px;
@@ -64,23 +64,8 @@
       text-align: center;
       padding: 40px 20px 20px;
       margin: 0 20px;
-      position: relative;
     }
-    #getApp:after {
-      content: "";
-      position: absolute;
-      background: url("img/flowers-bottom.png") 0 0 no-repeat;
-      background-size: contain;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      bottom: -94px;
-      width: 280px;
-      height: 117px;
-    }
-    #getApp h2 {
-      font: normal 21px/21px mostra-nuova, sans-serif;
-      color: #576877;
+    .cta2 {
       margin: 14px auto;
     }
     #getApp p {
@@ -94,69 +79,35 @@
       margin: 20px auto;
     }
     #mc-embedded-subscribe-form input[type=submit] {
-      width: 124px;
       height: 40px;
       border-radius: 7px;
       margin-top: 14px;
       background: linear-gradient(#5d4b6a 0%, #754995 100%);
     }
 
-    blockquote {
+    .cta {
       margin-top: 80px;
     }
 
     #our_goals {
-      margin-top: 50px;
-    }
-
-    #our_goals h2 {
-      font: normal italic 32px/38px droid-serif, serif;
-      text-align: center;
-      color: #576877;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-    #our_goals h2:after,
-    #our_goals h2:before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 0;
-      border: 2px solid rgba(255, 255, 255, 0.5);
-    }
-    #our_goals h2 span {
-      padding: 0 20px;
-      white-space: nowrap;
+      padding: 60px 0 10px;
+      background: white;
+      margin: 0 20px;
     }
 
     #our_goals article {
-      background: #fff;
-      margin: 80px 20px 20px;
-      padding: 0 20px 10px;
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      padding: 0 10px 10px;
     }
-
-    #our_goals article img {
-      max-width: 239px;
-      max-height: 120px;
-      border-radius: 6px;
-      margin: -60px auto 0;
+    #our_goals .subheader {
+      margin: 20px 0 16px;
+      display: flex;
+      align-items: center;
     }
-
-    #our_goals article h3 {
-      text-align: left;
-      font-family: "Mostra Nuova";
-      font-weight: bold;
-      font-size: 20px;
-      color: #576877;
-      margin: 20px 0;
-    }
-
-    #our_goals article p {
-      font-size: 14px;
-      line-height: 18px;
-      text-align: left;
+    #our_goals .subheader:before {
+      height: 35px;
+      width: 35px;
+      margin-right: 12px;
+      flex-shrink: 0;
     }
 
     @media only screen and (min-width: 768px) {
@@ -285,6 +236,14 @@
     <div id="logo">
       <a href="https://www.angelshot.ltd"><img src="img/logo.png" alt="AngelShot Ltd."></a>
     </div>
+    <nav class="mainNav">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Programs</a></li>
+        <li><a href="#">Join the Movement</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </nav>
   </header>
   <section class="main" id="home">
     <div id="intro">
@@ -293,15 +252,35 @@
       </div>
       <cite>IMCBerea College [<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Berea_College_20110901_Campus_students_OA-19L_(20715121726).jpg">via Wikimedia Commons</a></cite>
     </div>
+    <div id="our_goals" class="floral">
+      <h2 class="sectionHeader"><span>Our Goals</span></h2>
+      <section>
+        <article>
+          <h3 class="subheader icon_heart">Increase community engagement & accountability</h3>
+          <p>The AngelShot WINGS Program will re-enforce social norms that protect against sexual violence by working with schools and local businesses to achieve our mission of creating safe environments by championing transparency and accountability.</p>
+        </article>
+        <article>
+          <h3 class="subheader icon_person">Prevent incidents and encourage victims to seek help</h3>
+          <p>AngelShot’s website/knowledge base will arm an individual with the information and knowledge to recognize when they’re in a potentially dangerous situation, and will provide them with the methodology to help themselves get out of it.</p>
+        </article>
+        <article>
+          <h3 class="subheader icon_earth">Prevent violence by ending "Rape Culture"</h3>
+          <p>AngelShot provides educational resources that will compel our society to shift its mindset on the unacceptable behaviors that perpetuate rape culture. Through shared stories and experiences, we provide an outlet for those who have been a victim of sexual violence.</p>
+        </article>
+      </section>
+    </div>
 
-<!-- Begin Give Lively Fundraising Widget -->
-<script>gl=document.createElement('script');gl.src='https://secure.givelively.org/widgets/simple_donation/angelshot-ltd.js?show_suggested_amount_buttons=true&show_in_honor_of=true&address_required=false&has_required_custom_question=null&suggested_donation_amounts[]=25&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100&suggested_donation_amounts[]=250';document.getElementsByTagName('head')[0].appendChild(gl);</script><div id="give-lively-widget" class="gl-simple-donation-widget"></div>
-<!-- End Give Lively Fundraising Widget -->
+    <blockquote class="cta">
+      <p>Our mission is to provide tools and knowledge that <strong class="nowrap">empower women</strong> to safeguard themselves and <strong class="nowrap">encourage communities</strong> to act as havens for them.</p>
+    </blockquote>
 
+    <!-- Begin Give Lively Fundraising Widget -->
+    <script>gl=document.createElement('script');gl.src='https://secure.givelively.org/widgets/simple_donation/angelshot-ltd.js?show_suggested_amount_buttons=true&show_in_honor_of=true&address_required=false&has_required_custom_question=null&suggested_donation_amounts[]=25&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100&suggested_donation_amounts[]=250';document.getElementsByTagName('head')[0].appendChild(gl);</script><div id="give-lively-widget" class="gl-simple-donation-widget"></div>
+    <!-- End Give Lively Fundraising Widget -->
 
     <div id="getApp">
-      <h2>Ever needed an out? <span class="nowrap">Get an Angel.</span></h2>
-      <p class="tagline">Discreetly bails you out of bad dates, rides, and everything else.™</p>
+      <h2 class="cta2">Ever needed an out?<br><span class="nowrap">Get an Angel.</span></h2>
+      <p class="tagline">Discreetly bails you out of a bad situation.™</p>
       <!-- Begin Mailchimp Signup Form -->
       <div id="mc_embed_signup">
         <form action="https://ltd.us4.list-manage.com/subscribe/post?u=091175bb199db49734caae8f1&amp;id=634f908f1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -319,38 +298,12 @@
               <input type="text" name="b_091175bb199db49734caae8f1_634f908f1b" tabindex="-1" value="" />
             </div>
             <div class="clear">
-              <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button" />
+              <input type="submit" value="Join the beta" name="subscribe" id="mc-embedded-subscribe" class="button" />
             </div>
           </div>
         </form>
       </div>
       <!--End mc_embed_signup-->
-    </div>
-    <blockquote>
-      <p>Our mission is to provide tools and knowledge that <strong class="nowrap">empower women</strong> to safeguard themselves and <strong class="nowrap">encourage communities</strong> to act as havens for them.</p>
-    </blockquote>
-    <div id="our_goals">
-      <h2><span>Our Goals</span></h2>
-      <section>
-        <article>
-          <img srcset=" img/increase-community-engagement@2x.jpg 480w, img/increase-community-engagement.jpg 240w " src="img/increase-community-engagement.jpg" >
-          <h3>Increase community <span class="nowrap">engagement & accountability</span></h3>
-          <p>51% of student rape and sexual assault <strong>victimizations occurred while</strong> the victim was pursuing leisure activities <strong>away from home</strong>.</p>
-          <p>89% of college campuses reported zero incidents of rape in 2016.</p>
-        </article>
-        <article>
-          <img srcset=" img/seek-help@2x.jpg 480w, img/seek-help.jpg 240w " src="img/seek-help.jpg" >
-          <h3>Encourage victims to report <span class="nowrap">incidents and seek help</span></h3>
-          <p>80% of rape and sexual assault victimizations of students and 67% of nonstudents go <strong>unreported to police</strong>.</p>
-          <p><strong>Fewer than 1 in 5 female victims</strong> of rape and sexual assault <strong>received assistance</strong> from a victim services agency.</p>
-        </article>
-        <article>
-          <img srcset=" img/end-rape-culture@2x.jpg 480w, img/end-rape-culture.jpg 240w " src="img/end-rape-culture.jpg" >
-          <h3>Prevent violence and ending <span class="nowrap">"Rape Culture"</span></h3>
-          <p>For both college students and nonstudents, <strong>the offender was known to the victim</strong> in about 80% of rape and sexual assault victimizations.</p>
-          <p>About a quarter of victims who did not report to police believed the incident was a personal matter, and 1 in 5 stated a <strong>fear of reprisal</strong>.</p>
-        </article>
-      </section>
     </div>
   </section>
   <footer>

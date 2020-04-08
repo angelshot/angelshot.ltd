@@ -6,8 +6,8 @@ html {
   line-height: 1.4;
   min-height: 100%;
   min-width: 320px;
-  background: #c2dee4;
-  background: linear-gradient(180deg, rgb(194,222,228) 0%, rgba(188,188,216,1) 100%);
+  background: #C5E3EE;
+  background: linear-gradient(#c5e3ee 0%, #b2b3df 100%);
 }
 
 body {
@@ -16,13 +16,12 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   min-height: 100vh;
-  text-align: center;
   color: #243645;
   font-family: droid-serif, serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.2;
+  line-height: 21px;
 }
 
 ::-moz-selection {
@@ -56,10 +55,34 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
+.subheader {
+  font: bold 20px/24px mostra-nuova, sans-serif;
+  color: #487194;
+}
+
 header {
   height: 30px;
   overflow: visible;
   z-index: 1;
+}
+
+.mainNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mainNav ul {
+  display: none;
+}
+
+.mainNav::before {
+  content: '{menu}';
+}
+
+.mainNav li {
+  list-style: none;
+  display: inline;
 }
 
 .main {
@@ -67,8 +90,8 @@ header {
 }
 
 #logo {
-  max-width: 100px;
-  margin: 0px auto;
+  max-width: 60px;
+  margin: 0px auto 0 20px;
 }
 #logo img {
   display: block;
@@ -135,15 +158,6 @@ input[type="submit"] {
   display: block;
 }
 
-blockquote {
-  font: normal 20px/29px droid-serif, serif;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0px 1px 5px #1f3544;
-  margin: 20px;
-  padding: 0;
-}
-
 footer {
   text-align: left;
   margin: 0 20px 20px;
@@ -178,6 +192,74 @@ footer nav a {
 
 .nowrap {
   white-space: nowrap;
+}
+
+.icon_heart:before {
+  content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016.001%2016%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h16v16H0z%22%2F%3E%3Cpath%20d%3D%22M14.722%202.275a4.3%204.3%200%2000-6.119%200l-.6.6-.6-.6a4.331%204.331%200%2000-6.127%206.123l6.721%206.721%206.721-6.721a4.3%204.3%200%20000-6.119%22%20fill%3D%22%23754995%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+}
+.icon_person:before {
+  content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%2016v-2c0-2.2%203.6-4%208-4s8%201.8%208%204v2zM4%204a4%204%200%20114%204%204%204%200%2001-4-4z%22%20fill%3D%22%23754995%22%2F%3E%3C%2Fsvg%3E');
+}
+.icon_earth:before {
+  content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M12.72%2012.32a1.635%201.635%200%2000-1.52-1.12h-.8V8.8a.756.756%200%2000-.8-.8H4.8V6.4h1.6a.756.756%200%2000.8-.8V4h1.6a1.6%201.6%200%20001.6-1.6v-.32a6.48%206.48%200%20014%205.92%206.326%206.326%200%2001-1.68%204.32m-5.52%202A6.456%206.456%200%20011.6%208a8.815%208.815%200%2001.16-1.44L5.6%2010.4v.8a1.6%201.6%200%20001.6%201.6M8%200a8%208%200%20108%208%208.024%208.024%200%2000-8-8z%22%20fill%3D%22%23754995%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.floral {
+  position: relative;
+}
+.floral:after {
+  content: "";
+  position: absolute;
+  background: url("../img/flowers-bottom.png") 0 0 no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -94px;
+  width: 280px;
+  height: 117px;
+}
+
+.sectionHeader {
+  font: normal italic 28px/33px droid-serif, serif;
+  text-align: center;
+  color: #487194;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sectionHeader span {
+  padding: 0 20px;
+  position: relative;
+  flex: none;
+}
+.sectionHeader:before,
+.sectionHeader:after {
+  content: '';
+  height: 3px;
+  background: #C5E3EE;
+  flex: 1;
+}
+.sectionHeader span:before {
+  background: red;
+}
+.sectionHeader span:after {right: 0;}
+
+.cta {
+  font: normal 25px/34px droid-serif, serif;
+  text-align: center;
+  color: #2f4961;
+  margin: 20px;
+  padding: 0;
+}
+
+.cta2 {
+  font: normal 21px/25px mostra-nuova, sans-serif;
+  color: #754995;
+}
+
+.gl-simple-donation-widget {
+  margin: 40px 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -226,12 +308,6 @@ footer nav a {
   }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 @media print {
   *,
   *:before,
