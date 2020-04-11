@@ -24,6 +24,10 @@ body {
   line-height: 21px;
 }
 
+body.freeze {
+  position: fixed;
+}
+
 ::-moz-selection {
   background: #8F88A8;
   color: #D9DCFF;
@@ -280,6 +284,13 @@ input[type="password"]:invalid:not(:placeholder-shown):not(:focus) {
   position: relative;
 }
 
+label {
+  font: normal 12px/14px mostra-nuova, sans-serif;
+  color: #487194;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
 ::-webkit-input-placeholder,
 .inline-label {
   display: block;
@@ -314,7 +325,9 @@ input[type="email"]:invalid:not(:placeholder-shown) + .inline-label {
   display: block;
 }
 .button:hover {
-  filter: drop-shadow(0px 3px 6px #243645);
+  box-shadow: 0px 3px 6px #243645;
+  text-decoration: none;
+
 }
 .button:disabled {
   background: #92879A;
@@ -373,21 +386,21 @@ input[type="email"]:invalid:not(:placeholder-shown) + .inline-label {
   color: #d0d5db;
 }
 
-#mc-embedded-subscribe-form.newsletter-signup {
+.subscribe-newsletter-form {
   margin: 0;
   max-width: unset;
 }
 
-#mc-embedded-subscribe-form input[type=submit].button-inline {
+.subscribe-newsletter input[type=submit].button-inline {
   margin: 0;
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.mc-field-group.fieldset {
+.subscribe-newsletter .fieldset {
   padding-top: 20px;
 }
-#mc-embedded-subscribe-form label {
+.subscribe-newsletter label {
   display: block;
   opacity: 1;
   position: absolute;
@@ -540,6 +553,10 @@ footer nav a {
 }
 
 @media only screen and (min-width: 1025px) {
+  body.freeze {
+    position: static;
+  }
+
   #logo {
     max-width: 154px;
   }
@@ -559,6 +576,9 @@ footer nav a {
     position: static;
     background: transparent;
     max-width: unset;
+  }
+  #menu_toggle:checked ~ .navigation {
+    overflow-y: hidden;
   }
   
   .mainNav {
