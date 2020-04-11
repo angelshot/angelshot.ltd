@@ -230,7 +230,7 @@ header {
 }
 
 #logo {
-  max-width: 100px;
+  max-width: 81px;
   margin: 0px auto 0 20px;
   z-index: 1;
   position: relative;
@@ -507,10 +507,6 @@ footer nav a {
 }
 
 @media only screen and (min-width: 768px) {
-  #logo {
-    max-width: 154px;
-  }
-
   footer {
     width: 100%;
     margin: 0 0 20px;
@@ -544,6 +540,9 @@ footer nav a {
 }
 
 @media only screen and (min-width: 1025px) {
+  #logo {
+    max-width: 154px;
+  }
   header {
     height: 120px;
     display: flex;

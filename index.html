@@ -23,9 +23,9 @@
 
   <style>
     #intro {
-      background: center center url("img/angelshot-intro.jpg") no-repeat;
+      background: top center #fff url("img/angelshot-intro@2x.jpg") no-repeat;
       background-size: cover;
-      padding-top: 90px;
+      padding-top: 131px;
       text-align: center;
       color: #fff;
       position: relative;
@@ -176,6 +176,8 @@
     @media only screen and (min-width: 1024px) {
       #intro {
         background-image: url("img/angelshot-intro@3x.jpg");
+        background-size: auto 100%;
+        padding-top: 300px;
       }
       #intro cite {
         top: auto;
@@ -190,9 +192,6 @@
     }
 
     @media only screen and (min-width: 1280px) {
-      #intro {
-        padding-top: 300px;
-      }
       #our_goals {
         max-width: 1244px;
         margin: 0 auto;
@@ -216,7 +215,6 @@
         background-image: url("img/angelshot-intro@4x.jpg");
         margin-left: auto;
         margin-right: auto;
-        background-color: #684c77;
       }
       #intro cite {
       	writing-mode: unset;
@@ -229,9 +227,6 @@
     }
 
     @media only screen and (min-width: 2048px) {
-      #intro {
-        background-size: 2048px;
-      }
       #intro cite {
         right: calc(50vw - 1024px);
         left: auto;
