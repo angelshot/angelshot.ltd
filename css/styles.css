@@ -155,7 +155,7 @@ header {
 
 .mainNav {
   padding: 14px;
-  font: normal 20px/24px mostra-nuova;
+  font: normal 20px/24px mostra-nuova, sans-serif;
   color: #fff;
 }
 
@@ -195,7 +195,7 @@ header {
 
 .subNav a,
 .subNav a:visited {
-  font-family: "Droid Serif";
+  font-family: droid-serif, serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 30px;
@@ -208,7 +208,7 @@ header {
 
 .navigation .status501c3 {
   margin: 20px 24px;
-  font-family: "Droid Serif";
+  font-family: droid-serif, serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -216,7 +216,7 @@ header {
 }
 .navigation .copyright {
   margin: 20px 24px;
-  font-family: "Droid Serif";
+  font-family: droid-serif, serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
@@ -392,7 +392,7 @@ input[type="email"]:invalid:not(:placeholder-shown) + .inline-label {
   top: 0;
   left: 0;
   background: transparent;
-  font-family: mostra-nuova;
+  font-family: mostra-nuova, sans-serif;
   font-weight: normal;
   font-size: 10px;
   line-height: 11px;
