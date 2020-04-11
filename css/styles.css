@@ -134,6 +134,8 @@ header {
 
 #menu_toggle:checked ~ .navigation {
   right: 0;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .navigation li {
