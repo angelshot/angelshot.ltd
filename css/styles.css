@@ -340,6 +340,10 @@ footer nav a {
 }
 
 @media only screen and (min-width: 1440px) {
+  header {
+    width: 1244px;
+    margin: 0 auto;
+  }
   #logo {
     max-width: 200px;
   }
