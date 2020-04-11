@@ -155,7 +155,7 @@ header {
 
 .mainNav {
   padding: 14px;
-  font: normal 20px/24px "Mostra Nuova";
+  font: normal 20px/24px mostra-nuova;
   color: #fff;
 }
 
@@ -228,7 +228,7 @@ header {
 }
 
 #logo {
-  max-width: 60px;
+  max-width: 100px;
   margin: 0px auto 0 20px;
   z-index: 1;
   position: relative;
@@ -392,7 +392,7 @@ input[type="email"]:invalid:not(:placeholder-shown) + .inline-label {
   top: 0;
   left: 0;
   background: transparent;
-  font-family: "Mostra Nuova";
+  font-family: mostra-nuova;
   font-weight: normal;
   font-size: 10px;
   line-height: 11px;
