@@ -1,5 +1,5 @@
 import React from "react"
-import NewsletterForm from "../components/newsletterForm"
+import NewsletterForm from "./newsletterForm"
 
 const Footer = () => (
 <footer>
