@@ -19,28 +19,6 @@
 
     <meta name="theme-color" content="#BECBDD">
     <style>
-      #privacy {
-        flex: 1;
-        background: #fff;
-        text-align: left;
-        padding: 90px 20px 30px;
-        margin: 30px 20px 70px;
-        position: relative;
-        max-width: 1280px;
-        align-self: center;
-      }
-      #privacy:after {
-        content: "";
-        position: absolute;
-        background: url("img/flowers-bottom.png") 0 0 no-repeat;
-        background-size: contain;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        bottom: -84px;
-        width: 386px;
-        height: 115px;
-      }
       #privacy h2 {
         font: normal 21px/21px mostra-nuova, sans-serif;
         color: #576877;
@@ -49,33 +27,78 @@
       #privacy p {
         color: #576877;
       }
-      @media only screen and (min-width: 768px) {
-        #privacy {
-          column-count: 2;
-          text-align: justify;
-          margin-top: 50px;
-          column-gap: 40px;
-        }
-        #intro {
-          padding-top: 80px;
-          margin-bottom: 0;
-          background-size: cover;
-          column-span: all;
-        }
-      }
     </style>
   </head>
   <body>
     <header>
       <div id="logo">
         <a href="https://www.angelshot.ltd"><img src="img/logo.png" alt="AngelShot Ltd."></a>
-    </div>
-    </header>
-    <section id="privacy">
-      <div id="intro">
-        <h1>AngelShot Ltd. Privacy Policy</h1>
-        <p>Last modified: 12/20/2019</p>
       </div>
+      <input id="menu_toggle" type="checkbox" onchange="
+        function freezeBody(e){
+          if (e.checked) { document.body.classList.add('freeze') }
+          else { document.body.classList.remove('freeze') }
+        } freezeBody(this);" />
+      <nav class="navigation">
+        <ul class="mainNav">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="our_programs.html">Our Programs</a></li>
+          <li><a href="join_the_movement.html">Join the Movement</a></li>
+          <li class="donate-large"><a href="#give-lively-widget" class="button">Donate</a></li>
+          <li class="donate-small"><a href="#give-lively-widget" class="button button-wide-alt" onclick="document.getElementById('menu_toggle').checked=false;">Make a Donation</a></li>
+        </ul>
+        <section class="mobile">
+          <div class="subscribe-newsletter">
+            <h6 class="subheader">Subscribe to our newsletter</h6>
+            <p>Stay up to date on the progress of our programs, and discover upcoming events and volunteer opportunities.</p>
+            <!-- REPLACE THIS!!! -->
+            <!-- REPLACE THIS!!! -->
+            <!-- REPLACE THIS!!! -->
+            <!-- Begin Mailchimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form action="https://ltd.us4.list-manage.com/subscribe/post?u=091175bb199db49734caae8f1&amp;id=634f908f1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-newsletter-form" target="_blank">
+                <div id="mc_embed_signup_scroll">
+                  <div class="mc-field-group fieldset">
+                    <label for="mce-EMAIL">Enter your email</label>
+                    <input type="email" value="" name="EMAIL" placeholder="Email" required class="required email" id="mce-EMAIL" />
+                    <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button-inline" />
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none" ></div>
+                    <div class="response" id="mce-success-response" style="display:none" ></div>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_091175bb199db49734caae8f1_634f908f1b" tabindex="-1" value="" />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--End mc_embed_signup-->
+          </div>
+  
+          <ul class="subNav">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+  
+          <ul class="socialNav">
+            <li><a href="#" class="icon_instagram alt">Follow us on Instagram</a></li>
+            <li><a href="#" class="icon_twitter alt">Follow us on Twitter</a></li>
+            <li><a href="#" class="icon_facebook alt">Follow us on Facebook</a></li>
+          </ul>
+  
+          <p class="status501c3">AngelShot Ltd. is a registered 501(c)(3) nonprofit charitable organization.</p>
+          <p class="copyright">©2020 AngelShot Ltd.</p>
+        </section>
+      </nav>
+    </header>
+    <div class="intro">
+      <h1 class="title">Privacy Policy</h1>
+    </div>
+    <section id="privacy" class="sectionContainer floral col-2">
+      <p class="subtitle">Last modified: 12/20/2019</p>
       <p>AngelShot Ltd. (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;) operates <a href="https://angelshot.ltd">https://angelshot.ltd</a> (the &quot;Site&quot;). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site. We use your Personal Information only for replying to you. By using the Site, you agree to the collection and use of information in accordance with this policy.</p>
       <h2> Information Collection And Use</h2>
       <p>While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to your name (&quot;Personal Information&quot;).</p>
@@ -97,11 +120,73 @@
       <h2> Contact Us</h2>
       <p>If you have any questions about this Privacy Policy, please contact us at hi@angelshot.ltd.</p>
     </section>
+
+
+    <section id="mission">
+      <blockquote class="cta">
+        Our mission is to provide tools and knowledge that <strong>empower women</strong> to safeguard themselves and <strong>encourage communities</strong> to act as havens for them.
+      </blockquote>
+      <!-- Begin Give Lively Fundraising Widget -->
+      <script>gl=document.createElement('script');gl.src='https://secure.givelively.org/widgets/simple_donation/angelshot-ltd.js?show_suggested_amount_buttons=true&show_in_honor_of=true&address_required=false&has_required_custom_question=null&suggested_donation_amounts[]=25&suggested_donation_amounts[]=50&suggested_donation_amounts[]=100&suggested_donation_amounts[]=250';document.getElementsByTagName('head')[0].appendChild(gl);</script><div id="give-lively-widget" class="gl-simple-donation-widget"></div>
+      <!-- End Give Lively Fundraising Widget -->
+    </section>
+
     <footer>
-      <nav>
-        <span><a href="privacy.html">Privacy Policy</a></span>
-      </nav>
-        <p id="copyright">&copy; 2020 AngelShot Ltd.</p>
+      <div class="grid">
+        <div class="subscribe-newsletter">
+          <h6 class="subheader">Subscribe to our newsletter</h6>
+          <p>Stay up to date on the progress of our programs, and discover upcoming events and volunteer opportunities.</p>
+          <!-- REPLACE THIS!!! -->
+          <!-- REPLACE THIS!!! -->
+          <!-- REPLACE THIS!!! -->
+          <!-- Begin Mailchimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="https://ltd.us4.list-manage.com/subscribe/post?u=091175bb199db49734caae8f1&amp;id=634f908f1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-newsletter-form" target="_blank">
+              <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Enter your email</label>
+                <div class="mc-field-group fieldset">
+                  <input type="email" value="" name="EMAIL" placeholder="Email" required class="required email" id="mce-EMAIL" />
+                  <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button" />
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none" ></div>
+                  <div class="response" id="mce-success-response" style="display:none" ></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_091175bb199db49734caae8f1_634f908f1b" tabindex="-1" value="" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
+        </div>
+        <ul class="nav socialNav">
+          <li><a href="#" class="icon_instagram alt">Follow us on Instagram</a></li>
+          <li><a href="#" class="icon_twitter alt">Follow us on Twitter</a></li>
+          <li><a href="#" class="icon_facebook alt">Follow us on Facebook</a></li>
+        </ul>
+
+        <ul class="nav footerNav">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="our_programs.html">Our Programs</a></li>
+          <li><a href="join_the_movement.html">Join the Movement</a></li>
+        </ul>
+
+        <ul class="nav footerSubNav">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+        
+      <section class="fine_print">
+        <div class="container">
+          <p class="status501c3">AngelShot Ltd. is a registered 501(c)(3) nonprofit charitable organization.</p>
+          <p class="copyright">&copy;2020 AngelShot Ltd.</p>
+          <a href="#" class="backToTop">Back to Top</a>
+        </div>
+      </section>
     </footer>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
