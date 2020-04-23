@@ -9,8 +9,8 @@ export default () => (
     <Intro>Terms of Use</Intro>
     <section id="privacy" class="sectionContainer floral">
       <CTA tagName="h2">
-        DO NOT USE THIS SERVICE FOR AN EMERGENCY. IF YOU EXPERIENCE AN
-        EMERGENCY, CALL 911 IMMEDIATELY.
+        DO NOT USE THIS SERVICE FOR AN EMERGENCY. <br />
+        IF YOU EXPERIENCE AN EMERGENCY, CALL 911 IMMEDIATELY.
       </CTA>
       <div class="col-2">
         <p>
