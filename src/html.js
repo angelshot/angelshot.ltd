@@ -4,20 +4,24 @@ import * as PropTypes from "prop-types"
 class Html extends Component {
   render() {
     return (
-      <html op="news" lang="en" {...this.props.htmlAttributes}>
+      <html lang="en_US" {...this.props.htmlAttributes}>
         <head>
           <meta name="referrer" content="origin" />
           <meta charSet="utf-8" />
-          <meta
-            name="description"
-            content="Gatsby example site showing use with no plugins"
-          />
+  
+          <title>AngelShot | Engaging communities to help protect women.</title>
+
+          <meta name="description" content="AngelShot engages communities to help protect women. We provide tools and knowledge that empower women to safeguard themselves and encourage communities to act as havens for them." />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="google-site-verification" content="o-IxUxONLoA45N5dPU-gMnVWZKq8R_qj45-Du27E8Tk" />
+          <meta name="theme-color" content="#BECBDD" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <title>Gatsby - No Plugins</title>
+
+          <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+          <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+          <link rel="manifest" href="site.webmanifest" />
+  
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
