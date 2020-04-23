@@ -1,0 +1,19 @@
+{
+  "name": "angelshot.ltd",
+  "version": "1.0.0",
+  "description": "angelshot.ltd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelshot/angelshot.ltd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelshot/angelshot.ltd/issues"
+  },
+  "homepage": "https://github.com/angelshot/angelshot.ltd#readme"
+}
