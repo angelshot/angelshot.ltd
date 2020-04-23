@@ -1,0 +1,141 @@
+#intro {
+    background: top center #fff url("../../static/img/hero-home.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  #intro cite {
+    font-size: 6px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    z-index: 1;
+    color: #2F4961;
+      writing-mode: vertical-rl;
+    text-align: right;
+  }
+  #intro .inset {
+    display: inline-block;
+    background: #487194;
+    color: #fff;
+    bottom: -20px;
+    margin: 0 40px -50px;
+    position: relative;
+    max-width: 800px;
+    z-index: 1;
+  }
+  #intro h1 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 20px;
+    text-shadow: 0px 3px 6px #000;
+  }
+  .sectionContainer.withHero {
+    padding-top: 60px;
+  }
+
+  #our_goals article {
+    padding: 0 0 10px;
+  }
+  #our_goals .subheader {
+    margin: 20px 0 16px;
+    display: flex;
+    align-items: center;
+  }
+  #our_goals .subheader:before {
+    height: 35px;
+    width: 35px;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    #intro {
+      padding-top: 180px;
+      margin-bottom: 0;
+      background-size: cover;
+      background-image: url("../../static/img/hero-home@2x.jpg");
+    }
+    #intro .inset {
+      bottom: -27px;
+    }
+    #intro h1 {
+      font-size: 26px;
+      line-height: 1.15em;
+      padding: 24px 70px;
+    }
+    #intro cite {
+      font-size: 9px;
+    }
+    #our_goals {
+      padding-top: 80px;
+    }
+    #our_goals section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 10px;
+      margin: 0 10px 0;
+    }
+    #our_goals .subheader {
+      align-items: normal;
+    }
+    #our_goals .subheader:before {
+      margin-top: 6px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #intro {
+      background-image: url("../../static/img/hero-home@3x.jpg");
+      background-size: auto 100%;
+      padding-top: 300px;
+    }
+    #intro cite {
+      top: auto;
+        writing-mode: unset;
+    }
+    #our_goals section {
+      grid-column-gap: 44px;
+    }
+    #our_goals .nowrap {
+      white-space: nowrap;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    #our_goals section {
+      width: 1156px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #our_goals article {
+      padding: 20px;
+    }
+    #our_goals article p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    #intro {
+      padding-top: 400px;
+      background-image: url("../../static/img/hero-home@4x.jpg");
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #intro cite {
+        writing-mode: unset;
+    }
+  }
+
+  @media only screen and (min-width: 2048px) {
+    #intro cite {
+      right: calc(50vw - 1024px);
+      left: auto;
+    }
+  }
