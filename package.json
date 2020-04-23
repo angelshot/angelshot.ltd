@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/angelshot/angelshot.ltd/issues"
   },
-  "homepage": "https://github.com/angelshot/angelshot.ltd#readme"
+  "homepage": "https://github.com/angelshot/angelshot.ltd#readme",
+  "dependencies": {
+    "gatsby": "^2.20.29",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
