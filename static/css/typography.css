@@ -1,0 +1,84 @@
+/* TYPOGRAPHY */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  color: #243645;
+  font-family: normal 400 14px/21px droid-serif, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.headline {
+  font-family: normal italic 32px/40px droid-serif, serif;
+  color: #fff;
+  text-shadow: 0px 3px 6px #576877;
+}
+
+.title {
+  font-family: normal italic 22px/25px droid-serif, serif;
+  color: #487194;
+}
+
+.subtitle {
+  font: normal italic 18px/21px droid-serif, serif;
+  color: #243645;
+}
+
+.subheader {
+  font: bold 20px/24px mostra-nuova, sans-serif;
+  color: #487194;
+}
+
+.subheader2 {
+  font: bold 16px/19px mostra-nuova, sans-serif;
+  color: #754995;
+}
+
+.smallBody {
+  color: #487194;
+  font-family: 12px/18px droid-serif, serif;
+}
+
+.secondaryBody {
+  color: #4c2f61;
+  font-family: 16px/19px mostra-nuova, sans-serif;
+}
+
+.cta {
+  font: normal 25px/34px droid-serif, serif;
+  text-align: center;
+  color: #2f4961;
+  margin: 20px;
+  padding: 0;
+}
+
+.cta2 {
+  font: normal 21px/25px mostra-nuova, sans-serif;
+  color: #754995;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+    color: #576877;
+  }
+  .subtitle {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
