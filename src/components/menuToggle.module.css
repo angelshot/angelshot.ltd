@@ -51,3 +51,9 @@
 .menuToggle:checked::before {
   opacity: 1;
 }
+
+@media only screen and (min-width: 768px) {
+  .menuToggle {
+    display: none;
+  }
+}

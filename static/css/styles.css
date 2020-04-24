@@ -49,17 +49,6 @@ fieldset {
 .main {
   flex: 1;
 }
-
-#logo {
-  max-width: 81px;
-  margin: 0px auto 0 20px;
-  z-index: 1;
-  position: relative;
-}
-#logo img {
-  display: block;
-  width: 100%;
-}
 a,
 a:active {
   color: #754995;
@@ -76,7 +65,7 @@ a.learnMore:after {
   display: inline-block;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="email"],
 input[type="password"] {
   font: normal 14px/40px droid-serif, serif;
@@ -102,7 +91,7 @@ input[type="text"]:invalid:not(:placeholder-shown):not(:focus),
 input[type="email"]:invalid:not(:placeholder-shown):not(:focus),
 input[type="password"]:invalid:not(:placeholder-shown):not(:focus) {
   border: 2px solid #be3151;
-}
+} */
 
 .fieldset {
   position: relative;
@@ -144,34 +133,6 @@ footer .nav li {
 
 footer .subscribe-newsletter {
   display: none;
-}
-
-.subscribe-newsletter-form {
-  margin: 0;
-  max-width: unset;
-}
-
-.mobile .subscribe-newsletter input[type="submit"].button-inline {
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.mobile .subscribe-newsletter .fieldset {
-  padding-top: 20px;
-}
-.mobile .subscribe-newsletter label {
-  display: block;
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: transparent;
-  font-family: mostra-nuova, sans-serif;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 11px;
-  color: #c5e3ee;
 }
 
 footer {
@@ -487,10 +448,6 @@ footer .nav {
     padding-top: 140px;
   }
 
-  #logo {
-    max-width: 154px;
-  }
-
   .sectionContainer {
     margin-top: -170px;
     padding: 210px 56px 44px;
@@ -511,10 +468,6 @@ footer .nav {
 }
 
 @media only screen and (min-width: 1348px) {
-  #logo {
-    margin: 0;
-  }
-
   .intro {
     width: 100%;
     max-width: 1348px;

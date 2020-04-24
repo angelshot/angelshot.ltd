@@ -21,9 +21,7 @@ const Nav = () => (
           </Link>
         </li>
         <li className={styles.donateLarge}>
-          <Link to="/#donate" className={styles.button}>
-            Donate
-          </Link>
+          <Button href="#donate">Make a Donation</Button>
         </li>
         <li className={styles.donateSmall}>
           <Button

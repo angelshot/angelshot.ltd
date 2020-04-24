@@ -2,7 +2,6 @@
   position: fixed;
   z-index: 999;
   width: calc(100% - 20px);
-  max-width: 405px;
   top: 0;
   right: -100%;
   bottom: 0;
@@ -75,6 +74,7 @@
 .subNav a:visited {
   font: normal 12px/30px droid-serif, serif;
   color: #fff;
+  text-decoration: none;
 }
 
 .socialNav {
@@ -90,7 +90,7 @@
   overflow: hidden;
 }
 
-.navigation .status501c3 {
+.status501c3 {
   margin: 20px 24px;
   font-family: droid-serif, serif;
   font-weight: normal;
@@ -98,7 +98,7 @@
   line-height: 14px;
   color: #d0d5db;
 }
-.navigation .copyright {
+.copyright {
   margin: 20px 24px;
   font-family: droid-serif, serif;
   font-weight: normal;
@@ -126,17 +126,13 @@
   content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h16v16H0z%22%2F%3E%3Cpath%20d%3D%22M9.422%2016V8.711h2.489l.356-2.844H9.422V4.089c0-.8.267-1.422%201.422-1.422h1.511V.089C12%20.089%2011.111%200%2010.133%200a3.431%203.431%200%2000-3.644%203.733v2.134H4v2.844h2.489V16z%22%20fill%3D%22%23FFFFFF%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
 }
 
-@media only screen and (min-width: 1025px) {
-  .menuToggle {
-    display: none;
-  }
-
+@media only screen and (min-width: 768px) {
   .navigation {
     position: static;
     background: transparent;
     max-width: unset;
   }
-  :global #menuToggle:checked ~ #navigation {
+  :global #menu_toggle:checked ~ #navigation {
     overflow-y: hidden;
   }
 

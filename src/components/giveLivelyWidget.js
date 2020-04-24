@@ -8,7 +8,7 @@ class GiveLivelyWidget extends React.Component {
     document.getElementsByTagName("head")[0].appendChild(gl)
   }
   render() {
-    return <div id="give-lively-widget" class="gl-simple-donation-widget"></div>
+    return <div id="donate" class="gl-simple-donation-widget"></div>
   }
 }
 

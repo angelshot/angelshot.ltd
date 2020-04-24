@@ -5,7 +5,7 @@ import styles from "./header.module.css"
 
 const Header = () => (
   <header className={styles.header}>
-    <div id="logo">
+    <div className={styles.logo}>
       <Link to="/">
         <img src="img/logo.png" alt="AngelShot Ltd." />
       </Link>

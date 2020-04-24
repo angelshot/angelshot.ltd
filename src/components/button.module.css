@@ -1,4 +1,5 @@
-.button {
+.button,
+.button:visited {
   font: normal 20px/24px mostra-nuova, sans-serif;
   text-align: center;
   color: #fff;
@@ -42,6 +43,9 @@
   background: linear-gradient(#c2dee4 0%, #bcbcd8 100%);
   color: #754995;
   padding: 12px;
+}
+.buttonWideAlt:visited {
+  color: #754995;
 }
 .buttonWideAlt:hover {
   filter: drop-shadow(0px 3px 6px #243645);
