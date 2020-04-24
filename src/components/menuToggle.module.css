@@ -1,0 +1,53 @@
+.menuToggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  -webkit-appearance: none;
+  outline: none;
+  z-index: 1000;
+}
+
+.menuToggle::after,
+.menuToggle::before {
+  position: absolute;
+  font: normal 26px/26px sans-serif;
+  text-align: center;
+  transition: transform 0.25s, opacity 0.25s;
+}
+/* hamburger */
+.menuToggle::after {
+  content: "\2630";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 16px;
+  color: #754995;
+}
+/* close */
+.menuToggle::before {
+  content: "\2715";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 16px;
+  opacity: 0;
+  color: #fff;
+}
+.menuToggle:checked {
+  position: fixed;
+}
+
+.menuToggle:checked::after,
+.menuToggle:checked::before {
+  transform: rotate(180deg);
+}
+.menuToggle:checked::after {
+  opacity: 0;
+}
+.menuToggle:checked::before {
+  opacity: 1;
+}

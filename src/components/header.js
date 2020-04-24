@@ -1,12 +1,16 @@
 import React from "react"
+import { Link } from "gatsby"
 import Nav from "./nav"
+import styles from "./header.module.css"
 
 const Header = () => (
-  <header>
+  <header className={styles.header}>
     <div id="logo">
-      <a href="https://www.angelshot.ltd"><img src="img/logo.png" alt="AngelShot Ltd."/></a>
+      <Link to="/">
+        <img src="img/logo.png" alt="AngelShot Ltd." />
+      </Link>
     </div>
-    <Nav/>
+    <Nav />
   </header>
 )
 

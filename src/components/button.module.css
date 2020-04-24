@@ -1,0 +1,73 @@
+.button {
+  font: normal 20px/24px mostra-nuova, sans-serif;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  border-radius: 7px;
+  background: linear-gradient(#4c2f61 0%, #9d61c7 100%);
+  padding: 8px 32px;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+}
+.button:hover {
+  box-shadow: 0px 3px 6px #243645;
+  text-decoration: none;
+}
+.button:disabled {
+  background: #92879a;
+  color: #d0d5db;
+}
+
+.button2 {
+  composes: button;
+  font: normal 17px/20px mostra-nuova, sans-serif;
+  background: #2f4961;
+  padding: 10px 30px;
+  margin: auto;
+  display: inline-block;
+  text-decoration: none;
+}
+.button2:hover {
+  background: #487194;
+  filter: drop-shadow(0px 3px 6px #243645);
+}
+.button2:disabled {
+  background: #487194;
+  color: #d0d5db;
+}
+
+.buttonWideAlt {
+  composes: button;
+  background: linear-gradient(#c2dee4 0%, #bcbcd8 100%);
+  color: #754995;
+  padding: 12px;
+}
+.buttonWideAlt:hover {
+  filter: drop-shadow(0px 3px 6px #243645);
+}
+.buttonWideAlt:disabled {
+  background: #92879a;
+  color: #d0d5db;
+}
+
+.buttonInline {
+  composes: button;
+  width: 40px;
+  height: 40px;
+  border-radius: 0px 6px 6px 0px;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8%200L6.545%201.455l5.506%205.506H0v2.078h12.052l-5.507%205.506L8%2016l8-8z%22%20fill%3D%22%23FFFFFF%22%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(#4c2f61 0%, #9d61c7 100%);
+  background-size: 16px, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  color: transparent;
+}
+.buttonInline:hover {
+  border: 2px inset #f1f9ff;
+}
+.buttonInline:disabled {
+  background: #92879a;
+  color: #d0d5db;
+}
