@@ -8,6 +8,16 @@
   transition: right 0.25s;
   background: linear-gradient(#4c2f61 0%, #9d61c7 100%);
   color: #fff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 :global #menu_toggle:checked ~ #navigation {

@@ -7,8 +7,9 @@ class MenuToggle extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
+  // TODO: fix this
   handleChange(e) {
-    if (e.checked) {
+    if (e.target.checked) {
       document.body.classList.add("freeze")
     } else {
       document.body.classList.remove("freeze")
