@@ -5,12 +5,12 @@ import MissionDonation from "./missionDonation"
 import BetaSignupCTA from "./betaSignupCTA"
 
 export default ({ children }) => (
-  <div>
-    <Header/>
+  <>
+    <Header />
     {children}
-    <MissionDonation/>
-    <BetaSignupCTA/>
-    <Footer/>
+    <MissionDonation />
+    <BetaSignupCTA />
+    <Footer />
     {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158909295-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,5 +18,5 @@ export default ({ children }) => (
       gtag('js', new Date());
       gtag('config', 'UA-158909295-1');
     </script> */}
-  </div>
-);
+  </>
+)

@@ -1,0 +1,33 @@
+.mission blockquote {
+  margin: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .mission {
+    display: flex;
+    margin: 20px auto 30px;
+    padding: 0 20px;
+    max-width: 1156px;
+  }
+
+  .mission .cta {
+    max-width: 560px;
+    font-size: 25px;
+    line-height: 32px;
+    margin: auto 20px auto 0;
+    text-shadow: none;
+    max-width: 442px;
+    flex: 1;
+  }
+  .mission .cta .nowrap {
+    white-space: unset;
+  }
+  .mission .cta p {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .mission .cta {
+    max-width: 560px;
+  }
+}

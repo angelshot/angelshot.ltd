@@ -1,13 +1,15 @@
 import React from "react"
 import GiveLivelyWidget from "./giveLivelyWidget"
+import CTA from "./cta"
+import styles from "./missionDonation.module.css"
 
 const MissionDonation = () => (
-  <section id="mission">
-    <blockquote class="cta">
+  <section className={styles.mission}>
+    <CTA tagName="blockquote">
       Our mission is to provide tools and knowledge that{" "}
       <strong>empower women</strong> to safeguard themselves and{" "}
       <strong>encourage communities</strong> to act as havens for them.
-    </blockquote>
+    </CTA>
     <GiveLivelyWidget />
   </section>
 )

@@ -1,39 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
-import NewsletterForm from "./newsletterForm"
-import Button from "./Button"
-import styles from "./nav.module.css"
+import MainNav from "./mainNav"
 import MenuToggle from "./menuToggle"
+import NewsletterForm from "./newsletterForm"
+import SocialNav from "./socialNav"
+import SubNav from "./subNav"
+
+import styles from "./nav.module.css"
 
 const Nav = () => (
   <>
     <MenuToggle />
     <nav className={styles.navigation} id="navigation">
-      <ul className={styles.mainNav}>
-        <li>
-          <Link to="/about_us" className={styles.link}>
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link to="/our_programs.html" className={styles.link}>
-            Our Programs
-          </Link>
-        </li>
-        <li className={styles.donateLarge}>
-          <Button href="#donate">Make a Donation</Button>
-        </li>
-        <li className={styles.donateSmall}>
-          <Button
-            href="#donate"
-            type="buttonWideAlt"
-            onClick="document.getElementById('menu_toggle').checked=false;"
-            className={styles.buttonWideAlt}
-          >
-            Make a Donation
-          </Button>
-        </li>
-      </ul>
+      <MainNav header />
       <section className={styles.mobile}>
         <div>
           <div className={styles.subscribeNewsletter}>
@@ -44,35 +22,8 @@ const Nav = () => (
             </p>
             <NewsletterForm />
           </div>
-          <ul className={styles.subNav}>
-            <li>
-              <Link to="/#">Contact Us</Link>
-            </li>
-            <li>
-              <Link to="/#">Privacy Policy</Link>
-            </li>
-            <li>
-              <Link to="/#">Terms & Conditions</Link>
-            </li>
-          </ul>
-
-          <ul className={styles.socialNav}>
-            <li>
-              <Link to="/#" className={styles.icon_instagram}>
-                Follow us on Instagram
-              </Link>
-            </li>
-            <li>
-              <Link to="/#" className={styles.icon_twitter}>
-                Follow us on Twitter
-              </Link>
-            </li>
-            <li>
-              <Link to="/#" className={styles.icon_facebook}>
-                Follow us on Facebook
-              </Link>
-            </li>
-          </ul>
+          <SubNav />
+          <SocialNav />
         </div>
         <div>
           <p className={styles.status501c3}>

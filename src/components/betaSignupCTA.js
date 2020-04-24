@@ -1,11 +1,20 @@
 import React from "react"
+import CTA from "./cta"
+import Button from "./button"
+import styles from "./betaSignupCTA.module.css"
 
 const BetaSignupCTA = () => (
-    <div id="getApp">
-        <h2 class="cta2">Ever needed an out? <span class="nowrap">Get an Angel.</span></h2>
-        <p class="tagline">Discreetly bails you out of bad dates, rides, and everything else.&trade;</p>
-        <a class="button2" href="angelbot.html">Join the beta</a>
-    </div>
+  <div className={styles.getApp}>
+    <CTA tagName="h2" alt>
+      Ever needed an out? <span class="nowrap">Get an Angel.</span>
+    </CTA>
+    <p>
+      Discreetly bails you out of bad dates, rides, and everything else.&trade;
+    </p>
+    <Button type="button2" href="/angelbot">
+      Join the beta
+    </Button>
+  </div>
 )
 
 export default BetaSignupCTA

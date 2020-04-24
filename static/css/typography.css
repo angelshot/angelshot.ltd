@@ -7,7 +7,7 @@ html {
 
 body {
   color: #243645;
-  font: 14px/21px droid-serif, serif;
+  font: 16px/21px droid-serif, serif;
 }
 
 h1,
@@ -49,11 +49,9 @@ h6 {
   font: 16px/19px mostra-nuova, sans-serif;
 }
 
-
-
 @media only screen and (min-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
   .title {
     font-size: 32px;
