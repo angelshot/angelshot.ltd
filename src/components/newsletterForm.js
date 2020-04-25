@@ -13,7 +13,7 @@ const NewsletterForm = () => (
     >
       <div>
         <label htmlFor="mce-EMAIL">Enter your email</label>
-        <div class="mc-field-group fieldset">
+        <div className="mc-field-group fieldset">
           <InputText
             type="email"
             name="EMAIL"
