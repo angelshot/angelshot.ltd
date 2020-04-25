@@ -159,20 +159,6 @@ label {
   margin-top: 70px;
 } */
 
-.sectionContainer {
-  padding: 40px 20px 10px;
-  background: white;
-  margin: -20px 20px 20px;
-}
-
-.sectionContainer *:first-child {
-  margin-top: 0;
-}
-
-.sectionContainer.withHero {
-  margin-top: 0;
-}
-
 .sectionHeader {
   font: normal italic 28px/33px droid-serif, serif;
   text-align: center;
@@ -198,24 +184,6 @@ label {
 }
 .sectionHeader span:after {
   right: 0;
-}
-
-.floral {
-  position: relative;
-  margin-bottom: 70px;
-}
-.floral:after {
-  content: "";
-  position: absolute;
-  background: url("../img/flowers-bottom.png") 0 0 no-repeat;
-  background-size: contain;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  bottom: -72px;
-  width: 320px;
-  max-width: 100%;
-  height: 98px;
 }
 
 /* .gl-simple-donation-widget {

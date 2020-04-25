@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import Floral from "../components/floral"
 
 import "./index.css"
 
@@ -30,7 +31,7 @@ const Home = () => (
           </a>
         </cite>
       </div>
-      <div id="our_goals" class="sectionContainer withHero floral">
+      <Floral id="our_goals" withHero>
         <h2 class="sectionHeader">
           <span>Our Goals</span>
         </h2>
@@ -83,7 +84,7 @@ const Home = () => (
             </a>
           </article>
         </section>
-      </div>
+      </Floral>
     </section>
   </Layout>
 )

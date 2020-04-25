@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/angelshot/angelshot.ltd#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.20.29",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "react": "^16.13.1",
