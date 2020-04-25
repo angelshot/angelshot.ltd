@@ -1,13 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
+import Floral from "../components/floral"
 import CTA from "../components/cta"
 import { Link } from "gatsby"
 
 export default () => (
   <Layout>
     <Intro>Terms of Use</Intro>
-    <section id="privacy" class="sectionContainer floral">
+    <Floral>
       <CTA tagName="h2">
         DO NOT USE THIS SERVICE FOR AN EMERGENCY. <br />
         IF YOU EXPERIENCE AN EMERGENCY, CALL 911 IMMEDIATELY.
@@ -607,6 +608,6 @@ export default () => (
           at: hi@angelshot.ltd
         </p>
       </div>
-    </section>
+    </Floral>
   </Layout>
 )

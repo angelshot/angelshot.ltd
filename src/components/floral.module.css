@@ -1,0 +1,43 @@
+.floral {
+  position: relative;
+  padding: 40px 20px 10px;
+  background: white;
+  margin: -20px 20px 70px 20px;
+}
+
+.floral:after {
+  content: "";
+  position: absolute;
+  background: url("../../static/img/flowers-bottom.png") 0 0 no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -72px;
+  width: 320px;
+  max-width: 100%;
+  height: 98px;
+}
+
+.floral *:first-child {
+  margin-top: 0;
+}
+
+.withHero {
+  composes: floral;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .floral {
+    margin-top: -120px;
+    margin-bottom: 90px;
+    padding: 160px 56px 44px;
+  }
+
+  .withHero {
+    composes: floral;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+}
