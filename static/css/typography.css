@@ -1,0 +1,65 @@
+/* TYPOGRAPHY */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  color: #243645;
+  font: 16px/21px droid-serif, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.title {
+  font: normal italic 22px/25px droid-serif, serif;
+  color: #487194;
+}
+
+.subtitle {
+  font: normal italic 18px/21px droid-serif, serif;
+  color: #243645;
+}
+
+.subheader {
+  font: bold 20px/24px mostra-nuova, sans-serif;
+  color: #487194;
+}
+
+.subheader2 {
+  font: bold 16px/19px mostra-nuova, sans-serif;
+  color: #754995;
+}
+
+.smallBody {
+  color: #487194;
+  font: 12px/18px droid-serif, serif;
+}
+
+.secondaryBody {
+  color: #4c2f61;
+  font: 16px/19px mostra-nuova, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+    color: #576877;
+  }
+  .subtitle {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}

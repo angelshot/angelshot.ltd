@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-    /* Your site config here */
-  }
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: 'rtx2vjd'
+        }
+      }
+    }
+  ]
+}
