@@ -7,12 +7,19 @@
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         typekit: {
-          id: 'rtx2vjd'
-        }
-      }
-    }
-  ]
+          id: "rtx2vjd",
+        },
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-158909295-1",
+      },
+    },
+  ],
 }
