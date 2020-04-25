@@ -36,7 +36,6 @@
   }
 
   .withHero {
-    composes: floral;
     margin-top: 0;
     padding-top: 40px;
   }

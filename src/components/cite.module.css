@@ -1,0 +1,36 @@
+.cite {
+  font-size: 6px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  bottom: 6px;
+  z-index: 1;
+  color: #2f4961;
+  writing-mode: vertical-rl;
+  text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .cite {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cite {
+    top: auto;
+    writing-mode: unset;
+  }
+}
+
+@media only screen and (min-width: 2048px) {
+  .cite {
+    right: calc(50vw - 1024px);
+    left: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .cite {
+    writing-mode: unset;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Button from "./Button"
+import Button from "./button"
 
 import styles from "./mainNav.module.css"
 
