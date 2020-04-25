@@ -30,14 +30,14 @@
   display: block;
 }
 
+.mainNavFooter {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .mainNav {
     padding: 0;
     margin: 0;
-  }
-
-  .mainNav {
-    grid-area: 2 / 2 / 3 / 3;
   }
 
   .mainNav .link:hover {
@@ -68,6 +68,7 @@
   }
 
   .mainNavFooter {
+    composes: mainNav;
     padding: 0;
     margin: 0;
     display: block;

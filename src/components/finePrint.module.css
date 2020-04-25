@@ -1,0 +1,45 @@
+.fine_print {
+  font: normal 12px/18px droid-serif, serif;
+  color: #d0d5db;
+  margin: 20px 0;
+}
+
+.backToTop {
+  color: transparent;
+  display: block;
+  width: 16px;
+  height: 16px;
+  transform: rotate(270deg);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  overflow: hidden;
+}
+
+.backToTop:before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8%200L6.545%201.455l5.506%205.506H0v2.078h12.052l-5.507%205.506L8%2016l8-8z%22%20fill%3D%22%23D0D5DB%22%2F%3E%3C%2Fsvg%3E");
+}
+
+@media only screen and (min-width: 768px) {
+  .fine_print {
+    margin: 0;
+    padding: 5px 20px;
+    color: #d0d5db;
+    background: linear-gradient(#4c2f61 0%, #9d61c7 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 26px;
+  }
+
+  .backToTop {
+    bottom: 14px;
+    right: 0;
+  }
+}

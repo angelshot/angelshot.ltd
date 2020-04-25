@@ -2,13 +2,16 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from "./subNav.module.css"
 
-const SubNav = (footer) => (
-  <ul className={footer ? styles.subNavFooter : styles.subNav}>
+const SubNav = ({ footer, style }) => (
+  <ul
+    className={footer ? styles.subNavFooter : styles.subNav}
+    style={footer ? style : null}
+  >
     <li>
-      <Link to="/#">Contact Us</Link>
+      <Link to="/contact">Contact Us</Link>
     </li>
     <li>
-      <Link to="/#">Privacy Policy</Link>
+      <Link to="/privacy">Privacy Policy</Link>
     </li>
     <li>
       <Link to="/terms">Terms &amp; Conditions</Link>

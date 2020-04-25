@@ -11,7 +11,7 @@ const Nav = () => (
   <>
     <MenuToggle />
     <nav className={styles.navigation} id="navigation">
-      <MainNav header />
+      <MainNav />
       <section className={styles.mobile}>
         <div>
           <div className={styles.subscribeNewsletter}>

@@ -1,0 +1,11 @@
+.subscribeNewsletter {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribeNewsletter {
+    display: block;
+    padding: 25px 20px;
+    max-width: 456px;
+  }
+}
