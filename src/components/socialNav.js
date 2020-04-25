@@ -2,8 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from "./socialNav.module.css"
 
-const SocialNav = () => (
-  <ul className={styles.socialNav}>
+const SocialNav = ({ footer, style }) => (
+  <ul
+    className={footer ? styles.socialNavFooter : styles.socialNav}
+    style={footer ? style : null}
+  >
     <li>
       <Link to="/#" className={styles.icon_instagram}>
         Follow us on Instagram

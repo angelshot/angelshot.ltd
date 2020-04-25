@@ -7,7 +7,8 @@ html {
   background: linear-gradient(#c5e3ee 0%, #b2b3df 100%);
 }
 
-body {
+body,
+#gatsby-focus-wrapper {
   display: flex;
   align-content: center;
   justify-content: flex-start;
