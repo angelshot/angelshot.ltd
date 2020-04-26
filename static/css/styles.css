@@ -165,6 +165,16 @@ label {
   white-space: nowrap;
 }
 
+.title {
+  line-height: 25px;
+  font-family: "Droid Serif";
+  font-weight: normal;
+  font-style: italic;
+  font-size: 22px;
+  text-align: left;
+  color: #487194;
+}
+
 .angelbot-signup-form {
   position: relative;
   text-shadow: none;

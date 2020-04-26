@@ -1,0 +1,31 @@
+.cardWithOverlay {
+  margin: 140px 20px 40px;
+  padding: 0 20px 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.overlay {
+  background-color: #2f4961;
+  padding: 20px;
+  margin: 20px -20px -20px -20px;
+  color: #fff;
+}
+.overlayItem {
+  margin: 20px;
+  font: 21px/25px mostra-nuova, sans-serif;
+}
+.overlayItem:first-child {
+  margin-top: 0;
+}
+.overlayItem:last-child {
+  margin-bottom: 0;
+}
+.image {
+  display: block;
+  width: 100%;
+  margin-top: -85px;
+}
+
+.title {
+  margin: 20px 0 16px;
+}
