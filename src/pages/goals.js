@@ -1,5 +1,4 @@
 import React from "react"
-// import classNames from "classnames/bind"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Cite from "../components/cite"
@@ -13,11 +12,10 @@ import {
   Title,
 } from "../components/cardWithOverlay"
 import SectionHeader from "../components/sectionHeader"
+import Floral from "../components/floral"
 import styles from "./goals.module.css"
 
-// const cx = classNames.bind(styles)
-
-export default ({ children }) => (
+export default () => (
   <Layout>
     <Hero className={styles.hero}>
       <Intro
@@ -25,7 +23,7 @@ export default ({ children }) => (
         quote="The goal of sexual violence prevention is to stop it from happening in
         the first place."
       >
-        Our Goals
+        About Us
       </Intro>
       <Cite />
     </Hero>
@@ -182,7 +180,7 @@ export default ({ children }) => (
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
-    <SectionHeader>Milestones</SectionHeader>
+    <SectionHeader className={styles.milestoneHeader}>Milestones</SectionHeader>
     <div className={styles.slider}>
       <div className={styles.milestones}>
         <div className={styles.milestone}>
@@ -238,5 +236,53 @@ export default ({ children }) => (
         </li>
       </ul>
     </div>
+    <Floral doubleSided className={styles.team}>
+      <SectionHeader className={styles.teamHeader}>Meet the Team</SectionHeader>
+      <section className={styles.teammate}>
+        <div className={styles.photo}>
+          <img src="/img/team-wendy.jpg" alt="Wendy" />
+          <h4>Wendy Lau, Co-Founder</h4>
+        </div>
+        <p>
+          Wendy is a Hong Kong native who immigrated to Canada at a very young
+          age, and moved to NYC to further her career in technology. She enjoys
+          leading engineering teams and the challenges around process,
+          efficiency and problem solving. She has since applied these interests
+          to her current role as a Data Product Manager. You’ll likely find her
+          printing her photos in the darkroom or playing video games, while
+          listening to podcasts about how to work happily.
+        </p>
+      </section>
+      <section className={styles.teammate}>
+        <div className={styles.photo}>
+          <img src="/img/team-soraya.jpg" alt="Soraya" />
+          <h4>Soraya Dib, Co-Founder</h4>
+        </div>
+        <p>
+          A self-proclaimed challenger of the status-quo, Soraya is a
+          first-generation American and NYC native. She studied art and science
+          and has established herself as a technology leader, founding a Women
+          in Tech employee resource group as well as Women Tech Leaders NYC. She
+          loves inspiring creativity in others and using her talents to promote
+          women’s safety. She loves experimenting with visual art, container
+          gardening and hosting BBQs during the warmer seasons.
+        </p>
+      </section>
+      <section className={styles.teammate}>
+        <div className={styles.photo}>
+          <img src="/img/team-mikayla.jpg" alt="Mikayla" />
+          <h4>Mikayla Dib, Co-Founder</h4>
+        </div>
+        <p>
+          Mikayla is a New York City native, currently working towards a degree
+          in Marketing and Advertising at the University of Delaware, with plans
+          to graduate in the spring of 2021.
+        </p>
+        <p>
+          She has experience as a social media marketing specialist and brand
+          ambassador.
+        </p>
+      </section>
+    </Floral>
   </Layout>
 )

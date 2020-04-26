@@ -72,6 +72,44 @@
   margin-bottom: 10px;
 }
 
+.team {
+  background: #2f4961;
+  display: flex;
+  flex-direction: column;
+}
+.teamHeader {
+  color: #fff;
+}
+.teammate {
+  color: #d0d5db;
+  padding: 20px;
+  flex: 1;
+}
+.photo {
+  text-align: center;
+  position: relative;
+  width: 256px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.teammate h4 {
+  font: 100 16px/19px mostra-nuova, sans-serif;
+  color: #fff;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 14px 30px 10px 16px;
+  background: linear-gradient(#4c2f61 0%, #9d61c7 100%);
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+}
+.teammate img {
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: inline-block;
+  margin: auto;
+}
+
 @media only screen and (min-width: 768px) {
   .quote {
     max-width: 358px;
@@ -93,6 +131,14 @@
   .future > ul li {
     break-inside: avoid;
   }
+
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .teamHeader {
+    flex-basis: 100%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -107,6 +153,10 @@
   }
   .milestone {
     align-self: baseline;
+  }
+  .milestoneHeader {
+    margin-top: 80px;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -125,6 +175,11 @@
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+  }
+  .team {
+    max-width: 1132px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (min-width: 1440px) {

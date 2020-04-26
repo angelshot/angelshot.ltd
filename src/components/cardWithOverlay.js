@@ -25,11 +25,11 @@ const Image = ({ srcset, alt, attribution }) => (
     <picture>
       <source
         media="(max-width: 1023px)"
-        srcset={`${srcset[0]}, ${srcset[1]} 2x`}
+        srcSet={`${srcset[0]}, ${srcset[1]} 2x`}
       />
       <source
         media="(min-width: 1024px)"
-        srcset={`${srcset[2]}, ${srcset[3]} 2x`}
+        srcSet={`${srcset[2]}, ${srcset[3]} 2x`}
       />
       <img src={srcset[0]} alt={alt} />
     </picture>
