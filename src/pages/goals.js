@@ -183,5 +183,58 @@ export default ({ children }) => (
       </Overlay>
     </CardWithOverlay>
     <SectionHeader>Milestones</SectionHeader>
+    <div className="carousel">
+      <div className="milestone">
+        <h3>Spring 2020</h3>
+        <p>Launch AngelShot Website & Donation Platform</p>
+      </div>
+      <div className="milestone">
+        <h3>Summer 2020</h3>
+        <p>Launch AngelBot invite-only beta program</p>
+      </div>
+      <div className="milestone">
+        <h3>Fall 2020</h3>
+        <p>Pilot WINGS Community Engagement Program</p>
+      </div>
+    </div>
+    <div class="future">
+      <h4>Future program expansion</h4>
+      <ul>
+        <li>
+          <p>Expand to large colleges in major metropolitan areas</p>
+          <ul>
+            <li>> 15,000 students</li>
+            <li>
+              Ex: University of Southern California, New York University, and
+              University of Pennsylvania, UCLA, Michigan State, University of
+              Texas at Austin
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>Expand to “medium” colleges</p>
+          <ul>
+            <li>5,000 - 15,000 students</li>
+            <li>
+              Ex: Yale, Brown, Howard, Duke, University of Arkansas, University
+              of Montana, Binghamton University
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>Expand to all colleges nation-wide</p>
+        </li>
+        <li>
+          <p>Expand social media outreach</p>
+          <ul>
+            <li>Explore various platforms such as GroupMe and Snapchat</li>
+            <li>
+              Invite local establishments such as bars and coffee shops to
+              participate in WINGS
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </Layout>
 )
