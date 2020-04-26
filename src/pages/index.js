@@ -8,7 +8,7 @@ import Cite from "../components/cite"
 
 import styles from "./index.module.css"
 
-var cx = classNames.bind(styles)
+const cx = classNames.bind(styles)
 
 const Home = () => (
   <Layout>
@@ -20,7 +20,12 @@ const Home = () => (
             <br /> to help protect women.
           </h1>
         </div>
-        <Cite />
+        <Cite
+          author="Gemma Chua-Tran"
+          authorURL="https://unsplash.com/@gemmachuatran?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          site="Unsplash"
+          siteURL="https://unsplash.com/collections/8969218/angelshot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        />
       </div>
       <Floral withHero className={styles.ourGoals}>
         <h2 className={styles.sectionHeader}>

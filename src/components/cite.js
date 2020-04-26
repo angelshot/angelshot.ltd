@@ -1,21 +1,15 @@
 import React from "react"
 import styles from "./cite.module.css"
 
-const Cite = () => (
+const Cite = ({ author, authorURL, site, siteURL }) => (
   <cite className={styles.cite}>
     Photo by{" "}
-    <a
-      href="https://unsplash.com/@gemmachuatran?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-      target="_new"
-    >
-      Gemma Chua-Tran
+    <a href={authorURL} target="_new">
+      {author}
     </a>{" "}
     on{" "}
-    <a
-      href="https://unsplash.com/collections/8969218/angelshot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-      target="_new"
-    >
-      Unsplash
+    <a href={siteURL} target="_new">
+      {site}
     </a>
   </cite>
 )

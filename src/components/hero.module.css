@@ -1,0 +1,18 @@
+.hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero {
+    height: 550px;
+  }
+}

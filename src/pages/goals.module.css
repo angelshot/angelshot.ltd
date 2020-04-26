@@ -1,0 +1,24 @@
+.hero {
+  background-image: url("../images/goal-hero-small.jpg");
+}
+
+.quote {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  max-width: 225px;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    max-width: 358px;
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .quote {
+    max-width: 508px;
+  }
+}
