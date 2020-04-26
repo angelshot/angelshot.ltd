@@ -1,7 +1,6 @@
 .getApp {
-  background: #fff
-    url(../../static/img/istockphoto-1152767877-612x612-colored.jpg) center
-    center no-repeat;
+  background: #fff url(../images/istockphoto-1152767877-612x612-colored.jpg)
+    center center no-repeat;
   background-size: cover;
   padding: 20px 30px;
   text-align: center;

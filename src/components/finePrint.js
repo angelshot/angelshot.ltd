@@ -9,7 +9,7 @@ const FinePrint = () => (
         organization.
       </p>
       <p className={styles.copyright}>&copy;2020 AngelShot Ltd.</p>
-      <a href="#" className={styles.backToTop}>
+      <a href="#top" className={styles.backToTop}>
         Back to Top
       </a>
     </div>

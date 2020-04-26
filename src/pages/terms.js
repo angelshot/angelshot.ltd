@@ -2,18 +2,21 @@ import React from "react"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Floral from "../components/floral"
+import Hero from "../components/hero"
 import CTA from "../components/cta"
 import { Link } from "gatsby"
 
 export default () => (
   <Layout>
-    <Intro>Terms of Use</Intro>
-    <Floral>
+    <Hero noImage>
+      <Intro>Terms of Use</Intro>
+    </Hero>
+    <Floral withHero>
       <CTA tagName="h2">
         DO NOT USE THIS SERVICE FOR AN EMERGENCY. <br />
         IF YOU EXPERIENCE AN EMERGENCY, CALL 911 IMMEDIATELY.
       </CTA>
-      <div class="col-2">
+      <div className="col-2">
         <p>
           Please read these Terms of Use carefully (&quot;Terms&quot;). These
           Terms govern and apply to your access and use of the programs offered
@@ -32,7 +35,7 @@ export default () => (
           &ldquo;You&quot;, &quot;Your,&rdquo; and &ldquo;Yourself&rdquo; refer
           to the individual user of our Services.
         </p>
-        <h2 class="subheader">Intellectual Property Rights</h2>
+        <h2 className="subheader">Intellectual Property Rights</h2>
         <p>
           Unless otherwise indicated, our Services are our proprietary property
           and all source code, databases, functionality, software, website
@@ -59,7 +62,7 @@ export default () => (
           all rights not expressly granted to you in and to our Services, the
           Content and the Marks.
         </p>
-        <h2 class="subheader">User Representations</h2>
+        <h2 className="subheader">User Representations</h2>
         <p>
           By using our services, you represent and warrant that: (1) all
           information you submit will be true, accurate, current, and complete;
@@ -74,7 +77,7 @@ export default () => (
           unauthorized purpose; and (8) your use of our Services will not
           violate any applicable law or regulation.
         </p>
-        <h2 class="subheader">User Registration</h2>
+        <h2 className="subheader">User Registration</h2>
         <p>
           You may be required to register with our Services. You agree to keep
           your password confidential and will be responsible for all use of your
@@ -83,7 +86,7 @@ export default () => (
           that such username is inappropriate, obscene, or otherwise
           objectionable.
         </p>
-        <h2 class="subheader">Prohibited Activities</h2>
+        <h2 className="subheader">Prohibited Activities</h2>
         <p>
           You may not access or use our Services for any purpose other than that
           for which we make our Services available. Our Services may not be used
@@ -182,7 +185,7 @@ export default () => (
             revenue-generating endeavor or commercial enterprise.
           </li>
         </ol>
-        <h2 class="subheader">User Generated Contributions</h2>
+        <h2 className="subheader">User Generated Contributions</h2>
         <p>
           The Site may invite you to chat, contribute to, or participate in
           blogs, message boards, online forums, and other functionality, and may
@@ -272,7 +275,7 @@ export default () => (
           of Use and may result in, among other things, termination or
           suspension of your rights to use the Site.
         </p>
-        <h2 class="subheader">Contribution License</h2>
+        <h2 className="subheader">Contribution License</h2>
         <p>
           By posting your Contributions to any part of the Site, you
           automatically grant, and you represent and warrant that you have the
@@ -315,7 +318,7 @@ export default () => (
           and for any reason, without notice. We have no obligation to monitor
           your Contributions.
         </p>
-        <h2 class="subheader">Submissions</h2>
+        <h2 className="subheader">Submissions</h2>
         <p>
           You acknowledge and agree that any questions, comments, suggestions,
           ideas, feedback, or other information regarding our Services
@@ -331,7 +334,7 @@ export default () => (
           alleged or actual infringement or misappropriation of any proprietary
           right in your Submissions.
         </p>
-        <h2 class="subheader">Third-party Website And Content</h2>
+        <h2 className="subheader">Third-party Website And Content</h2>
         <p>
           The Site may contain (or you may be sent via the Site) links to other
           websites (&quot;Third-Party Websites&quot;) as well as articles,
@@ -365,7 +368,7 @@ export default () => (
           you or harm caused to you relating to or resulting in any way from any
           Third-Party Content or any contact with Third-Party Websites.
         </p>
-        <h2 class="subheader">Services Management</h2>
+        <h2 className="subheader">Services Management</h2>
         <p>
           We reserve the right, but not the obligation, to: (1) monitor our
           Services for violations of these Terms of Use; (2) take appropriate
@@ -382,7 +385,7 @@ export default () => (
           rights and property and to facilitate the proper functioning of our
           Services.
         </p>
-        <h2 class="subheader">Privacy Policy</h2>
+        <h2 className="subheader">Privacy Policy</h2>
         <p>
           We care about data privacy and security. Please review our Privacy
           Policy: <Link to="/privacy">https://www.angelshot.ltd/privacy</Link>.
@@ -402,7 +405,7 @@ export default () => (
           requisite and verifiable parental consent, we will delete that
           information from our Services as quickly as is reasonably practical.
         </p>
-        <h2 class="subheader">Copyright Infringements</h2>
+        <h2 className="subheader">Copyright Infringements</h2>
         <p>
           We respect the intellectual property rights of others. If you believe
           that any material available on or through the Site infringes upon any
@@ -416,7 +419,7 @@ export default () => (
           infringes your copyright, you should consider first contacting an
           attorney.
         </p>
-        <h2 class="subheader">Term And Termination</h2>
+        <h2 className="subheader">Term And Termination</h2>
         <p>
           These Terms of Use shall remain in full force and effect while you use
           our Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF
@@ -429,7 +432,7 @@ export default () => (
           OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR
           SOLE DISCRETION.
         </p>
-        <h2 class="subheader">Modifications And Interruptions</h2>
+        <h2 className="subheader">Modifications And Interruptions</h2>
         <p>
           We reserve the right to change, modify, or remove the contents of our
           Services at any time or for any reason at our sole discretion without
@@ -452,14 +455,14 @@ export default () => (
           Services or to supply any corrections, updates, or releases in
           connection therewith unless required by law.
         </p>
-        <h2 class="subheader">Governing Law</h2>
+        <h2 className="subheader">Governing Law</h2>
         <p>
           These Terms of Use and your use of our Services are governed by and
           construed in accordance with the laws of the State of New York
           applicable to agreements made and to be entirely performed within the
           State of New York, without regard to its conflict of law principles.
         </p>
-        <h2 class="subheader">Disclaimer Of Warranty</h2>
+        <h2 className="subheader">Disclaimer Of Warranty</h2>
         <p>
           THE CONTENT PROVIDED VIA OUR SERVICES IS PROVIDED AS A SERVICE TO
           MEMBERS OF THE PUBLIC. INFORMATION PRESENTED VIA OUR SERVICES IS
@@ -495,7 +498,7 @@ export default () => (
           WARRANTIES WITH RESPECT TO ANY RESULTS THAT MAY BE OBTAINED FROM THE
           USE OF OUR SERVICES.
         </p>
-        <h2 class="subheader">Limitations Of Liability</h2>
+        <h2 className="subheader">Limitations Of Liability</h2>
         <p>
           UNDER NO CIRCUMSTANCES WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS
           BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY YOUR RELIANCE ON
@@ -519,7 +522,7 @@ export default () => (
           YOUR SOLE AND EXCLUSIVE REMEDY FOR DISSATISFACTION WITH OUR SERVICES
           IS TO STOP USING OUR SERVICES.
         </p>
-        <h2 class="subheader">Indemnification</h2>
+        <h2 className="subheader">Indemnification</h2>
         <p>
           You agree to defend, indemnify, and hold us harmless, including our
           subsidiaries, affiliates, and all of our respective officers, agents,
@@ -539,7 +542,7 @@ export default () => (
           claim, action, or proceeding which is subject to this indemnification
           upon becoming aware of it.
         </p>
-        <h2 class="subheader">User Data</h2>
+        <h2 className="subheader">User Data</h2>
         <p>
           We will maintain certain data that you transmit to our Services for
           the purpose of managing the performance of our Services, as well as
@@ -551,7 +554,7 @@ export default () => (
           action against us arising from any such loss or corruption of such
           data.
         </p>
-        <h2 class="subheader">
+        <h2 className="subheader">
           Electronic Communications, Transactions, And Signatures
         </h2>
         <p>
@@ -570,7 +573,7 @@ export default () => (
           retention of non-electronic records, or to payments or the granting of
           credits by any means other than electronic means.
         </p>
-        <h2 class="subheader">California Users And Residents</h2>
+        <h2 className="subheader">California Users And Residents</h2>
         <p>
           If any complaint with us is not satisfactorily resolved, you can
           contact the Complaint Assistance Unit of the Division of Consumer
@@ -578,7 +581,7 @@ export default () => (
           at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834
           or by telephone at (800) 952-5210 or (916) 445-1254.
         </p>
-        <h2 class="subheader">Miscellaneous</h2>
+        <h2 className="subheader">Miscellaneous</h2>
         <p>
           These Terms of Use and any policies or operating rules posted by us on
           the Site or in respect to our Services constitute the entire agreement
@@ -601,7 +604,7 @@ export default () => (
           of these Terms of Use and the lack of signing by the parties hereto to
           execute these Terms of Use.
         </p>
-        <h2 class="subheader">Contact Us</h2>
+        <h2 className="subheader">Contact Us</h2>
         <p>
           In order to resolve a complaint regarding our Services or to receive
           further information regarding use of our Services, please contact us

@@ -1,0 +1,41 @@
+.hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+
+.noImage {
+  height: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .noImage {
+    background: #fff;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .noImage {
+    max-width: 1348px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    height: 550px;
+  }
+  .noImage {
+    height: 180px;
+  }
+}

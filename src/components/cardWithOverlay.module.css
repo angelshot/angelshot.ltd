@@ -1,0 +1,107 @@
+.cardWithOverlay {
+  margin: 125px 20px 0;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  max-width: 1244px;
+}
+.cardBody {
+  padding: 0 20px 20px;
+}
+.overlay {
+  background-color: #2f4961;
+  padding: 20px;
+  margin: -20px 0 0;
+  color: #fff;
+}
+.overlayItem {
+  margin: 20px;
+  font: 100 18px/22px mostra-nuova, sans-serif;
+}
+.overlayItem:first-child {
+  margin-top: 0;
+}
+.overlayItem:last-child {
+  margin-bottom: 0;
+}
+.image {
+  display: block;
+  width: 100%;
+  margin-top: -85px;
+}
+.image img {
+  display: block;
+  margin: 0 auto;
+}
+.title {
+  margin: 20px 0 16px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .cardWithOverlay {
+    margin-top: 60px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    position: relative;
+    border-radius: 0px 6px 6px 0px;
+    overflow: hidden;
+  }
+
+  .cardWithOverlayAlt {
+    composes: cardWithOverlay;
+    flex-direction: row;
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .cardBody {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+  }
+
+  .overlay {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    right: 0;
+    margin: 0;
+    background-color: rgba(47, 73, 97, 0.8);
+  }
+  .cardWithOverlayAlt .overlay {
+    left: 0;
+    right: 50%;
+  }
+  .overlayItem {
+    text-shadow: 0px 1px 4px #000;
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .image {
+    flex: 1 1 50%;
+    margin: 0;
+    width: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .image img {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+  }
+
+  .title {
+    max-width: 66%;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cardWithOverlay {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

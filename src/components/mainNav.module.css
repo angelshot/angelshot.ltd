@@ -12,6 +12,10 @@
   color: #fff;
 }
 
+:global .active {
+  font-weight: bold;
+}
+
 .mainNavHeader {
   composes: mainNav;
   padding: 14px;

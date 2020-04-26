@@ -1,0 +1,63 @@
+.quote {
+  font: normal italic 14px/18px droid-serif, serif;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 3px 6px #000;
+  margin: 0;
+}
+
+.quote:before {
+  display: inline-block;
+  content: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018.907%2018.277%22%3E%3Cpath%20d%3D%22M6.972%2010.373v7.9H0v-6.3c0-3.334.354-5.8%201.182-7.41A9.949%209.949%200%20016.026%200l1.655%202.717A6.288%206.288%200%20004.727%205.31a9.673%209.673%200%2000-1.063%205.063zm11.344%200v7.9h-6.972v-6.3c0-3.458.354-5.8%201.182-7.41A9.949%209.949%200%200117.37%200l1.536%202.717a6.288%206.288%200%2000-2.954%202.593%2012.78%2012.78%200%2000-1.063%205.063z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E);
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+
+.quote:after {
+  display: inline-block;
+  content: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018.907%2018.277%22%3E%3Cpath%20d%3D%22M11.935%207.904v-7.9h6.972v6.3c0%203.334-.354%205.8-1.182%207.41a9.949%209.949%200%2001-4.844%204.563l-1.655-2.717a6.288%206.288%200%20002.954-2.593%209.673%209.673%200%20001.063-5.063zm-11.344%200v-7.9h6.972v6.3c0%203.458-.354%205.8-1.182%207.41a9.949%209.949%200%2001-4.844%204.563L.001%2015.56a6.288%206.288%200%20002.954-2.593%2012.78%2012.78%200%20001.063-5.063z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E);
+  width: 19px;
+  height: 19px;
+  margin-left: 5px;
+  vertical-align: -8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .quote:before {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-left: -25px;
+    vertical-align: 3px;
+  }
+
+  .quote:after {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: -11px;
+    margin-right: -25px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .quote {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .quote:before {
+    width: 36px;
+    height: 36px;
+  }
+
+  .quote:after {
+    width: 36px;
+    height: 36px;
+  }
+}

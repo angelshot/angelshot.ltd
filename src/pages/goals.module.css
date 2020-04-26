@@ -1,0 +1,207 @@
+.hero {
+  background-image: url("../images/goal-hero-small.jpg");
+}
+
+.quote {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  max-width: 225px;
+}
+
+.slider {
+  width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  position: relative;
+  padding-bottom: 6px;
+}
+.milestones {
+  width: 1268px;
+  height: 186px;
+  background-image: url("../images/milestones_bg.jpg");
+  display: flex;
+  border-radius: 6px;
+  margin: 0 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.milestone {
+  margin: 55px 44px 0;
+}
+.milestone h3 {
+  font: normal 16px/19px mostra-nuova, serif;
+  color: #4c2f61;
+  margin-bottom: 10px;
+}
+.milestone p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #2f4961;
+  margin: 0;
+}
+
+.future {
+  background: #c5e3ee;
+  margin: -6px 20px 0;
+  padding: 20px;
+}
+.future > h4 {
+  margin: 16px 0;
+}
+.future > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.future > ul li {
+  margin: 0;
+}
+.future > ul li p {
+  margin: 0 0 16px;
+}
+.future ul ul {
+  padding: 0;
+  margin: 0 0 20px 20px;
+}
+.future ul ul li {
+  list-style-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%226%22%20height%3D%226%22%3E%3Ccircle%20data-name%3D%22Ellipse%20227%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20fill%3D%22%23487194%22%2F%3E%3C%2Fsvg%3E");
+  font-size: 12px;
+  line-height: 18px;
+  color: #487194;
+  margin-bottom: 10px;
+}
+
+.team {
+  background: #2f4961;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 44px;
+}
+.teamHeader {
+  color: #fff;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.teammate {
+  color: #d0d5db;
+  padding: 20px;
+  flex: 1;
+}
+.photo {
+  text-align: center;
+  position: relative;
+  width: 256px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.teammate h4 {
+  font: 100 16px/19px mostra-nuova, sans-serif;
+  color: #fff;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 14px 30px 10px 16px;
+  background: linear-gradient(#4c2f61 0%, #9d61c7 100%);
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+}
+.teammate img {
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: inline-block;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    max-width: 358px;
+    position: static;
+    margin-top: 10px;
+  }
+  .hero {
+    background-image: url("../images/goal-hero-small@2x.jpg");
+  }
+
+  .future {
+    padding: 20px 44px;
+  }
+  .future > ul {
+    columns: 3;
+    column-gap: 44px;
+  }
+
+  .future > ul li {
+    break-inside: avoid;
+  }
+
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .teamHeader {
+    flex-basis: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    background-image: url("../images/goal-hero-large.jpg");
+  }
+  .slider {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .milestones {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/milestones_bg@2x.jpg");
+  }
+  .milestone {
+    align-self: baseline;
+  }
+  .milestoneHeader {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .future {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: unset;
+    max-width: 1268px;
+    box-sizing: border-box;
+  }
+  .milestones {
+    margin: 0 auto;
+  }
+  .future {
+    max-width: 1204px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  .team {
+    max-width: 1132px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-image: url("../images/goal-hero-large@2x.jpg");
+  }
+  .quote {
+    max-width: 508px;
+  }
+}

@@ -1,14 +1,12 @@
 import React from "react"
-import classNames from "classnames/bind"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Floral from "../components/floral"
 import Cite from "../components/cite"
+import SectionHeader from "../components/sectionHeader"
 
 import styles from "./index.module.css"
-
-var cx = classNames.bind(styles)
 
 const Home = () => (
   <Layout>
@@ -20,15 +18,20 @@ const Home = () => (
             <br /> to help protect women.
           </h1>
         </div>
-        <Cite />
+        <Cite
+          author="Gemma Chua-Tran"
+          authorURL="https://unsplash.com/@gemmachuatran?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          site="Unsplash"
+          siteURL="https://unsplash.com/collections/8969218/angelshot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        />
       </div>
       <Floral withHero className={styles.ourGoals}>
-        <h2 className={styles.sectionHeader}>
-          <span>Our Goals</span>
-        </h2>
+        <SectionHeader className={styles.sectionHeader}>
+          Our Goals
+        </SectionHeader>
         <section>
           <article>
-            <h3 className={cx("subheader", "icon_heart")}>
+            <h3 className={`subheader ${styles.icon_heart}`}>
               Increase community engagement & accountability
             </h3>
             <p>
@@ -38,12 +41,12 @@ const Home = () => (
               <strong>creating safe environments</strong> by championing
               transparency and accountability.
             </p>
-            <Link to="/" className="learnMore">
+            <Link to="/goals#community_engagement" className="learnMore">
               Learn more
             </Link>
           </article>
           <article>
-            <h3 className={cx("subheader", "icon_person")}>
+            <h3 className={`subheader ${styles.icon_person}`}>
               Prevent incidents and encourage victims to seek help
             </h3>
             <p>
@@ -55,12 +58,12 @@ const Home = () => (
               </strong>{" "}
               get out of it.
             </p>
-            <Link to="/" className="learnMore">
+            <Link to="/goals#seek_help" className="learnMore">
               Learn more
             </Link>
           </article>
           <article>
-            <h3 className={cx("subheader", "icon_earth")}>
+            <h3 className={`subheader ${styles.icon_earth}`}>
               Prevent violence by ending "Rape Culture"
             </h3>
             <p>
@@ -70,7 +73,7 @@ const Home = () => (
               experiences, we <strong>create an outlet</strong> for those who
               have been a victim of sexual violence.
             </p>
-            <Link to="/" className="learnMore">
+            <Link to="/goals#prevent_violence" className="learnMore">
               Learn more
             </Link>
           </article>

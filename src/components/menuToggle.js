@@ -1,4 +1,5 @@
 import React from "react"
+import { globalHistory } from "@reach/router"
 import styles from "./menuToggle.module.css"
 
 class MenuToggle extends React.Component {
@@ -7,7 +8,19 @@ class MenuToggle extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-  // TODO: fix this
+  componentDidMount() {
+    this.historyUnsubscribe = globalHistory.listen(({ action }) => {
+      if (action === "PUSH") {
+        document.body.classList.remove("freeze")
+        this.refs.toggle.checked = false
+      }
+    })
+  }
+
+  componentWillUnmount() {
+    this.historyUnsubscribe()
+  }
+
   handleChange(e) {
     if (e.target.checked) {
       document.body.classList.add("freeze")
@@ -21,6 +34,7 @@ class MenuToggle extends React.Component {
       <input
         className={styles.menuToggle}
         id="menu_toggle"
+        ref="toggle"
         type="checkbox"
         onChange={this.handleChange}
       />
