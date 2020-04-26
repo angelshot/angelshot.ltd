@@ -40,7 +40,7 @@ class Html extends Component {
             sizes="16x16"
             href="favicon/favicon-16x16.png"
           />
-          <link rel="manifest" href="site.webmanifest" />
+          <link rel="manifest" href="manifest.webmanifest" />
 
           {this.props.headComponents}
         </head>
