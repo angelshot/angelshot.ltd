@@ -9,7 +9,7 @@
 .doubleSided:before {
   content: "";
   position: absolute;
-  background: url("/img/flowers-bottom.png") 0 0 no-repeat;
+  background: url("../images/flowers-bottom.png") 0 0 no-repeat;
   background-size: contain;
   margin: 0 auto;
   left: 0;

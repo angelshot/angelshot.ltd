@@ -30,10 +30,10 @@ export default () => (
     <CardWithOverlay id="community_engagement">
       <Image
         srcset={[
-          "/img/goal-community_engagement-small.png",
-          "/img/goal-community_engagement-small@2x.png",
-          "/img/goal-community_engagement-large.png",
-          "/img/goal-community_engagement-large@2x.png",
+          "/images/goal-community_engagement-small.png",
+          "/images/goal-community_engagement-small@2x.png",
+          "/images/goal-community_engagement-large.png",
+          "/images/goal-community_engagement-large@2x.png",
         ]}
         alt="People at a food establishment"
       />
@@ -81,10 +81,10 @@ export default () => (
     <CardWithOverlay alt id="seek_help">
       <Image
         srcset={[
-          "/img/goal-seek_help-small.png",
-          "/img/goal-seek_help-small@2x.png",
-          "/img/goal-seek_help-large.png",
-          "/img/goal-seek_help-large@2x.png",
+          "/images/goal-seek_help-small.png",
+          "/images/goal-seek_help-small@2x.png",
+          "/images/goal-seek_help-large.png",
+          "/images/goal-seek_help-large@2x.png",
         ]}
         alt="People sitting in a support circle"
       />
@@ -132,10 +132,10 @@ export default () => (
     <CardWithOverlay id="prevent_violence">
       <Image
         srcset={[
-          "/img/goal-prevent_rape-small.png",
-          "/img/goal-prevent_rape-small@2x.png",
-          "/img/goal-prevent_rape-large.png",
-          "/img/goal-prevent_rape-large@2x.png",
+          "/images/goal-prevent_rape-small.png",
+          "/images/goal-prevent_rape-small@2x.png",
+          "/images/goal-prevent_rape-large.png",
+          "/images/goal-prevent_rape-large@2x.png",
         ]}
         alt="Man holding a woman's hand down on a cafe table"
       />
@@ -240,7 +240,7 @@ export default () => (
       <SectionHeader className={styles.teamHeader}>Meet the Team</SectionHeader>
       <section className={styles.teammate}>
         <div className={styles.photo}>
-          <img src="/img/team-wendy.jpg" alt="Wendy" />
+          <img src="/images/team-wendy.jpg" alt="Wendy" />
           <h4>Wendy Lau, Co-Founder</h4>
         </div>
         <p>
@@ -255,7 +255,7 @@ export default () => (
       </section>
       <section className={styles.teammate}>
         <div className={styles.photo}>
-          <img src="/img/team-soraya.jpg" alt="Soraya" />
+          <img src="/images/team-soraya.jpg" alt="Soraya" />
           <h4>Soraya Dib, Co-Founder</h4>
         </div>
         <p>
@@ -270,7 +270,7 @@ export default () => (
       </section>
       <section className={styles.teammate}>
         <div className={styles.photo}>
-          <img src="/img/team-mikayla.jpg" alt="Mikayla" />
+          <img src="/images/team-mikayla.jpg" alt="Mikayla" />
           <h4>Mikayla Dib, Co-Founder</h4>
         </div>
         <p>

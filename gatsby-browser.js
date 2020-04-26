@@ -1,2 +1,2 @@
-import "./static/css/normalize.css"
-import "./static/css/styles.css"
+import "./static/normalize.css"
+import "./static/styles.css"
