@@ -5,7 +5,9 @@ import styles from "./floral.module.css"
 const cx = classNames.bind(styles)
 
 const Floral = ({ children, className, withHero }) => (
-  <section className={cx(className, { withHero })}>{children}</section>
+  <section className={cx(styles.floral, className, { withHero })}>
+    {children}
+  </section>
 )
 
 export default Floral

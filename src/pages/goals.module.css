@@ -4,7 +4,7 @@
 
 .quote {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   right: 20px;
   max-width: 225px;
 }
@@ -15,9 +15,20 @@
     position: static;
     margin-top: 10px;
   }
+  .hero {
+    background-image: url("../images/goal-hero-small@2x.jpg");
+  }
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero {
+    background-image: url("../images/goal-hero-large.jpg");
+  }
+}
 @media only screen and (min-width: 1440px) {
+  .hero {
+    background-image: url("../images/goal-hero-large@2x.jpg");
+  }
   .quote {
     max-width: 508px;
   }

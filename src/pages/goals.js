@@ -21,7 +21,7 @@ export default ({ children }) => (
       </Intro>
       <Cite />
     </Hero>
-    <Floral>
+    <Floral withHero>
       <p>Sorry, but the page you were trying to view does not exist.</p>
     </Floral>
     <Footer />
