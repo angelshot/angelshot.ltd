@@ -10,7 +10,7 @@ const MainNav = ({ footer, style }) => {
       className={footer ? styles.mainNavFooter : styles.mainNavHeader}
       style={footer ? style : null}
     >
-      <li>
+      <li className={styles.homeLink}>
         <Link to="/" className={styles.link} activeClassName="active">
           Home
         </Link>

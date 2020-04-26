@@ -93,4 +93,8 @@
     text-decoration: none;
     font: normal 12px/30px droid-serif, serif;
   }
+
+  .mainNavHeader .homeLink {
+    display: none;
+  }
 }
