@@ -1,7 +1,5 @@
 import React from "react"
-import Floral from "../components/floral"
-import Footer from "../components/footer"
-import Header from "../components/header"
+import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Cite from "../components/cite"
 import Hero from "../components/hero"
@@ -9,8 +7,7 @@ import Hero from "../components/hero"
 import styles from "./goals.module.css"
 
 export default ({ children }) => (
-  <>
-    <Header />
+  <Layout>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}
@@ -21,9 +18,5 @@ export default ({ children }) => (
       </Intro>
       <Cite />
     </Hero>
-    <Floral withHero>
-      <p>Sorry, but the page you were trying to view does not exist.</p>
-    </Floral>
-    <Footer />
-  </>
+  </Layout>
 )
