@@ -183,22 +183,24 @@ export default ({ children }) => (
       </Overlay>
     </CardWithOverlay>
     <SectionHeader>Milestones</SectionHeader>
-    <div className="carousel">
-      <div className="milestone">
-        <h3>Spring 2020</h3>
-        <p>Launch AngelShot Website & Donation Platform</p>
-      </div>
-      <div className="milestone">
-        <h3>Summer 2020</h3>
-        <p>Launch AngelBot invite-only beta program</p>
-      </div>
-      <div className="milestone">
-        <h3>Fall 2020</h3>
-        <p>Pilot WINGS Community Engagement Program</p>
+    <div className={styles.slider}>
+      <div className={styles.milestones}>
+        <div className={styles.milestone}>
+          <h3>Spring 2020</h3>
+          <p>Launch AngelShot Website & Donation Platform</p>
+        </div>
+        <div className={styles.milestone}>
+          <h3>Summer 2020</h3>
+          <p>Launch AngelBot invite-only beta program</p>
+        </div>
+        <div className={styles.milestone}>
+          <h3>Fall 2020</h3>
+          <p>Pilot WINGS Community Engagement Program</p>
+        </div>
       </div>
     </div>
-    <div class="future">
-      <h4>Future program expansion</h4>
+    <div className={styles.future}>
+      <h4 className="subheader2">Future program expansion</h4>
       <ul>
         <li>
           <p>Expand to large colleges in major metropolitan areas</p>

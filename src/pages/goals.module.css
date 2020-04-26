@@ -9,6 +9,62 @@
   max-width: 225px;
 }
 
+.slider {
+  width: 100%;
+  overflow-x: scroll;
+}
+.milestones {
+  width: 1286px;
+  height: 204px;
+  background-image: url("../images/milestones_bg.png");
+  display: flex;
+}
+
+.milestone {
+  margin: 55px 44px 0;
+}
+.milestone h3 {
+  font: normal 16px/19px mostra-nuova, serif;
+  color: #4c2f61;
+}
+.milestone p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #2f4961;
+}
+
+.future {
+  background: #c5e3ee;
+  margin: -12px 20px 0;
+  padding: 20px;
+}
+.future > h4 {
+  margin: 16px 0;
+}
+.future > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.future > ul li {
+  margin: 0;
+}
+.future > ul li p {
+  margin: 0 0 16px;
+}
+.future ul ul {
+  padding: 0;
+  margin: 0 0 20px 20px;
+}
+.future ul ul li {
+  list-style-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%226%22%20height%3D%226%22%3E%3Ccircle%20data-name%3D%22Ellipse%20227%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20fill%3D%22%23487194%22%2F%3E%3C%2Fsvg%3E");
+  font-size: 12px;
+  line-height: 18px;
+  color: #487194;
+  margin-bottom: 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .quote {
     max-width: 358px;
@@ -18,11 +74,33 @@
   .hero {
     background-image: url("../images/goal-hero-small@2x.jpg");
   }
+
+  .future {
+    padding: 20px 44px;
+  }
+  .future > ul {
+    columns: 3;
+    column-gap: 44px;
+  }
+
+  .future > ul li {
+    break-inside: avoid;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .hero {
     background-image: url("../images/goal-hero-large.jpg");
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .milestones {
+    margin: 0 auto;
+  }
+  .future {
+    max-width: 1204px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (min-width: 1440px) {
