@@ -12,6 +12,7 @@ import {
   Image,
   Title,
 } from "../components/cardWithOverlay"
+import SectionHeader from "../components/sectionHeader"
 import styles from "./goals.module.css"
 
 // const cx = classNames.bind(styles)
@@ -28,7 +29,7 @@ export default ({ children }) => (
       </Intro>
       <Cite />
     </Hero>
-    <CardWithOverlay>
+    <CardWithOverlay id="community_engagement">
       <Image
         srcset={[
           "/img/goal-community_engagement-small.png",
@@ -79,7 +80,7 @@ export default ({ children }) => (
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
-    <CardWithOverlay alt>
+    <CardWithOverlay alt id="seek_help">
       <Image
         srcset={[
           "/img/goal-seek_help-small.png",
@@ -130,7 +131,7 @@ export default ({ children }) => (
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
-    <CardWithOverlay>
+    <CardWithOverlay id="prevent_violence">
       <Image
         srcset={[
           "/img/goal-prevent_rape-small.png",
@@ -181,5 +182,6 @@ export default ({ children }) => (
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
+    <SectionHeader>Milestones</SectionHeader>
   </Layout>
 )

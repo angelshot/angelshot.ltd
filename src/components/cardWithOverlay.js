@@ -1,8 +1,11 @@
 import React from "react"
 import styles from "./cardWithOverlay.module.css"
 
-const CardWithOverlay = ({ children, alt }) => (
-  <div className={alt ? styles.cardWithOverlayAlt : styles.cardWithOverlay}>
+const CardWithOverlay = ({ children, alt, id }) => (
+  <div
+    id={id}
+    className={alt ? styles.cardWithOverlayAlt : styles.cardWithOverlay}
+  >
     {children}
   </div>
 )
