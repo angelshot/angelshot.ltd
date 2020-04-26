@@ -2,13 +2,16 @@ import React from "react"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Floral from "../components/floral"
+import Hero from "../components/hero"
 import CTA from "../components/cta"
 import { Link } from "gatsby"
 
 export default () => (
   <Layout>
-    <Intro>Terms of Use</Intro>
-    <Floral>
+    <Hero noImage>
+      <Intro>Terms of Use</Intro>
+    </Hero>
+    <Floral withHero>
       <CTA tagName="h2">
         DO NOT USE THIS SERVICE FOR AN EMERGENCY. <br />
         IF YOU EXPERIENCE AN EMERGENCY, CALL 911 IMMEDIATELY.
