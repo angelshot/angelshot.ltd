@@ -164,12 +164,7 @@ label {
 }
 
 .title {
-  line-height: 25px;
-  font-family: "Droid Serif";
-  font-weight: normal;
-  font-style: italic;
-  font-size: 22px;
-  text-align: left;
+  font: normal italic 22px/25px droid-serif, serif;
   color: #487194;
 }
 
