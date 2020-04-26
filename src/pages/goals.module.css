@@ -10,14 +10,19 @@
 }
 
 .slider {
-  width: 100%;
-  overflow-x: scroll;
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  overflow-x: auto;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+  position: relative;
 }
 .milestones {
-  width: 1286px;
-  height: 204px;
-  background-image: url("../images/milestones_bg.png");
+  width: 1268px;
+  height: 186px;
+  background-image: url("../images/milestones_bg.jpg");
   display: flex;
+  border-radius: 6px;
 }
 
 .milestone {
@@ -26,17 +31,19 @@
 .milestone h3 {
   font: normal 16px/19px mostra-nuova, serif;
   color: #4c2f61;
+  margin-bottom: 10px;
 }
 .milestone p {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: #2f4961;
+  margin: 0;
 }
 
 .future {
   background: #c5e3ee;
-  margin: -12px 20px 0;
+  margin: 0 20px;
   padding: 20px;
 }
 .future > h4 {
@@ -92,8 +99,24 @@
   .hero {
     background-image: url("../images/goal-hero-large.jpg");
   }
+  .milestones {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/milestones_bg@2x.jpg");
+  }
+  .milestone {
+    align-self: baseline;
+  }
 }
 @media only screen and (min-width: 1280px) {
+  .slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: unset;
+    max-width: 1268px;
+    box-sizing: border-box;
+  }
   .milestones {
     margin: 0 auto;
   }
@@ -101,6 +124,7 @@
     max-width: 1204px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
   }
 }
 @media only screen and (min-width: 1440px) {
