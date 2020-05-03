@@ -10,6 +10,17 @@
   text-align: right;
 }
 
+.card {
+  text-align: center;
+}
+
+.title {
+  margin-top: 16px;
+}
+.subheader {
+  font-weight: normal;
+}
+
 @media only screen and (min-width: 768px) {
   .quote {
     max-width: 290px;
