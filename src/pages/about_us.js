@@ -13,7 +13,7 @@ import {
 } from "../components/cardWithOverlay"
 import SectionHeader from "../components/sectionHeader"
 import Floral from "../components/floral"
-import styles from "./goals.module.css"
+import styles from "./about_us.module.css"
 
 export default () => (
   <Layout>
@@ -27,7 +27,9 @@ export default () => (
       </Intro>
       <Cite />
     </Hero>
-    <CardWithOverlay id="community_engagement">
+
+    <SectionHeader className={styles.goalsHeader}>Our Goals</SectionHeader>
+    <CardWithOverlay id="community_engagement" className={styles.firstCard}>
       <Image
         srcset={[
           "/images/goal-community_engagement-small.png",

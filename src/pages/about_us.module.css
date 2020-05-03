@@ -9,6 +9,10 @@
   max-width: 225px;
 }
 
+.goalsHeader {
+  margin-bottom: 0;
+}
+
 .slider {
   width: 100%;
   margin: 0;
@@ -155,6 +159,9 @@
     margin: 0 auto;
     overflow: hidden;
   }
+  .firstCard {
+    margin-top: 0;
+  }
   .milestones {
     width: calc(100% - 40px);
     margin: 0 auto;
@@ -165,6 +172,7 @@
   .milestone {
     align-self: baseline;
   }
+  .goalsHeader,
   .milestoneHeader {
     margin-top: 80px;
     margin-bottom: 40px;
@@ -192,7 +200,7 @@
     box-sizing: border-box;
   }
   .team {
-    max-width: 1132px;
+    max-width: 1244px;
     margin-left: auto;
     margin-right: auto;
   }
