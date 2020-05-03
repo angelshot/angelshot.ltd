@@ -49,7 +49,11 @@ export default () => (
           value="1"
           name="EULA"
           required
-          labelBody="I have ready and agree to the End User License Agreement."
+          labelBody={
+            <span>I have ready and agree to the <Link to="/terms">
+              End User License Agreement
+            </Link>.</span>
+          }
         />
         <h4 className="subheader2">Demographics (Optional):</h4>
         <p>In order to ensure that we are able to provide this service to a diverse group of individuals, please share with us the following information. We will never share this with anyone.</p>
