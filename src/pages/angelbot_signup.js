@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Floral from "../components/floral"
 import Hero from "../components/hero"
+import { Image } from "../components/cardWithOverlay"
 import InputText from "../components/InputText"
 import InputCheckbox from "../components/InputCheckbox"
 import Button from "../components/Button"
@@ -14,20 +15,31 @@ export default () => (
       <Intro>Our Programs</Intro>
     </Hero>
     <Floral>
-      <h2 className="title">
-        AngelBot
-      </h2>
-      <p>
-      AngelBot encourages you to remove yourself from situations you perceive to be dangerous by sending you text messages as your friend, Angel.
-      </p>
-      <h3 className="title">
-        Join the Beta
-      </h3>
-      <p>
-      Have you ever needed an out? Do you want to help improve the future of women's safety? Sign up to be a part of the AngelBot Beta program!
-      </p>
-
-      <div>
+      <section>
+        <h2 className="title">
+          AngelBot
+        </h2>
+        <p>
+        AngelBot encourages you to remove yourself from situations you perceive to be dangerous by sending you text messages as your friend, Angel.
+        </p>
+        <Image
+          srcset={[
+            "images/angelbot.png",
+            "images/angelbot@2x.png",
+            "images/angelbot.png",
+            "images/angelbot@2x.png"         
+          ]}
+          alt="Angelbot"
+        />
+        <h3 className="title">
+          Join the Beta
+        </h3>
+        <p>
+        Have you ever needed an out? Do you want to help improve the future of women's safety? Sign up to be a part of the AngelBot Beta program!
+        </p>
+      </section>
+      
+      <section>
       <form>
         <h4 className="subheader2">Required fields:</h4>
         <InputText
@@ -88,12 +100,13 @@ export default () => (
           labelBody="Occupation (student/other)"
         />
         <Button
-          type="button"
+          buttonType="button2"
+          type="submit"
           tagName="button"
           children="Join the Beta"
         />
       </form>
-      </div>
+      </section>
        
     </Floral>
   </Layout>
