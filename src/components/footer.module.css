@@ -15,9 +15,10 @@
     display: grid;
     color: #fff;
     grid-template-columns: 3fr repeat(2, 1fr);
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 80px 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0;
+    align-items: end;
     margin: 0 auto;
     width: 100%;
     max-width: 1348px;

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styles from "./socialNav.module.css"
 
 const SocialNav = ({ footer, style }) => (
@@ -8,19 +7,27 @@ const SocialNav = ({ footer, style }) => (
     style={footer ? style : null}
   >
     <li>
-      <Link to="/#" className={styles.icon_instagram}>
+      <a
+        href="https://www.instagram.com/angel.shot.ltd/"
+        target="_new"
+        className={styles.icon_instagram}
+      >
         Follow us on Instagram
-      </Link>
+      </a>
     </li>
-    <li>
-      <Link to="/#" className={styles.icon_twitter}>
+    {/* <li>
+      <a href="/#" className={styles.icon_twitter}>
         Follow us on Twitter
-      </Link>
-    </li>
+      </a>
+    </li> */}
     <li>
-      <Link to="/#" className={styles.icon_facebook}>
+      <a
+        href="https://business.facebook.com/angelshot.ltd"
+        target="_new"
+        className={styles.icon_facebook}
+      >
         Follow us on Facebook
-      </Link>
+      </a>
     </li>
   </ul>
 )
