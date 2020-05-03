@@ -21,6 +21,13 @@
   font-weight: normal;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1156px;
+  margin: 20px auto 0;
+}
+
 @media only screen and (min-width: 768px) {
   .quote {
     max-width: 290px;
@@ -31,6 +38,9 @@
   }
   .hero {
     background-image: url("../images/programs-hero-small@2x.jpg");
+  }
+  .section {
+    flex-direction: row;
   }
 }
 

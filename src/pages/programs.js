@@ -27,34 +27,36 @@ export default ({ children }) => (
         siteURL="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
       />
     </Hero>
-    <Card className={styles.card}>
-      <CardImage
-        srcset={["/images/community.png", "/images/community@2x.png"]}
-        alt="WINGS Program"
-      />
-      <CardBody>
-        <h2 className={`title ${styles.title}`}>WINGS Program</h2>
-        <p className={`subheader ${styles.subheader}`}>
-          The AngelShot WINGS Program works with communities to prevent sexual
-          violence.
-        </p>
-        <Button>Join the Movement</Button>
-      </CardBody>
-    </Card>
-    <Card className={styles.card}>
-      <CardImage
-        srcset={["/images/angelbot.png", "/images/angelbot@2x.png"]}
-        alt="AngelBot"
-      />
-      <CardBody>
-        <h2 className={`title ${styles.title}`}>AngelBot</h2>
-        <p className={`subheader ${styles.subheader}`}>
-          AngelBot is a free, mobile safety application that discreetly bails
-          you out of bad situations.
-        </p>
-        <Button>Join the Beta</Button>
-      </CardBody>
-    </Card>
+    <section className={styles.section}>
+      <Card className={styles.card}>
+        <CardImage
+          srcset={["/images/community.png", "/images/community@2x.png"]}
+          alt="WINGS Program"
+        />
+        <CardBody>
+          <h2 className={`title ${styles.title}`}>WINGS Program</h2>
+          <p className={`subheader ${styles.subheader}`}>
+            The AngelShot WINGS Program works with communities to prevent sexual
+            violence.
+          </p>
+          <Button>Join the Movement</Button>
+        </CardBody>
+      </Card>
+      <Card className={styles.card}>
+        <CardImage
+          srcset={["/images/angelbot.png", "/images/angelbot@2x.png"]}
+          alt="AngelBot"
+        />
+        <CardBody>
+          <h2 className={`title ${styles.title}`}>AngelBot</h2>
+          <p className={`subheader ${styles.subheader}`}>
+            AngelBot is a free, mobile safety application that discreetly bails
+            you out of bad situations.
+          </p>
+          <Button>Join the Beta</Button>
+        </CardBody>
+      </Card>
+    </section>
     <Footer />
   </>
 )

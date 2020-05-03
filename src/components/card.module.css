@@ -17,21 +17,3 @@
   max-width: 315px;
   max-height: 166px;
 }
-
-@media only screen and (min-width: 1024px) {
-  .card {
-  }
-
-  .cardImage {
-  }
-  .cardImage img {
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .card {
-  }
-}
