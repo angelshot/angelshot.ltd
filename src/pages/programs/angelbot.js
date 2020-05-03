@@ -51,7 +51,13 @@ export default () => (
           Have you ever needed an out? Do you want to help improve the future of
           women's safety? Sign up to be a part of the AngelBot Beta program!
         </p>
-        <form>
+        <form
+          action="https://ltd.us4.list-manage.com/subscribe/post"
+          method="POST"
+        >
+          <input type="hidden" name="u" value="091175bb199db49734caae8f1" />
+          <input type="hidden" name="id" value="634f908f1b" />
+          <input type="hidden" name="FORMNAME" value="angelbot" />
           <h4 className="subheader2">Required fields:</h4>
           <InputText
             type="tel"
@@ -69,7 +75,7 @@ export default () => (
             labelBody="Email"
           />
           <InputCheckbox
-            value="1"
+            value="EULA"
             name="EULA"
             required
             labelBody={
@@ -105,13 +111,13 @@ export default () => (
           />
           <InputText
             type="text"
-            name="SEXUALORIENTATION"
+            name="SXO"
             placeholder="Sexual Orientation"
             labelBody="Sexual Orientation"
           />
           <InputText
             type="text"
-            name="OCCUPATION"
+            name="entry.1581637925"
             placeholder="Occupation (student/other)"
             labelBody="Occupation (student/other)"
           />
