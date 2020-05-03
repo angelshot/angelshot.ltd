@@ -8,7 +8,7 @@ import Button from "../components/button"
 
 import styles from "./programs.module.css"
 
-export default ({ children }) => (
+export default () => (
   <Layout>
     <Hero className={styles.hero}>
       <Intro
