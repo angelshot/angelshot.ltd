@@ -37,7 +37,7 @@ export default ({ children }) => (
             The AngelShot WINGS Program works with communities to prevent sexual
             violence.
           </p>
-          <Button>Join the Movement</Button>
+          <Button href="/programs/wings">Join the Movement</Button>
         </CardBody>
       </Card>
       <Card className={styles.card}>
@@ -51,7 +51,7 @@ export default ({ children }) => (
             AngelBot is a free, mobile safety application that discreetly bails
             you out of bad situations.
           </p>
-          <Button>Join the Beta</Button>
+          <Button href="/programs/angelbot">Join the Beta</Button>
         </CardBody>
       </Card>
     </section>
