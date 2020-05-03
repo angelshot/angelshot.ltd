@@ -10,6 +10,12 @@
   text-align: right;
 }
 
+.logo img {
+  width: 100%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
 @media only screen and (min-width: 768px) {
   .quote {
     max-width: 290px;
@@ -20,6 +26,29 @@
   }
   .hero {
     background-image: url("../../images/programs-hero-small@2x.jpg");
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content;
+    gap: 20px 40px;
+    grid-template-areas: "intro logo" "form logo" "form howItWorks" "form howItWorks";
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .form {
+    grid-area: form;
+  }
+
+  .howItWorks {
+    grid-area: howItWorks;
   }
 }
 

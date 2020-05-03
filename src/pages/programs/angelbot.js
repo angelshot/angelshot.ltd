@@ -3,7 +3,6 @@ import Layout from "../../components/layout"
 import Intro from "../../components/intro"
 import Floral from "../../components/floral"
 import Hero from "../../components/hero"
-import { Image } from "../../components/cardWithOverlay"
 import InputText from "../../components/InputText"
 import InputCheckbox from "../../components/InputCheckbox"
 import Button from "../../components/Button"
@@ -29,31 +28,29 @@ export default () => (
         siteURL="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
       />
     </Hero>
-    <Floral withHero>
-      <section>
+    <Floral withHero className={styles.grid}>
+      <section className={styles.intro}>
         <h2 className="title">AngelBot</h2>
         <p>
           AngelBot encourages you to remove yourself from situations you
           perceive to be dangerous by sending you text messages as your friend,
           Angel.
         </p>
-        <Image
-          srcset={[
-            "../images/angelbot.png",
-            "../images/angelbot@2x.png",
-            "../images/angelbot.png",
-            "../images/angelbot@2x.png",
-          ]}
-          alt="Angelbot"
+      </section>
+      <picture className={styles.logo}>
+        <source
+          media="(max-width: 1023px)"
+          srcSet="../images/angelbot.png, ../images/angelbot@2x.png 2x"
         />
-        <h3 className="title">Join the Beta</h3>
+        <img src="../images/angelbot.png" alt="AngelBot logo" />
+      </picture>
+
+      <section className={styles.form}>
+        <h3 className="subtitle">Join the Beta</h3>
         <p>
           Have you ever needed an out? Do you want to help improve the future of
           women's safety? Sign up to be a part of the AngelBot Beta program!
         </p>
-      </section>
-
-      <section>
         <form>
           <h4 className="subheader2">Required fields:</h4>
           <InputText
@@ -125,6 +122,24 @@ export default () => (
             children="Join the Beta"
           />
         </form>
+      </section>
+      <section className={styles.howItWorks}>
+        <h4 className="subheader">How it works</h4>
+        <p>
+          AngelBot is an AI text messaging service that, to the outside
+          observer, is your friend Angel who needs you to go help her deal with
+          various unforeseen circumstances. Through some short Q&amp;A texts,
+          AngelBot will try to figure out if you are in immediate need for an
+          excuse to leave or if it needs to check in on you after a period of
+          time. When it is time for you to leave, use your conversation with
+          Angel as an excuse to remove yourself from potential danger.
+        </p>
+        <p classname="bottom">
+          <strong>Interested in working with your community?</strong>
+          <br />
+          Sign up for the{" "}
+          <Link to="/programs/wings">AngelShot WINGS Program</Link>.
+        </p>
       </section>
     </Floral>
   </Layout>
