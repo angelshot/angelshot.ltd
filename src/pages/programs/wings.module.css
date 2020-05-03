@@ -1,0 +1,89 @@
+.hero {
+  background-image: url("../../images/programs-hero-small.jpg");
+}
+
+.quote {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  max-width: 280px;
+  text-align: right;
+}
+
+.card {
+  text-align: center;
+}
+
+.title {
+  margin-top: 16px;
+}
+.subheader {
+  font-weight: normal;
+}
+
+.form {
+  margin: 30px auto 40px;
+}
+
+.section article ul {
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    max-width: 290px;
+    position: relative;
+    bottom: unset;
+    margin-top: 10px;
+    margin-left: 87px;
+  }
+  .hero {
+    background-image: url("../../images/programs-hero-small@2x.jpg");
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    background-image: url("../../images/programs-hero-large.jpg");
+  }
+  .quote {
+    max-width: 380px;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content;
+    gap: 20px 44px;
+    grid-template-areas: "intro intro form" "ambassador haven form" "events events form";
+  }
+
+  .form {
+    grid-area: form;
+    margin-top: 0;
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .ambassador {
+    grid-area: ambassador;
+  }
+
+  .haven {
+    grid-area: haven;
+  }
+
+  .events {
+    grid-area: events;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-image: url("../../images/programs-hero-large@2x.jpg");
+  }
+  .quote {
+    max-width: 508px;
+  }
+}
