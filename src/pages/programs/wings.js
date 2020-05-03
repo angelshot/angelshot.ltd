@@ -4,6 +4,8 @@ import Intro from "../../components/intro"
 import Hero from "../../components/hero"
 import Cite from "../../components/cite"
 import Floral from "../../components/floral"
+import Button from "../../components/button"
+import InputText from "../../components/inputText"
 
 import styles from "./wings.module.css"
 
@@ -30,8 +32,18 @@ export default ({ children }) => (
         Join the AngelShot WINGS Program as either an{" "}
         <a href="#ambassador">Ambassador</a> or <a href="#haven">Haven</a>.
       </p>
-      <h3 className="subtitle">Join the Movement</h3>
-      <form></form>
+      <form>
+        <h3 className="subtitle">Join the Movement</h3>
+        <div>
+          <label>Name</label>
+          <InputText required placeholder="Name" />
+        </div>
+        <div>
+          <label>Email</label>
+          <InputText type="email" required placeholder="Email" />
+        </div>
+        <Button type="button" tagName="button" children="Join the Movement" />
+      </form>
       <p>
         <strong>Interested in becoming a tester?</strong> Sign up for the{" "}
         <a href="/program/angelbot">AngelBot Beta Program</a>.
