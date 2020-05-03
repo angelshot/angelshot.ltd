@@ -25,7 +25,12 @@ export default () => (
       >
         About Us
       </Intro>
-      <Cite />
+      <Cite
+        author="Toimetaja tõlkebüroo"
+        authorURL="https://unsplash.com/@toimetaja?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        site="Unsplash"
+        siteURL="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      />
     </Hero>
 
     <SectionHeader className={styles.goalsHeader}>Our Goals</SectionHeader>
