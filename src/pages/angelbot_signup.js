@@ -10,7 +10,7 @@ import Button from "../components/Button"
 import { Link } from "gatsby"
 
 export default () => (
-  <Layout>
+  <Layout>    
     <Hero>
       <Intro>Our Programs</Intro>
     </Hero>
@@ -40,8 +40,12 @@ export default () => (
       </section>
       
       <section>
-      <form>
+      <form action="https://ltd.us4.list-manage.com/subscribe/post" method="POST">
         <h4 className="subheader2">Required fields:</h4>
+        <InputText
+          type="hidden"
+          name="FORMNAME"
+          value="angelbot" />
         <InputText
           type="tel"
           name="PHONE"
@@ -58,7 +62,7 @@ export default () => (
           labelBody="Email"
         />
         <InputCheckbox
-          value="1"
+          value="EULA"
           name="EULA"
           required
           labelBody={
@@ -89,13 +93,13 @@ export default () => (
         />
         <InputText
           type="text"
-          name="SEXUALORIENTATION"
+          name="SXO"
           placeholder="Sexual Orientation"                    
           labelBody="Sexual Orientation"
         />
         <InputText
           type="text"
-          name="OCCUPATION"
+          name="entry.1581637925"
           placeholder="Occupation (student/other)"                    
           labelBody="Occupation (student/other)"
         />
@@ -106,6 +110,14 @@ export default () => (
           children="Join the Beta"
         />
       </form>
+      <div>
+        <h4 className="subheader">How it works</h4>
+        <p>AngelBot is an AI text messaging service that, to the outside observer, is your friend Angel who needs you to go help her deal with various unforeseen circumstances. Through some short Q&amp;A texts, AngelBot will try to figure out if you are in immediate need for an excuse to leave or if it needs to check in on you after a period of time. When it is time for you to leave, use your conversation with Angel as an excuse to remove yourself from potential danger.</p>
+        <p classname="bottom">
+          <strong>Interested in working with your community?</strong><br />
+          Sign up for the <Link to="/programs/wings">AngelShot WINGS Program</Link>.
+        </p>
+      </div>
       </section>
        
     </Floral>
