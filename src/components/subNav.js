@@ -7,9 +7,9 @@ const SubNav = ({ footer, style }) => (
     className={footer ? styles.subNavFooter : styles.subNav}
     style={footer ? style : null}
   >
-    <li>
+    {/* <li>
       <Link to="/contact">Contact Us</Link>
-    </li>
+    </li> */}
     <li>
       <Link to="/privacy">Privacy Policy</Link>
     </li>

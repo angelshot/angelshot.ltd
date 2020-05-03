@@ -12,7 +12,7 @@ const Footer = () => (
     <div className={styles.grid}>
       <SubscribeNewsletter style={{ gridArea: "1 / 1 / 3 / 2" }} />
       <SocialNav footer style={{ gridArea: "1 / 3 / 2 / 4" }} />
-      <MainNav footer style={{ gridArea: "2 / 2 / 3 / 3" }} />
+      <MainNav footer style={{ gridArea: "1 / 2 / 3 / 3" }} />
       <SubNav footer style={{ gridArea: "2 / 3 / 3 / 4" }} />
     </div>
     <FinePrint />
@@ -20,3 +20,8 @@ const Footer = () => (
 )
 
 export default Footer
+
+// grid-row-start: 2;
+// grid-column-start: 3;
+// grid-row-end: 3;
+// grid-column-end: 4;
