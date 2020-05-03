@@ -1,6 +1,5 @@
 import React from "react"
-import Footer from "../components/footer"
-import Header from "../components/header"
+import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Hero from "../components/hero"
 import { Card, CardBody, CardImage } from "../components/card"
@@ -10,8 +9,7 @@ import Button from "../components/button"
 import styles from "./programs.module.css"
 
 export default ({ children }) => (
-  <>
-    <Header />
+  <Layout>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}
@@ -57,6 +55,5 @@ export default ({ children }) => (
         </CardBody>
       </Card>
     </section>
-    <Footer />
-  </>
+  </Layout>
 )
