@@ -16,7 +16,12 @@ const MainNav = ({ footer, style }) => {
         </Link>
       </li>
       <li>
-        <Link to="/about_us" className={styles.link} activeClassName="active">
+        <Link
+          to="/about_us"
+          className={styles.link}
+          activeClassName="active"
+          partiallyActive
+        >
           About Us
         </Link>
       </li>
