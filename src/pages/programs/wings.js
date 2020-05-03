@@ -32,7 +32,7 @@ export default ({ children }) => (
         Join the AngelShot WINGS Program as either an{" "}
         <a href="#ambassador">Ambassador</a> or <a href="#haven">Haven</a>.
       </p>
-      <form>
+      <form className={styles.form}>
         <h3 className="subtitle">Join the Movement</h3>
         <div>
           <label>Name</label>
@@ -166,6 +166,30 @@ export default ({ children }) => (
             <li>Increase/improve your reputation as a safe haven</li>
             <li>Increase Customer Loyalty</li>
             <li>Receive tax deduction on qualified donations</li>
+          </ul>
+        </article>
+        <article>
+          <h4 className="subheader">Events</h4>
+          <p>
+            Angelshot Ambassadors and volunteers work with Havens and other
+            partner organizations and event planners to organize, host and
+            participate in events.
+          </p>
+          <ul>
+            <li>
+              Organize, host and participate in events in line with our mission.
+              <ul>
+                <li>Participate in fairs - campus, community, etc</li>
+              </ul>
+            </li>
+            <li>
+              Participate in events supporting or opposing a policy issue in
+              alignment with our mission such as rallies, marches, parades
+            </li>
+            <li>
+              Host personal safety-related workshops to share knowledge about
+              our tools, Ambassador Program, and available resources
+            </li>
           </ul>
         </article>
       </section>
