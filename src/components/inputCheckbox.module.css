@@ -1,0 +1,18 @@
+.inline {
+  width: 30px;
+  height: 30px;  
+  color: transparent;
+  margin: 0;  
+}
+.inline:hover {
+  border: 2px inset #f1f9ff;
+}
+.inline:disabled {
+  background: #92879a;
+  color: #d0d5db;
+}
+.checkboxLabel {
+  margin-bottom:0;
+  margin-left:6px;
+  font-size:1em;
+}

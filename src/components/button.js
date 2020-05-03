@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "./button.module.css"
 
-const Button = ({ type, tagName, children, href }) =>
+const Button = ({ buttonType, tagName, children, href, type }) =>
   React.createElement(
     tagName,
-    { className: type ? styles[`${type}`] : styles.button, href },
+    { className: buttonType ? styles[`${buttonType}`] : styles.button, href, type },
     children
   )
 

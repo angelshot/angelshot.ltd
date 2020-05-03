@@ -19,3 +19,7 @@
 .input:invalid:not(:placeholder-shown):not(:focus) {
   border: 2px solid #be3151;
 }
+
+.tooltip {
+  display:none;
+}
