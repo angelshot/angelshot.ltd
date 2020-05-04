@@ -1,10 +1,20 @@
 import React from "react"
 import styles from "./inputCheckbox.module.css"
 
-const InputCheckbox = ({ value, name, required, labelBody }) => (  
-  <div>
-    <input type="checkbox" value={value} name={name} className={styles.inline} required={required} />
-    <label htmlFor={name} className={styles.checkboxLabel}>{labelBody}</label>
+const InputCheckbox = ({ id, value, name, required, children, disabled }) => (
+  <div className={styles.fieldset}>
+    <input
+      type="checkbox"
+      id={id}
+      value={value}
+      name={name}
+      className={styles.checkbox}
+      required={required}
+      disabled={disabled}
+    />
+    <label htmlFor={id} className={styles.checkboxLabel}>
+      {children}
+    </label>
   </div>
 )
 

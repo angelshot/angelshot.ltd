@@ -1,10 +1,20 @@
 import React from "react"
+import classNames from "classnames/bind"
 import styles from "./button.module.css"
 
-const Button = ({ buttonType, tagName, children, href, type }) =>
+const cx = classNames.bind(styles)
+
+const Button = ({ className, buttonType, tagName, children, href, type }) =>
   React.createElement(
     tagName,
-    { className: buttonType ? styles[`${buttonType}`] : styles.button, href, type },
+    {
+      className: cx(
+        className,
+        buttonType ? styles[`${buttonType}`] : styles.button
+      ),
+      href,
+      type,
+    },
     children
   )
 

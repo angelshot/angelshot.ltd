@@ -21,5 +21,13 @@
 }
 
 .tooltip {
-  display:none;
+  display: none;
+}
+
+.inline {
+  font: normal 14px/16px droid-serif, serif;
+  height: 16px;
+  margin-left: 6px;
+  border-width: 0 0 3px 0;
+  border-color: #d0d5db;
 }
