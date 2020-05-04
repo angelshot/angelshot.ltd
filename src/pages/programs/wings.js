@@ -1,10 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import Intro from "../../components/intro"
 import Hero from "../../components/hero"
 import Cite from "../../components/cite"
 import Floral from "../../components/floral"
 import Button from "../../components/button"
+import InputCheckbox from "../../components/inputCheckbox"
 import InputText from "../../components/inputText"
 
 import styles from "./wings.module.css"
@@ -35,16 +37,51 @@ export default () => (
         </p>
       </section>
       <section className={styles.form}>
-        <form>
+        <form
+          action="https://ltd.us4.list-manage.com/subscribe/post"
+          method="POST"
+        >
           <h3 className="subtitle">Join the Movement</h3>
-          <div>
-            <label>Name</label>
-            <InputText required placeholder="Name" />
-          </div>
-          <div>
-            <label>Email</label>
-            <InputText type="email" required placeholder="Email" />
-          </div>
+          <input type="hidden" name="u" value="091175bb199db49734caae8f1" />
+          <input type="hidden" name="id" value="634f908f1b" />
+          <input type="hidden" name="FORMNAME" value="angelbot" />
+          <h4 className="subheader2">Required fields:</h4>
+          <InputText
+            type="tel"
+            name="PHONE"
+            placeholder="Phone number"
+            required
+            labelBody="Phone number"
+            tooltip="Used to add you to Angel's contacts"
+          />
+          <InputText
+            type="email"
+            name="EMAIL"
+            placeholder="Email"
+            required
+            labelBody="Email"
+          />
+          <InputCheckbox
+            type="checkbox"
+            value="1"
+            name="group[69988][1]"
+            id="mce-group[69988]-69988-0"
+            labelBody="Becoming an Ambassador"
+          />
+          <InputCheckbox
+            type="checkbox"
+            value="2"
+            name="group[69988][2]"
+            id="mce-group[69988]-69988-1"
+            labelBody="Becoming a Haven"
+          />
+          <InputCheckbox
+            type="checkbox"
+            value="8"
+            name="group[69988][8]"
+            id="mce-group[69988]-69988-2"
+            labelBody="Other"
+          />
           <Button type="button" tagName="button" children="Join the Movement" />
         </form>
         <p>
