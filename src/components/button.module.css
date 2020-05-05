@@ -38,6 +38,21 @@
   color: #d0d5db;
 }
 
+.buttonWide {
+  composes: button;
+  width: 100%;
+}
+.buttonWide:visited {
+  color: #754995;
+}
+.buttonWide:hover {
+  filter: drop-shadow(0px 3px 6px #243645);
+}
+.buttonWide:disabled {
+  background: #92879a;
+  color: #d0d5db;
+}
+
 .buttonWideAlt {
   composes: button;
   background: linear-gradient(#c2dee4 0%, #bcbcd8 100%);

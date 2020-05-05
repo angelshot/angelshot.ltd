@@ -5,7 +5,8 @@ import Hero from "../../components/hero"
 import Cite from "../../components/cite"
 import Floral from "../../components/floral"
 import Button from "../../components/button"
-import InputText from "../../components/inputText"
+import InputCheckbox from "../../components/inputCheckbox"
+import InputText, { InlineInputText } from "../../components/inputText"
 
 import styles from "./wings.module.css"
 
@@ -35,17 +36,64 @@ export default () => (
         </p>
       </section>
       <section className={styles.form}>
-        <form>
+        <form
+          action="https://ltd.us4.list-manage.com/subscribe/post"
+          method="POST"
+        >
           <h3 className="subtitle">Join the Movement</h3>
-          <div>
-            <label>Name</label>
-            <InputText required placeholder="Name" />
-          </div>
-          <div>
-            <label>Email</label>
-            <InputText type="email" required placeholder="Email" />
-          </div>
-          <Button type="button" tagName="button" children="Join the Movement" />
+          <input type="hidden" name="u" value="091175bb199db49734caae8f1" />
+          <input type="hidden" name="id" value="634f908f1b" />
+          <input type="hidden" name="FORMNAME" value="angelbot" />
+          <h4 className={`subheader2 ${styles.subheader}`}>Required fields:</h4>
+          <InputText
+            type="text"
+            name="NAME"
+            placeholder="Name"
+            required
+            labelBody="Name"
+          />
+          <InputText
+            type="email"
+            name="EMAIL"
+            placeholder="Email"
+            required
+            labelBody="Email"
+          />
+          <h4 className={`subheader2 ${styles.subheader}`}>
+            I would like to help by:
+          </h4>
+          <InputCheckbox
+            type="checkbox"
+            value="1"
+            name="group[69988][1]"
+            id="mce-group[69988]-69988-0"
+          >
+            Becoming an Ambassador
+          </InputCheckbox>
+          <InputCheckbox
+            type="checkbox"
+            value="2"
+            name="group[69988][2]"
+            id="mce-group[69988]-69988-1"
+          >
+            Becoming a Haven
+          </InputCheckbox>
+          <InputCheckbox
+            type="checkbox"
+            value="8"
+            name="group[69988][8]"
+            id="mce-group[69988]-69988-2"
+          >
+            Other
+            <InlineInputText type="text" name="OTHER" inline />
+          </InputCheckbox>
+          <Button
+            className={styles.submit}
+            buttonType="buttonWide"
+            type="submit"
+            tagName="button"
+            children="Join the Movement"
+          />
         </form>
         <p>
           <strong>Interested in becoming a tester?</strong> Sign up for the{" "}

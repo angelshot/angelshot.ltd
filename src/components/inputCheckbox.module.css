@@ -1,18 +1,61 @@
-.inline {
-  width: 30px;
-  height: 30px;  
-  color: transparent;
-  margin: 0;  
+.fieldset {
+  margin: 10px 0;
+  display: flex;
+  align-items: flex-start;
 }
-.inline:hover {
-  border: 2px inset #f1f9ff;
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  -webkit-appearance: none;
+  flex: none;
 }
-.inline:disabled {
-  background: #92879a;
-  color: #d0d5db;
+.checkbox:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  border: 3px solid #754995;
+  border-radius: 4px;
+}
+.checkbox:disabled:after {
+  border-color: #92879a;
+}
+.checkbox:checked:after {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h16v16H0z%22%2F%3E%3Cpath%20d%3D%22M0%200h16v16H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M1%208.06L5.542%2016h1.21l8.5-15-1.727-1-7.393%2012.93-3.378-5.884z%22%20fill%3D%22%23754995%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 12px 12px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .checkboxLabel {
-  margin-bottom:0;
-  margin-left:6px;
-  font-size:1em;
+  font: normal 14px/14px mostra-nuova, sans-serif;
+  color: #487194;
+  margin-left: 6px;
+  flex: 1;
+  margin-top: 4px;
+}
+.checkbox:disabled + .checkboxLabel {
+  color: #92879a;
+}
+
+@media only screen and (min-width: 768px) {
+  .checkbox {
+    width: 30px;
+    height: 30px;
+  }
+  .checkbox:after {
+    height: 24px;
+    width: 24px;
+  }
+  .checkbox:checked:after {
+    background-size: 16px 16px;
+  }
+  .checkboxLabel {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 6px;
+  }
 }
