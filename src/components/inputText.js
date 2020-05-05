@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./inputText.module.css"
 
 export const InlineInputText = ({
+  className,
   type,
   value,
   name,
@@ -12,13 +13,14 @@ export const InlineInputText = ({
     type={type}
     value={value}
     name={name}
-    className={styles.inline}
+    className={className ? `${className} ${styles.inline}` : styles.inline}
     required={required}
     placeholder={placeholder}
   />
 )
 
 const InputText = ({
+  className,
   type,
   value,
   name,
@@ -27,7 +29,9 @@ const InputText = ({
   labelBody,
   tooltip,
 }) => (
-  <div className={styles.fieldset}>
+  <div
+    className={className ? `${className} ${styles.fieldset}` : styles.fieldset}
+  >
     {labelBody && <label htmlFor={name}>{labelBody}</label>}
     {tooltip && <span className={styles.tooltip}>{tooltip}</span>}
     <input
