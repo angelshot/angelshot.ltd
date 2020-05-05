@@ -40,9 +40,9 @@ export default () => (
       <picture className={styles.logo}>
         <source
           media="(max-width: 1023px)"
-          srcSet="../images/angelbot.png, ../images/angelbot@2x.png 2x"
+          srcSet="/images/angelbot.png, /images/angelbot@2x.png 2x"
         />
-        <img src="../images/angelbot.png" alt="AngelBot logo" />
+        <img src="/images/angelbot.png" alt="AngelBot logo" />
       </picture>
 
       <section className={styles.form}>

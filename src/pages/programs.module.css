@@ -12,6 +12,12 @@
 
 .card {
   text-align: center;
+  padding: 20px 40px;
+}
+
+.button {
+  max-width: 356px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -19,13 +25,14 @@
 }
 .subheader {
   font-weight: normal;
+  margin: 16px auto 20px;
 }
 
 .section {
   display: flex;
   flex-direction: column;
   max-width: 1156px;
-  margin: 20px auto 0;
+  margin: 20px auto;
 }
 
 @media only screen and (min-width: 768px) {

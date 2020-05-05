@@ -10,7 +10,8 @@
   .mission {
     display: flex;
     margin: 20px auto 30px;
-    max-width: 1348px;
+    max-width: 1120px;
+    box-sizing: border-box;
   }
 
   .cta {
