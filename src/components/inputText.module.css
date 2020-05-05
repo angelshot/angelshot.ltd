@@ -20,10 +20,6 @@
   border: 2px solid #be3151;
 }
 
-.tooltip {
-  display: none;
-}
-
 .inline {
   font: normal 14px/16px droid-serif, serif;
   height: 16px;
@@ -34,4 +30,9 @@
 
 .fieldset {
   margin-bottom: 12px;
+}
+
+.tooltip {
+  float: right;
+  margin-right: 6px;
 }

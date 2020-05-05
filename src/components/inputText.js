@@ -1,4 +1,5 @@
 import React from "react"
+import Tooltip from "./tooltip"
 import styles from "./inputText.module.css"
 
 export const InlineInputText = ({
@@ -33,7 +34,7 @@ const InputText = ({
     className={className ? `${className} ${styles.fieldset}` : styles.fieldset}
   >
     {labelBody && <label htmlFor={name}>{labelBody}</label>}
-    {tooltip && <span className={styles.tooltip}>{tooltip}</span>}
+    {tooltip && <Tooltip className={styles.tooltip}>{tooltip}</Tooltip>}
     <input
       type={type}
       value={value}
