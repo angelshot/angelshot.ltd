@@ -5,7 +5,7 @@ import styles from "./missionDonation.module.css"
 
 const MissionDonation = () => (
   <section className={styles.mission}>
-    <CTA tagName="blockquote">
+    <CTA tagName="blockquote" className={styles.cta}>
       Our mission is to provide tools and knowledge that{" "}
       <strong>empower women</strong> to safeguard themselves and{" "}
       <strong>encourage communities</strong> to act as havens for them.

@@ -1,4 +1,5 @@
 import React from "react"
+import styles from "./giveLivelyWidget.module.css"
 
 class GiveLivelyWidget extends React.Component {
   componentDidMount() {
@@ -8,7 +9,14 @@ class GiveLivelyWidget extends React.Component {
     document.getElementsByTagName("head")[0].appendChild(gl)
   }
   render() {
-    return <div id="give-lively-widget" className="gl-simple-donation-widget"></div>
+    return (
+      <div id="donate" className={styles.donationWidget}>
+        <div
+          id="give-lively-widget"
+          className="gl-simple-donation-widget"
+        ></div>
+      </div>
+    )
   }
 }
 

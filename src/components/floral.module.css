@@ -68,6 +68,12 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .floral {
+    padding-top: 80px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .floral {
     width: calc(100% - 40px);

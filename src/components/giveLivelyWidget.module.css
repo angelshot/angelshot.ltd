@@ -1,0 +1,9 @@
+.donationWidget {
+  margin: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .donationWidget {
+    flex: 1;
+  }
+}
