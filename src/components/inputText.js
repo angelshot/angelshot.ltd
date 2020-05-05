@@ -6,6 +6,7 @@ export const InlineInputText = ({
   className,
   type,
   value,
+  id,
   name,
   required,
   placeholder,
@@ -14,6 +15,7 @@ export const InlineInputText = ({
     type={type}
     value={value}
     name={name}
+    id={id ? id : name}
     className={className ? `${className} ${styles.inline}` : styles.inline}
     required={required}
     placeholder={placeholder}
@@ -25,6 +27,7 @@ const InputText = ({
   type,
   value,
   name,
+  id,
   required,
   placeholder,
   labelBody,
@@ -33,12 +36,13 @@ const InputText = ({
   <div
     className={className ? `${className} ${styles.fieldset}` : styles.fieldset}
   >
-    {labelBody && <label htmlFor={name}>{labelBody}</label>}
+    {labelBody && <label htmlFor={id ? id : name}>{labelBody}</label>}
     {tooltip && <Tooltip className={styles.tooltip}>{tooltip}</Tooltip>}
     <input
       type={type}
       value={value}
       name={name}
+      id={id ? id : name}
       className={styles.input}
       required={required}
       placeholder={placeholder}

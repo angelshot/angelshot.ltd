@@ -42,9 +42,14 @@ const MainNav = ({ footer, style }) => {
           </li>
           <li className={styles.donateSmall}>
             <Button
-              href="#donate"
+              href="https://secure.givelively.org/donate/angelshot-ltd"
               type="buttonWideAlt"
-              onClick="document.getElementById('menu_toggle').checked=false;"
+              onClick={(e) => {
+                e.preventDefault()
+                document.getElementById("menu_toggle").checked = false
+                document.body.classList.remove("freeze")
+                window.scrollTo(0, document.getElementById("donate").offsetTop)
+              }}
               className={styles.buttonWideAlt}
             >
               Make a Donation

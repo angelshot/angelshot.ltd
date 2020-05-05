@@ -11,7 +11,7 @@ const BetaSignupCTA = () => (
     <p>
       Discreetly bails you out of bad dates, rides, and everything else.&trade;
     </p>
-    <Button buttonType="button2" href="/angelbot">
+    <Button buttonType="button2" href="/programs/angelbot">
       Join the beta
     </Button>
   </div>

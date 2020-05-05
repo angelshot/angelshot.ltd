@@ -71,7 +71,6 @@
 }
 
 .buttonInline {
-  composes: button;
   width: 40px;
   height: 40px;
   border-radius: 0px 6px 6px 0px;
@@ -82,9 +81,14 @@
   background-position: center;
   border: 0;
   color: transparent;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .buttonInline:hover {
-  border: 2px inset #f1f9ff;
+  border: 2px solid #f1f9ff;
+  cursor: pointer;
 }
 .buttonInline:disabled {
   background: #92879a;

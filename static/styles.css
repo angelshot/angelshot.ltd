@@ -19,10 +19,6 @@ body,
   font: 16px/21px droid-serif, serif;
 }
 
-body.freeze {
-  position: fixed;
-}
-
 ::-moz-selection {
   background: #8f88a8;
   color: #d9dcff;
@@ -107,38 +103,6 @@ a.learnMore:after {
   display: inline-block;
 }
 
-/* input[type="text"],
-input[type="email"],
-input[type="password"] {
-  font: normal 14px/40px droid-serif, serif;
-  height: 40px;
-  padding: 0 8px;
-  box-sizing: border-box;
-  width: 100%;
-  position: relative;
-  color: #001f26;
-  border-radius: 7px;
-  background: #d0d5db;
-  border: 2px solid #d0d5db;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
-  outline: none;
-}
-
-input[type="text"]:invalid:not(:placeholder-shown):not(:focus),
-input[type="email"]:invalid:not(:placeholder-shown):not(:focus),
-input[type="password"]:invalid:not(:placeholder-shown):not(:focus) {
-  border: 2px solid #be3151;
-} */
-
-.fieldset {
-  position: relative;
-}
-
 label {
   font: normal 12px/14px mostra-nuova, sans-serif;
   color: #487194;
@@ -178,6 +142,12 @@ label {
   margin-top: 14px;
 }
 
+@media only screen and (max-width: 767px) {
+  body.freeze {
+    position: fixed;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   body {
     font-size: 14px;
@@ -204,10 +174,6 @@ label {
 }
 
 @media only screen and (min-width: 1025px) {
-  body.freeze {
-    position: static;
-  }
-
   .sectionContainer {
     margin-top: -170px;
     padding-top: 210px;

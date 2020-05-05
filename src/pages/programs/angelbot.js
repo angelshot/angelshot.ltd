@@ -73,6 +73,7 @@ export default () => (
           <InputText
             className={styles.inputText}
             type="email"
+            id="angelbotEMAIL"
             name="EMAIL"
             placeholder="Email"
             required

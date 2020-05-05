@@ -11,10 +11,11 @@ class GiveLivelyWidget extends React.Component {
   render() {
     return (
       <div id="donate" className={styles.donationWidget}>
-        <div
-          id="give-lively-widget"
-          className="gl-simple-donation-widget"
-        ></div>
+        <div id="give-lively-widget" className="gl-simple-donation-widget">
+          <a href="https://secure.givelively.org/donate/angelshot-ltd">
+            Click here to make a donation.
+          </a>
+        </div>
       </div>
     )
   }

@@ -4,7 +4,15 @@ import styles from "./button.module.css"
 
 const cx = classNames.bind(styles)
 
-const Button = ({ className, buttonType, tagName, children, href, type }) =>
+const Button = ({
+  className,
+  buttonType,
+  tagName,
+  children,
+  href,
+  type,
+  onClick,
+}) =>
   React.createElement(
     tagName,
     {
@@ -14,6 +22,7 @@ const Button = ({ className, buttonType, tagName, children, href, type }) =>
       ),
       href,
       type,
+      onClick,
     },
     children
   )

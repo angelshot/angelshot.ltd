@@ -1,6 +1,7 @@
 import React from "react"
-import InputButton from "./inputButton"
+import Button from "./button"
 import InputText from "./InputText"
+
 import styles from "./newsletterForm.module.css"
 
 const NewsletterForm = () => (
@@ -13,7 +14,7 @@ const NewsletterForm = () => (
     >
       <div>
         <label htmlFor="mce-EMAIL">Enter your email</label>
-        <div className="mc-field-group fieldset">
+        <div className={`mc-field-group ${styles.fieldset}`}>
           <InputText
             type="email"
             name="EMAIL"
@@ -21,11 +22,13 @@ const NewsletterForm = () => (
             required
             id="mce-EMAIL"
           />
-          <InputButton
+          <Button
+            tagName="button"
             id="mc-embedded-subscribe"
             type="submit"
             value="Submit"
             name="subscribe"
+            buttonType="buttonInline"
           />
         </div>
       </div>
