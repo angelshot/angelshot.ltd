@@ -11,8 +11,8 @@ import { Link } from "gatsby"
 
 import styles from "./angelbot.module.css"
 
-export default () => (
-  <Layout>
+export default ({ location }) => (
+  <Layout location={location}>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}
@@ -146,7 +146,7 @@ export default () => (
           time. When it is time for you to leave, use your conversation with
           Angel as an excuse to remove yourself from potential danger.
         </p>
-        <p classname="bottom">
+        <p className="bottom">
           <strong>Interested in working with your community?</strong>
           <br />
           Sign up for the{" "}
