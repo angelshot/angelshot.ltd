@@ -9,7 +9,9 @@ export default ({ children }) => (
     <Header />
     {children}
     <MissionDonation />
-    <BetaSignupCTA />
+    {document.location.pathname.indexOf("programs/angelbot") > -1 || (
+      <BetaSignupCTA />
+    )}
     <Footer />
   </>
 )
