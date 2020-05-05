@@ -16,6 +16,29 @@
   display: block;
 }
 
+.inputButton {
+  margin: 20px auto 40px;
+}
+
+.inputText {
+  max-width: 360px;
+}
+
+.inputTextMedium {
+  max-width: 200px;
+}
+
+.inputTextSmall {
+  max-width: 60px;
+}
+
+.form .subheader2 {
+  margin: 20px 0 10px;
+}
+.form .subheader2 + p {
+  margin-top: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .quote {
     max-width: 290px;
@@ -30,7 +53,7 @@
   .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: max-content max-content max-content max-content;
+    grid-template-rows: max-content max-content 1fr max-content;
     gap: 20px 40px;
     grid-template-areas: "intro logo" "form logo" "form howItWorks" "form howItWorks";
   }
@@ -50,6 +73,10 @@
   .howItWorks {
     grid-area: howItWorks;
   }
+
+  .inputButton {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -60,6 +87,24 @@
     max-width: 380px;
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form .subheader2 {
+    flex-wrap: none;
+    flex-basis: 100%;
+  }
+
+  .inputText {
+    flex-basis: 48%;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .hero {
     background-image: url("../../images/programs-hero-large@2x.jpg");

@@ -97,7 +97,7 @@ export default () => (
         </form>
         <p>
           <strong>Interested in becoming a tester?</strong> Sign up for the{" "}
-          <a href="/program/angelbot">AngelBot Beta Program</a>.
+          <a href="/programs/angelbot">AngelBot Beta Program</a>.
         </p>
       </section>
       <article id="ambassador" className={styles.ambassador}>
