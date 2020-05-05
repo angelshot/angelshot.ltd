@@ -27,7 +27,7 @@ const InputText = ({
   labelBody,
   tooltip,
 }) => (
-  <div>
+  <div className={styles.fieldset}>
     {labelBody && <label htmlFor={name}>{labelBody}</label>}
     {tooltip && <span className={styles.tooltip}>{tooltip}</span>}
     <input

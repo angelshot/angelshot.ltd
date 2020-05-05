@@ -46,12 +46,11 @@ export default () => (
           <input type="hidden" name="FORMNAME" value="angelbot" />
           <h4 className={`subheader2 ${styles.subheader}`}>Required fields:</h4>
           <InputText
-            type="tel"
-            name="PHONE"
-            placeholder="Phone number"
+            type="text"
+            name="NAME"
+            placeholder="Name"
             required
-            labelBody="Phone number"
-            tooltip="Used to add you to Angel's contacts"
+            labelBody="Name"
           />
           <InputText
             type="email"

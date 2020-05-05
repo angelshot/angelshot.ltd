@@ -31,3 +31,7 @@
   border-width: 0 0 3px 0;
   border-color: #d0d5db;
 }
+
+.fieldset {
+  margin-bottom: 12px;
+}
