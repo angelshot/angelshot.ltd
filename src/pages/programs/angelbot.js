@@ -58,8 +58,11 @@ export default () => (
           <input type="hidden" name="u" value="091175bb199db49734caae8f1" />
           <input type="hidden" name="id" value="634f908f1b" />
           <input type="hidden" name="FORMNAME" value="angelbot" />
-          <h4 className="subheader2">Required fields:</h4>
+          <h4 className={`subheader2 ${styles.subheader2}`}>
+            Required fields:
+          </h4>
           <InputText
+            className={styles.inputText}
             type="tel"
             name="PHONE"
             placeholder="Phone number"
@@ -68,61 +71,63 @@ export default () => (
             tooltip="Used to add you to Angel's contacts"
           />
           <InputText
+            className={styles.inputText}
             type="email"
             name="EMAIL"
             placeholder="Email"
             required
             labelBody="Email"
           />
-          <InputCheckbox
-            value="EULA"
-            name="EULA"
-            required
-            labelBody={
-              <span>
-                I have ready and agree to the{" "}
-                <Link to="/terms">End User License Agreement</Link>.
-              </span>
-            }
-          />
-          <h4 className="subheader2">Demographics (Optional):</h4>
+          <InputCheckbox value="EULA" name="EULA" required>
+            I have ready and agree to the{" "}
+            <Link to="/terms">End User License Agreement</Link>.
+          </InputCheckbox>
+          <h4 className={`subheader2 ${styles.subheader2}`}>
+            Demographics (Optional):
+          </h4>
           <p>
             In order to ensure that we are able to provide this service to a
             diverse group of individuals, please share with us the following
             information. We will never share this with anyone.
           </p>
           <InputText
+            className={styles.inputTextSmall}
             type="number"
             name="AGE"
             placeholder="Age"
             labelBody="Age"
           />
           <InputText
+            className={styles.inputText}
             type="text"
             name="GENDER"
             placeholder="Gender"
             labelBody="Gender"
           />
           <InputText
+            className={styles.inputTextMedium}
             type="number"
             name="ZIP"
             placeholder="Zip Code"
             labelBody="Zip Code"
           />
           <InputText
+            className={styles.inputText}
             type="text"
             name="SXO"
             placeholder="Sexual Orientation"
             labelBody="Sexual Orientation"
           />
           <InputText
+            className={styles.inputText}
             type="text"
             name="entry.1581637925"
             placeholder="Occupation (student/other)"
             labelBody="Occupation (student/other)"
           />
           <Button
-            buttonType="button2"
+            className={styles.inputButton}
+            buttonType="button"
             type="submit"
             tagName="button"
             children="Join the Beta"
