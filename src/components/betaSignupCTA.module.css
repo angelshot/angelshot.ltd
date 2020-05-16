@@ -1,6 +1,7 @@
 .getApp {
-  background: #fff url(../images/istockphoto-1152767877-612x612-colored.jpg)
-    center center no-repeat;
+  background: url(../images/istockphoto-1152767877-612x612-colored.jpg) center
+      center no-repeat,
+    linear-gradient(#a5cded 0%, #acbbe8 50%, #c1b7f0 100%);
   background-size: cover;
   padding: 20px 30px;
   text-align: center;
