@@ -1,0 +1,85 @@
+.floral {
+  position: relative;
+  padding: 40px 20px 10px;
+  background: white;
+  margin: -20px 0 70px 0;
+}
+
+.floral:after,
+.doubleSided:before {
+  content: "";
+  position: absolute;
+  background: url("../images/flowers-bottom.png") 0 0 no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -72px;
+  width: 320px;
+  max-width: 100%;
+  height: 98px;
+}
+
+.floral *:first-child {
+  margin-top: 0;
+}
+
+.withHero {
+  margin-top: 0;
+}
+
+.doubleSided {
+  margin-top: 100px;
+}
+
+.doubleSided:before {
+  top: -72px;
+  bottom: unset;
+  transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 360px) {
+  .floral {
+    margin: -20px 20px 70px 20px;
+  }
+  .doubleSided {
+    margin: 100px 20px 70px 20px;
+  }
+  .withHero {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .floral {
+    margin-top: -160px;
+    margin-bottom: 90px;
+    padding: 160px 56px 44px;
+  }
+
+  .withHero {
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .doubleSided {
+    margin-top: 90px;
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .floral {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .floral {
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    max-width: 1348px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

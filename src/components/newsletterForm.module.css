@@ -1,0 +1,11 @@
+.subscribeNewsletterForm {
+  margin: 0;
+  max-width: unset;
+}
+.fieldset {
+  position: relative;
+}
+.subscribeNewsletterForm label {
+  font: normal 11px/11px mostra-nuova, sans-serif;
+  color: #c5e3ee;
+}

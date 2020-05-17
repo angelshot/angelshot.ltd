@@ -1,0 +1,115 @@
+.hero {
+  background-image: url("../../images/programs-hero-small.jpg");
+}
+
+.quote {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  max-width: 280px;
+  text-align: right;
+}
+
+.logo img {
+  width: 100%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.inputButton {
+  margin: 20px auto 40px;
+}
+
+.inputText {
+  max-width: 360px;
+}
+
+.inputTextMedium {
+  max-width: 200px;
+}
+
+.inputTextSmall {
+  max-width: 60px;
+}
+
+.form .subheader2 {
+  margin: 20px 0 10px;
+}
+.form .subheader2 + p {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    max-width: 290px;
+    position: relative;
+    bottom: unset;
+    margin-top: 10px;
+    margin-left: 87px;
+  }
+  .hero {
+    background-image: url("../../images/programs-hero-small@2x.jpg");
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content max-content 1fr max-content;
+    gap: 20px 40px;
+    grid-template-areas: "intro logo" "form logo" "form howItWorks" "form howItWorks";
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .form {
+    grid-area: form;
+  }
+
+  .howItWorks {
+    grid-area: howItWorks;
+  }
+
+  .inputButton {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    background-image: url("../../images/programs-hero-large.jpg");
+  }
+  .quote {
+    max-width: 380px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form .subheader2 {
+    flex-wrap: none;
+    flex-basis: 100%;
+  }
+
+  .inputText {
+    flex-basis: 48%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-image: url("../../images/programs-hero-large@2x.jpg");
+  }
+  .quote {
+    max-width: 508px;
+  }
+}

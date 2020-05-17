@@ -1,0 +1,6 @@
+.error404 {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

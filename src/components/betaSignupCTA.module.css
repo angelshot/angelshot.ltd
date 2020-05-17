@@ -1,0 +1,29 @@
+.getApp {
+  background: url(../images/istockphoto-1152767877-612x612-colored.jpg) center
+      center no-repeat,
+    linear-gradient(#a5cded 0%, #acbbe8 50%, #c1b7f0 100%);
+  background-size: cover;
+  padding: 20px 30px;
+  text-align: center;
+}
+.getApp h2 {
+  margin: 14px auto;
+  text-align: center;
+}
+.getApp p {
+  font: normal italic 12px/18px droid-serif, serif;
+  color: #576877;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .getApp {
+    padding: 40px 30px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .getApp {
+    background-size: 1440px auto;
+  }
+}

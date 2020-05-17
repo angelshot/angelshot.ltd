@@ -1,0 +1,20 @@
+.mission {
+  margin-bottom: 20px;
+}
+
+.cta {
+  margin: 20px 20px 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mission {
+    display: flex;
+    margin: 20px auto 30px;
+    max-width: 1120px;
+    box-sizing: border-box;
+  }
+
+  .cta {
+    flex: 1;
+  }
+}

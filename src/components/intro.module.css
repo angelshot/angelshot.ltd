@@ -1,0 +1,49 @@
+.intro {
+  margin-top: 70px;
+}
+
+.headline {
+  font: normal italic 32px/40px droid-serif, serif;
+  color: #fff;
+  text-shadow: 0px 3px 6px #000;
+  background: #487194;
+  padding: 5px 10px 5px 20px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .headline {
+    padding-left: calc(50vw - 50% + 124px);
+    margin-left: calc(50% - 50vw);
+  }
+  .quote {
+    margin-left: 110px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .intro {
+    margin-top: 100px;
+  }
+  .headline {
+    padding: 10px 30px 10px 40px;
+    font-size: 40px;
+    line-height: 45px;
+    padding-left: calc(50vw - 50% + 144px);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .intro {
+    width: 100%;
+    max-width: 1348px;
+    /* margin-top: 174px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .headline {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}

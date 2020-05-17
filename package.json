@@ -1,21 +1,29 @@
 {
-  "name": "angelshot-web",
+  "name": "angelshot.ltd",
   "version": "1.0.0",
-  "description": "",
+  "description": "angelshot.ltd",
   "main": "index.js",
-  "dependencies": {
-    "stylelint-config-recommended": "^3.0.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelshot/angelshot.ltd.git"
+  },
   "author": "",
   "license": "ISC",
-  "stylelint": {
-      "extends": "stylelint-config-recommended",
-      "rules": {
-          "no-descending-specificity": null
-      }
+  "bugs": {
+    "url": "https://github.com/angelshot/angelshot.ltd/issues"
+  },
+  "homepage": "https://github.com/angelshot/angelshot.ltd#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "gatsby": "^2.20.29",
+    "gatsby-cli": "^2.12.7",
+    "gatsby-plugin-google-analytics": "^2.2.5",
+    "gatsby-plugin-manifest": "^2.3.7",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

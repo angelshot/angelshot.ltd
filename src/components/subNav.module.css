@@ -1,0 +1,38 @@
+.subNav {
+  padding: 0;
+  margin: 30px 24px 20px;
+}
+
+.subNav li {
+  list-style: none;
+  display: block;
+}
+
+.subNav a,
+.subNav a:visited {
+  font: normal 12px/30px droid-serif, serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.subNavFooter {
+  composes: subNav;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .subNav {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .subNav li {
+    margin: 20px 0;
+    text-align: right;
+  }
+
+  .subNavFooter {
+    padding-right: 20px;
+  }
+}

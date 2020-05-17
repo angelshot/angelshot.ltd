@@ -1,0 +1,19 @@
+.card {
+  margin: 85px 20px 20px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.cardBody {
+  padding: 0 20px 20px;
+}
+.cardImage {
+  display: block;
+  width: 100%;
+  margin-top: -85px;
+}
+.cardImage img {
+  display: block;
+  margin: 0 auto;
+  max-width: 315px;
+  max-height: 166px;
+}
