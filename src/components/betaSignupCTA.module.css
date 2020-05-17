@@ -1,6 +1,5 @@
 .getApp {
-  background: url(../images/istockphoto-1152767877-612x612-colored.jpg) center
-      center no-repeat,
+  background: url(../images/beta-cta-small.jpg) center top no-repeat,
     linear-gradient(#a5cded 0%, #acbbe8 50%, #c1b7f0 100%);
   background-size: cover;
   padding: 20px 30px;
@@ -19,11 +18,17 @@
 @media only screen and (min-width: 768px) {
   .getApp {
     padding: 40px 30px;
+    background-image: url(../images/beta-cta-small@2x.jpg);
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .getApp {
-    background-size: 1440px auto;
+    background-image: url(../images/beta-cta-large.jpg);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .getApp {
+    background-image: url(../images/beta-cta-large@2x.jpg);
   }
 }
