@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Floral from "../components/floral"
-import Cite from "../components/cite"
 import SectionHeader from "../components/sectionHeader"
 
 import styles from "./index.module.css"
@@ -18,12 +17,6 @@ const Home = () => (
             <br /> to help protect women.
           </h1>
         </div>
-        <Cite
-          author="Gemma Chua-Tran"
-          authorURL="https://unsplash.com/@gemmachuatran?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          site="Unsplash"
-          siteURL="https://unsplash.com/collections/8969218/angelshot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-        />
       </div>
       <Floral withHero className={styles.ourGoals}>
         <SectionHeader className={styles.sectionHeader}>
