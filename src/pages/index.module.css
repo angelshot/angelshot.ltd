@@ -39,7 +39,7 @@
   padding-top: 60px;
 }
 .ourGoals article {
-  padding: 0 0 10px;
+  padding: 0 0 40px;
 }
 .subheader {
   margin: 20px 0 16px;
@@ -102,6 +102,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
     margin: 0 10px 0;
+  }
+  .ourGoals article {
+    padding-bottom: 0;
   }
   .subheader {
     align-items: normal;
