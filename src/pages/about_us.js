@@ -37,10 +37,10 @@ export default () => (
     <CardWithOverlay id="community_engagement" className={styles.firstCard}>
       <Image
         srcset={[
-          "/images/goal-community_engagement-small.png",
-          "/images/goal-community_engagement-small@2x.png",
-          "/images/goal-community_engagement-large.png",
-          "/images/goal-community_engagement-large@2x.png",
+          "/images/goal-community_engagement-small.jpg",
+          "/images/goal-community_engagement-small@2x.jpg",
+          "/images/goal-community_engagement-large.jpg",
+          "/images/goal-community_engagement-large@2x.jpg",
         ]}
         alt="People at a food establishment"
       />
@@ -88,10 +88,10 @@ export default () => (
     <CardWithOverlay alt id="seek_help">
       <Image
         srcset={[
-          "/images/goal-seek_help-small.png",
-          "/images/goal-seek_help-small@2x.png",
-          "/images/goal-seek_help-large.png",
-          "/images/goal-seek_help-large@2x.png",
+          "/images/goal-seek_help-small.jpg",
+          "/images/goal-seek_help-small@2x.jpg",
+          "/images/goal-seek_help-large.jpg",
+          "/images/goal-seek_help-large@2x.jpg",
         ]}
         alt="People sitting in a support circle"
       />
@@ -139,10 +139,10 @@ export default () => (
     <CardWithOverlay id="prevent_violence">
       <Image
         srcset={[
-          "/images/goal-prevent_rape-small.png",
-          "/images/goal-prevent_rape-small@2x.png",
-          "/images/goal-prevent_rape-large.png",
-          "/images/goal-prevent_rape-large@2x.png",
+          "/images/goal-prevent_rape-small.jpg",
+          "/images/goal-prevent_rape-small@2x.jpg",
+          "/images/goal-prevent_rape-large.jpg",
+          "/images/goal-prevent_rape-large@2x.jpg",
         ]}
         alt="Man holding a woman's hand down on a cafe table"
       />
