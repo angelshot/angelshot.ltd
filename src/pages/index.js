@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Hero from "../components/hero"
+import Intro from "../components/intro"
 import Floral from "../components/floral"
 import SectionHeader from "../components/sectionHeader"
 
@@ -9,15 +11,13 @@ import styles from "./index.module.css"
 
 const Home = () => (
   <Layout>
+    <Hero className={styles.hero}>
+      <Intro>
+        Engaging communities
+        <br /> to help protect women.
+      </Intro>
+    </Hero>
     <section id="home">
-      <div className={styles.intro}>
-        <div className={styles.inset}>
-          <h1>
-            Engaging communities
-            <br /> to help protect women.
-          </h1>
-        </div>
-      </div>
       <Floral withHero className={styles.ourGoals}>
         <SectionHeader className={styles.sectionHeader}>
           Our Goals
