@@ -27,8 +27,8 @@ module.exports = {
         name: "AngelShot Ltd",
         short_name: "AngelShot Ltd",
         start_url: "/",
-        background_color: "#754995",
-        theme_color: "#754995",
+        background_color: "#c5e3ee",
+        theme_color: "#c5e3ee",
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",

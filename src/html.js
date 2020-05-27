@@ -20,7 +20,7 @@ class Html extends Component {
             name="google-site-verification"
             content="o-IxUxONLoA45N5dPU-gMnVWZKq8R_qj45-Du27E8Tk"
           />
-          <meta name="theme-color" content="#BECBDD" />
+          <meta name="theme-color" content="#c5e3ee" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
           <link
