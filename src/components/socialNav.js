@@ -8,25 +8,28 @@ const SocialNav = ({ footer, style }) => (
   >
     <li>
       <a
-        href="https://www.instagram.com/angel.shot.ltd/"
-        target="_new"
-        className={styles.icon_instagram}
+        href="https://twitter.com/AngelShot_ltd"
+        className={styles.icon_twitter}
       >
-        Follow us on Instagram
-      </a>
-    </li>
-    {/* <li>
-      <a href="/#" className={styles.icon_twitter}>
         Follow us on Twitter
       </a>
-    </li> */}
+    </li>
     <li>
       <a
-        href="https://business.facebook.com/angelshot.ltd"
+        href="https://facebook.com/angelshot.ltd"
         target="_new"
         className={styles.icon_facebook}
       >
         Follow us on Facebook
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.instagram.com/angelshot_ltd/"
+        target="_new"
+        className={styles.icon_instagram}
+      >
+        Follow us on Instagram
       </a>
     </li>
   </ul>
