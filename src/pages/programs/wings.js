@@ -43,7 +43,7 @@ export default () => (
           <h3 className="subtitle">Join the Movement</h3>
           <input type="hidden" name="u" value="091175bb199db49734caae8f1" />
           <input type="hidden" name="id" value="634f908f1b" />
-          <input type="hidden" name="FORMNAME" value="angelbot" />
+          <input type="hidden" name="FORMNAME" value="wings" />
           <h4 className={`subheader2 ${styles.subheader}`}>Required fields:</h4>
           <InputText
             type="text"

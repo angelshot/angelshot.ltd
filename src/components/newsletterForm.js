@@ -15,6 +15,7 @@ const NewsletterForm = () => (
       <div>
         <label htmlFor="mce-EMAIL">Enter your email</label>
         <div className={`mc-field-group ${styles.fieldset}`}>
+        <input type="hidden" name="FORMNAME" value="newsletter" />
           <InputText
             type="email"
             name="EMAIL"
