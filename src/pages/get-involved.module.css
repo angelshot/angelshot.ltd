@@ -51,33 +51,11 @@
 
   .section {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "volunteerContainer";
-  }
-
-  .volunteerContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "volunteerIntro" "volunteerOpportunities";
-    grid-area: volunteerContainer;
-  }
-  
-  .volunteerIntro { grid-area: volunteerIntro; }  
-  
-  .volunteerOpportunities {
-    display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    gap: 1px 1px;
-    grid-template-areas: ". volunteerForm";
-    grid-area: volunteerOpportunities;
+    gap: 20px 44px;
+    grid-template-areas: ". .";
   }
-  
-  .volunteerForm { grid-area: volunteerForm; }
 }
 @media only screen and (min-width: 1440px) {
   .hero {
