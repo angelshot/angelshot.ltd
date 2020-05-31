@@ -1,0 +1,57 @@
+.hero {
+  background-image: url("../images/programs-hero-small.jpg");
+}
+
+.quote {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  max-width: 280px;
+  text-align: right;
+}
+
+.title {
+  margin-top: 16px;
+}
+
+.subheader {
+  font-weight: normal;
+  margin: 30px 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    max-width: 290px;
+    position: relative;
+    bottom: unset;
+    margin-top: 10px;
+    margin-left: 87px;
+  }
+  .hero {
+    background-image: url("../images/programs-hero-small@2x.jpg");
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    background-image: url("../images/programs-hero-large.jpg");
+  }
+  .quote {
+    max-width: 380px;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: max-content max-content;
+    gap: 0 44px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-image: url("../images/programs-hero-large@2x.jpg");
+  }
+  .quote {
+    max-width: 508px;
+  }
+}
