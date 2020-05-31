@@ -13,7 +13,11 @@ import styles from "./get-involved.module.css"
 export default () => (
   <Layout>
     <Hero className={styles.hero}>
-      <Intro quoteStyles={styles.quote} quote="XXX" quoteAuthor="XXX">
+      <Intro
+        quoteStyles={styles.quote}
+        quote="Communities and countries and ultimately the world are only as strong as the health of their women."
+        quoteAuthor="Michelle Obama"
+      >
         Get Involved
       </Intro>
       <Cite
