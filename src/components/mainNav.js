@@ -35,6 +35,16 @@ const MainNav = ({ footer, style }) => {
           Our Programs
         </Link>
       </li>
+      <li>
+        <Link
+          to="/get-involved"
+          className={styles.link}
+          activeClassName="active"
+          partiallyActive
+        >
+          Get Involved
+        </Link>
+      </li>
       {!footer && (
         <>
           <li className={styles.donateLarge}>

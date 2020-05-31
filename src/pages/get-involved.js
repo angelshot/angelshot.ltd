@@ -8,7 +8,7 @@ import Floral from "../components/floral"
 // import InputCheckbox from "../components/inputCheckbox"
 // import InputText, { InlineInputText } from "../components/inputText"
 
-import styles from "./get_involved.module.css"
+import styles from "./get-involved.module.css"
 
 export default () => (
   <Layout>
