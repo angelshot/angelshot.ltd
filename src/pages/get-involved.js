@@ -66,8 +66,7 @@ export default () => (
         >
             <h3 className="subtitle">Volunteer with Us</h3>
             <input type="hidden" name="u" value="091175bb199db49734caae8f1" />
-            <input type="hidden" name="id" value="634f908f1b" />
-            <input type="hidden" name="FORMNAME" value="angelbot" />
+            <input type="hidden" name="id" value="869d816545" />            
             <h4 className={`subheader2 ${styles.subheader}`}>Required fields:</h4>
             <InputText
               type="text"
@@ -89,32 +88,32 @@ export default () => (
             <InputCheckbox
               type="checkbox"
               value="crux"
-              name="group[69988][1]"
-              id="mce-group[69988]-69988-0"
+              name="group[70176][1]"
+              id="group_1"
             >
               Creative &amp; User Experience
             </InputCheckbox>
             <InputCheckbox
               type="checkbox"
               value="tech"
-              name="group[69988][2]"
-              id="mce-group[69988]-69988-1"
+              name="group[70176][2]"
+              id="group_2"
             >
               Technology
             </InputCheckbox>
             <InputCheckbox
               type="checkbox"
-              value="outreach_and_fundraising"
-              name="group[69988][3]"
-              id="mce-group[69988]-69988-2"
+              value="outreach"
+              name="group[70176][3]"
+              id="group_3"
             >
               Outreach &amp; Fundraising
             </InputCheckbox>
             <InputCheckbox
               type="checkbox"
               value="other"
-              name="group[69988][4]"
-              id="mce-group[69988]-69988-3"
+              name="group[70176][4]"
+              id="group_4"
             >
               Other
               <InlineInputText type="text" name="OTHER" inline />
