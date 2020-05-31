@@ -17,7 +17,7 @@ const MainNav = ({ footer, style }) => {
       </li>
       <li>
         <Link
-          to="/about_us"
+          to="/about-us"
           className={styles.link}
           activeClassName="active"
           partiallyActive
