@@ -7,6 +7,6 @@ const cx = classNames.bind(styles)
 export default ({ children, className, author }) => (
   <blockquote className={cx(className, styles.quote)}>
     {children}
-    <div className={styles.author}>– {author}</div>
+    {author && <div className={styles.author}>– {author}</div>}
   </blockquote>
 )
