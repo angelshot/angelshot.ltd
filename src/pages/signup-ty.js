@@ -7,20 +7,18 @@ import Floral from "../components/floral"
 import styles from "./signup-ty.module.css"
 
 class SignUpTy extends React.Component {
-  _getType() {
-    const type = new URLSearchParams(window.location.search).get('type');
-
-    switch (type) {
-      case "angelbot":
-        return <p>Thank you for signing up for the AngelBot Beta program. We'll be in touch with you shortly!</p>
-      case "wings":
-        return <p>Thank you for your interest in joining the AngelShot WINGS Program. We'll be in touch with you shortly!</p>
-      case "newsletter":
-        return <p>Thank you for subscribing to our newsletter. Keep an eye out for upcoming events and volunteer opportunities!</p>
-      default:
-        return <p>You're in! Thanks for signing up.</p>
-    }
+  constructor() {
+    super();
+    this.state = {
+      signupType: 'default'
+    };
   }
+  componentDidMount() {
+    const type = new URLSearchParams(window.location.search).get('type');
+    let signupType = type ? type : 'default';
+  
+    this.setState({signupType});
+  }  
   render() {
     return (
       <Layout>
@@ -40,6 +38,18 @@ class SignUpTy extends React.Component {
         </Floral>
       </Layout>
     )
+  }
+  _getType() {
+    switch (this.state.signupType) {
+      case "angelbot":        
+        return <p>Thank you for signing up for the AngelBot Beta program. We'll be in touch with you shortly!</p>
+      case "wings":
+        return <p>Thank you for your interest in joining the AngelShot WINGS Program. We'll be in touch with you shortly!</p>
+      case "newsletter":
+        return <p>Thank you for subscribing to our newsletter. Keep an eye out for upcoming events and volunteer opportunities!</p>
+      default:
+        return <p>You're in! Thanks for signing up.</p>
+    }
   }
 }
 
