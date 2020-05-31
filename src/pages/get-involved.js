@@ -30,6 +30,12 @@ export default () => (
           safeguard themselves and encouraging communities to act as havens for
           them. As a small and mighty team, we could use your expertise in the
           following areas:
+        </p>        
+        <h3 className="subheader">Creative &amp; User Experience</h3>
+        <p>
+          We are looking for copywriters and user experience designers to help
+          refine the dialog within AngelBot, create newsletter templates,
+          fundraising campaigns, and social media content.
         </p>
         <h3 className="subheader">Technology</h3>
         <p>
@@ -38,12 +44,6 @@ export default () => (
           DialogFlow, Docker, and Gatsby.js. You will be working on features
           such as website updates, user management, privacy &amp; security, and
           improving upon our infrastructure.
-        </p>
-        <h3 className="subheader">Creative &amp; User Experience</h3>
-        <p>
-          We are looking for copywriters and user experience designers to help
-          refine the dialog within AngelBot, create newsletter templates,
-          fundraising campaigns, and social media content.
         </p>
         <h3 className="subheader">Outreach &amp; Fundraising</h3>
         <p>
