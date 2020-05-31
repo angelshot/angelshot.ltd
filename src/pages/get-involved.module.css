@@ -14,6 +14,10 @@
   margin-top: 16px;
 }
 
+.form {
+  margin: 30px auto 40px;
+}
+
 .subheader {
   font-weight: normal;
   margin: 30px 0 10px;
@@ -40,12 +44,40 @@
     max-width: 380px;
   }
 
+  .form {
+    grid-area: form;
+    margin-top: 0;
+  }
+
   .section {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: max-content max-content;
-    gap: 0 44px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "volunteerContainer";
   }
+
+  .volunteerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "volunteerIntro" "volunteerOpportunities";
+    grid-area: volunteerContainer;
+  }
+  
+  .volunteerIntro { grid-area: volunteerIntro; }  
+  
+  .volunteerOpportunities {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". volunteerForm";
+    grid-area: volunteerOpportunities;
+  }
+  
+  .volunteerForm { grid-area: volunteerForm; }
 }
 @media only screen and (min-width: 1440px) {
   .hero {
