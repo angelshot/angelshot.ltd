@@ -17,7 +17,7 @@ const MainNav = ({ footer, style }) => {
       </li>
       <li>
         <Link
-          to="/about_us"
+          to="/about-us"
           className={styles.link}
           activeClassName="active"
           partiallyActive
@@ -33,6 +33,16 @@ const MainNav = ({ footer, style }) => {
           partiallyActive
         >
           Our Programs
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/get-involved"
+          className={styles.link}
+          activeClassName="active"
+          partiallyActive
+        >
+          Get Involved
         </Link>
       </li>
       {!footer && (

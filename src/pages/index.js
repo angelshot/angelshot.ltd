@@ -34,7 +34,7 @@ const Home = () => (
               <strong>creating safe environments</strong> by championing
               transparency and accountability.
             </p>
-            <Link to="/about_us#community_engagement" className="learnMore">
+            <Link to="/about-us#community_engagement" className="learnMore">
               Learn more
             </Link>
           </article>
@@ -51,7 +51,7 @@ const Home = () => (
               </strong>{" "}
               get out of it.
             </p>
-            <Link to="/about_us#seek_help" className="learnMore">
+            <Link to="/about-us#seek_help" className="learnMore">
               Learn more
             </Link>
           </article>
@@ -66,7 +66,7 @@ const Home = () => (
               experiences, we <strong>create an outlet</strong> for those who
               have been a victim of sexual violence.
             </p>
-            <Link to="/about_us#prevent_violence" className="learnMore">
+            <Link to="/about-us#prevent_violence" className="learnMore">
               Learn more
             </Link>
           </article>
