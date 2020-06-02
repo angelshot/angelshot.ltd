@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "./button"
-import InputText from "./InputText"
+import InputText from "./inputText"
 
 import styles from "./newsletterForm.module.css"
 
@@ -15,7 +15,7 @@ const NewsletterForm = () => (
       <div>
         <label htmlFor="mce-EMAIL">Enter your email</label>
         <div className={`mc-field-group ${styles.fieldset}`}>
-        <input type="hidden" name="FORMNAME" value="newsletter" />
+          <input type="hidden" name="FORMNAME" value="newsletter" />
           <InputText
             type="email"
             name="EMAIL"
