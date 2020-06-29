@@ -9,6 +9,7 @@ const SocialNav = ({ footer, style }) => (
     <li>
       <a
         href="https://twitter.com/angelshot_org"
+        target="_new"
         className={styles.icon_twitter}
       >
         Follow us on Twitter
