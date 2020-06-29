@@ -8,7 +8,7 @@ const SocialNav = ({ footer, style }) => (
   >
     <li>
       <a
-        href="https://twitter.com/AngelShot_ltd"
+        href="https://twitter.com/angelshot_org"
         className={styles.icon_twitter}
       >
         Follow us on Twitter
@@ -16,7 +16,7 @@ const SocialNav = ({ footer, style }) => (
     </li>
     <li>
       <a
-        href="https://facebook.com/angelshot.ltd"
+        href="https://facebook.com/angelshot.org"
         target="_new"
         className={styles.icon_facebook}
       >
@@ -25,7 +25,7 @@ const SocialNav = ({ footer, style }) => (
     </li>
     <li>
       <a
-        href="https://www.instagram.com/angelshot_ltd/"
+        href="https://www.instagram.com/angelshot_org/"
         target="_new"
         className={styles.icon_instagram}
       >
