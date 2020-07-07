@@ -54,7 +54,7 @@
   .floral {
     margin-top: -160px;
     margin-bottom: 90px;
-    padding: 160px 56px 44px;
+    padding: 160px 36px 44px;
   }
 
   .withHero {
@@ -70,7 +70,12 @@
 
 @media only screen and (min-width: 1024px) {
   .floral {
-    padding-top: 80px;
+    padding: 160px 56px 44px;
+  }
+
+  .withHero {
+    margin-top: 0;
+    padding-top: 40px;
   }
 }
 
