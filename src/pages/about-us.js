@@ -277,17 +277,18 @@ export default () => (
       </section>
       <section className={styles.teammate}>
         <div className={styles.photo}>
-          <img src="/images/team-mikayla.jpg" alt="Mikayla" />
-          <h4>Mikayla Dib, Co-Founder</h4>
+          <img src="/images/team-aida.jpg" alt="Aida" />
+          <h4>Aida DeWitt, Director</h4>
         </div>
         <p>
-          Mikayla is a New York City native, currently working towards a degree
-          in Marketing and Advertising at the University of Delaware, with plans
-          to graduate in the spring of 2021.
-        </p>
-        <p>
-          She has experience as a social media marketing specialist and brand
-          ambassador.
+          A senior software architect hailing from Toronto, Aida is a Canadian
+          living in the San Francisco bay area. As an enterprise Solutions
+          Architect she leads product & engineering teams at Fortune 500
+          companies on design of modern cloud based customer experience delivery
+          platforms. She is passionate about democratizing access to information
+          and using technology for positive social impact. She balances her time
+          between bytes outdoors biking, hiking and getting her hands dirty with
+          sustainable backyard gardening.
         </p>
       </section>
     </Floral>
