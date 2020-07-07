@@ -14,9 +14,45 @@
   display: inline-block;
 }
 @media only screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 40px;
+  }
+  .card {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: max-content 1fr max-content;
+    gap: 0px 20px;
+    grid-template-areas: "subheader subheader" "icon copy" ". button";
+  }
+  .icon {
+    max-width: 60px;
+    float: none;
+    margin: 0;
+    grid-area: icon;
+    align-self: center;
+  }
+  .subheader {
+    display: block;
+    grid-area: subheader;
+  }
+  .card p {
+    grid-area: copy;
+  }
+  .button {
+    grid-area: button;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-}
-@media only screen and (min-width: 1440px) {
+  .card {
+    width: calc(50% - 20px);
+  }
 }
