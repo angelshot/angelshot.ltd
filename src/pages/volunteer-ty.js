@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../../components/layout"
-import Intro from "../../components/intro"
-import Hero from "../../components/hero"
-import Floral from "../../components/floral"
+import Layout from "../components/layout"
+import Intro from "../components/intro"
+import Hero from "../components/hero"
+import Floral from "../components/floral"
 
 import styles from "./volunteer-ty.module.css"
 

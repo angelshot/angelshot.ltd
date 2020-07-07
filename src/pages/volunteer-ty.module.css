@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../../images/get_involved-hero-small.jpg");
+  background-image: url("../images/get_involved-hero-small.jpg");
 }
 
 .quote {
@@ -32,13 +32,13 @@
     margin-left: 87px;
   }
   .hero {
-    background-image: url("../../images/get_involved-hero-small@2x.jpg");
+    background-image: url("../images/get_involved-hero-small@2x.jpg");
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .hero {
-    background-image: url("../../images/get_involved-hero-large.jpg");
+    background-image: url("../images/get_involved-hero-large.jpg");
   }
   .quote {
     max-width: 380px;
@@ -59,7 +59,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .hero {
-    background-image: url("../../images/get_involved-hero-large@2x.jpg");
+    background-image: url("../images/get_involved-hero-large@2x.jpg");
   }
   .quote {
     max-width: 560px;
