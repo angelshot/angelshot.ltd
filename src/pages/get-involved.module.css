@@ -1,12 +1,11 @@
-img {
+.icon {
   max-width: 50px;
   float: right;
+  margin: 0 0 10px 10px;
 }
 .card {
   padding: 20px;
-}
-.card:first-of-type {
-  margin-top: 40px;
+  margin: 40px 0;
 }
 .subheader {
   display: inline;

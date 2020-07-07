@@ -33,7 +33,10 @@ export default () => (
       </p>
       <Card className={styles.card}>
         <h3 className={`subheader ${styles.subheader}`}>Become a donor</h3>
-        <img src="/icons/noun_Donate_29964-modified-color.svg" />
+        <img
+          className={styles.icon}
+          src="/icons/noun_Donate_29964-modified-color.svg"
+        />
         <p>
           With your donation, you will help fund the{" "}
           <strong>development of new tools and programs</strong> that can help
@@ -48,7 +51,10 @@ export default () => (
         <h3 className={`subheader ${styles.subheader}`}>
           Love experimenting with new tech?
         </h3>
-        <img src="/icons/noun_SMS_1564599-modified-color.svg" />
+        <img
+          className={styles.icon}
+          src="/icons/noun_SMS_1564599-modified-color.svg"
+        />
         <p>
           By becoming a beta tester, you’ll get a sneak peak at our newest
           features and be able to provide feedback on how we can improve the
@@ -63,7 +69,10 @@ export default () => (
       </Card>
       <Card className={styles.card}>
         <h3 className={`subheader ${styles.subheader}`}>Volunteer with us</h3>
-        <img src="/icons/noun_teamwork_1671992-modified-color.svg" />
+        <img
+          className={styles.icon}
+          src="/icons/noun_teamwork_1671992-modified-color.svg"
+        />
         <p>
           Join our team to make a big impact in your community. We have a wide
           range of opportunities with different commitment levels where you can
@@ -78,7 +87,10 @@ export default () => (
         <h3 className={`subheader ${styles.subheader}`}>
           Start your own fundraiser
         </h3>
-        <img src="/icons/noun_Gift_2103889-modified-color.svg" />
+        <img
+          className={styles.icon}
+          src="/icons/noun_Gift_2103889-modified-color.svg"
+        />
         <p>
           Have a birthday coming up? Tell friends and family to donate to your
           favorite cause. You can also use holidays like Thanksgiving or
