@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
-import Intro from "../components/intro"
-import Hero from "../components/hero"
-import Floral from "../components/floral"
-import Button from "../components/button"
-import InputCheckbox from "../components/inputCheckbox"
-import InputText, { InlineInputText } from "../components/inputText"
+import Layout from "../../components/layout"
+import Intro from "../../components/intro"
+import Hero from "../../components/hero"
+import Floral from "../../components/floral"
+import Button from "../../components/button"
+import InputCheckbox from "../../components/inputCheckbox"
+import InputText, { InlineInputText } from "../../components/inputText"
 
-import styles from "./get-involved.module.css"
+import styles from "./volunteer.module.css"
 
 export default () => (
   <Layout>
