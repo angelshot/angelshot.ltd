@@ -61,10 +61,7 @@ export default () => (
             features and be able to provide feedback on how we can improve the
             platform to <strong>put an Angel in everyone’s pocket</strong>.
           </p>
-          <Button
-            href="/icons/noun_SMS_1564599-modified-color.svg"
-            className={styles.button}
-          >
+          <Button href="/programs/angelbot" className={styles.button}>
             Get your invite
           </Button>
         </Card>
