@@ -2,13 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Hero from "../components/hero"
-import Cite from "../components/cite"
 import Floral from "../components/floral"
-import Button from "../components/button"
-import InputCheckbox from "../components/inputCheckbox"
-import InputText, { InlineInputText } from "../components/inputText"
 
-import styles from "./get-involved-ty.module.css"
+import styles from "./volunteer-ty.module.css"
 
 export default () => (
   <Layout>
@@ -25,13 +21,13 @@ export default () => (
       <div>
         <h2 className="title">Thank you!</h2>
         <p>
-          Thank you for expressing your interest in helping AngelShot Ltd. achieve our
-          mission of providing tools and knowledge that empower women to
-          safeguard themselves and encouraging communities to act as havens for
-          them. You should be receiving a confirmation email shortly, please remember to 
-          add us to your address book.
+          Thank you for expressing your interest in helping AngelShot Ltd.
+          achieve our mission of providing tools and knowledge that empower
+          women to safeguard themselves and encouraging communities to act as
+          havens for them. You should be receiving a confirmation email shortly,
+          please remember to add us to your address book.
         </p>
-      </div>      
+      </div>
     </Floral>
   </Layout>
 )

@@ -12,6 +12,7 @@ const Button = ({
   href,
   type,
   onClick,
+  target,
 }) =>
   React.createElement(
     tagName,
@@ -23,6 +24,7 @@ const Button = ({
       href,
       type,
       onClick,
+      target,
     },
     children
   )
