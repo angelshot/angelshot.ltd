@@ -12,9 +12,11 @@ import styles from "./index.module.css"
 const Home = () => (
   <Layout>
     <Hero className={styles.hero}>
-      <Intro>
-        Engaging communities
-        <br /> to help protect women.
+      <Intro className={styles.intro}>
+        Safety should be
+        <br />
+        <span className={styles.madlib}>FREE</span>
+        ____________.
       </Intro>
     </Hero>
     <section id="home">
