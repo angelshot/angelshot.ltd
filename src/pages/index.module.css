@@ -79,7 +79,7 @@
     );
   }
   .intro h1 {
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 35px;
     line-height: 40px;
   }
@@ -187,10 +187,10 @@
 
 @media only screen and (min-width: 1280px) {
   .hero {
-    height: 550px;
+    height: 420px;
   }
   .hero h1 {
-    margin-top: 95px;
+    margin-top: 55px;
   }
   .ourGoals section {
     margin-left: 26px;
@@ -204,8 +204,12 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1441px) {
   .hero {
+    height: 500px;
     background-image: url("/images/hero-home-wings-large@2x.jpg");
+  }
+  .hero h1 {
+    margin-top: 95px;
   }
 }
