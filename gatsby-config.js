@@ -12,6 +12,9 @@ module.exports = {
         typekit: {
           id: "rtx2vjd",
         },
+        google: {
+          families: ["Architects Daughter"],
+        },
       },
     },
 
