@@ -1,12 +1,15 @@
 .sectionHeader {
-  font: normal italic 28px/33px droid-serif, serif;
+  font: normal italic 22px/25px droid-serif, serif;
   text-align: center;
   color: #487194;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 40px 0 20px;
+  margin: 20px 0;
   max-width: 1244px;
+}
+.sectionHeader:first-child {
+  margin-top: 0;
 }
 .sectionHeader span {
   padding: 0 20px;
@@ -26,7 +29,9 @@
 
 @media only screen and (min-width: 768px) {
   .sectionHeader {
-    margin: 40px 20px 20px;
+    font-size: 32px;
+    line-height: 33px;
+    margin: 30px 20px 20px;
   }
 }
 @media only screen and (min-width: 1280px) {

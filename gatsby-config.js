@@ -6,15 +6,18 @@
 
 module.exports = {
   plugins: [
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         typekit: {
           id: "rtx2vjd",
         },
+        google: {
+          families: ["Architects Daughter"],
+        },
       },
     },
-
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

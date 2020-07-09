@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Footer from "../components/footer"
 import Header from "../components/header"
 import Intro from "../components/intro"
@@ -9,6 +10,9 @@ import styles from "./404.module.css"
 
 export default ({ children }) => (
   <>
+    <Helmet>
+      <title>:Page not found</title>
+    </Helmet>
     <Header />
     <Hero noImage>
       <Intro>Page not found</Intro>

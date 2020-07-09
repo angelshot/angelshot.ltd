@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Cite from "../components/cite"
@@ -17,6 +18,9 @@ import styles from "./about-us.module.css"
 
 export default () => (
   <Layout>
+    <Helmet>
+      <title>About Us</title>
+    </Helmet>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}

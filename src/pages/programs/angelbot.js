@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Layout from "../../components/layout"
 import Intro from "../../components/intro"
 import Floral from "../../components/floral"
@@ -9,10 +10,20 @@ import Button from "../../components/button"
 import Cite from "../../components/cite"
 import { Link } from "gatsby"
 
-import styles from "./angelbot.module.css"
+import parentStyles from "../programs.module.css"
+import pageStyles from "./angelbot.module.css"
+let styles = {}
+Object.assign(styles, parentStyles, pageStyles)
 
 export default ({ location }) => (
   <Layout location={location}>
+    <Helmet>
+      <title>AngelBot</title>
+      <meta
+        name="description"
+        content="Discreetly bails you out of bad situations."
+      />
+    </Helmet>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}

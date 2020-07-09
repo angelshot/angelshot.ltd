@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Floral from "../components/floral"
@@ -8,6 +9,9 @@ import { Link } from "gatsby"
 
 export default () => (
   <Layout>
+    <Helmet>
+      <title>Terms of Use</title>
+    </Helmet>
     <Hero noImage>
       <Intro>Terms of Use</Intro>
     </Hero>

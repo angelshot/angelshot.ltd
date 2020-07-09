@@ -1,88 +1,133 @@
-@media only screen and (max-width: 767px) {
-  .hero h1 {
-    font-size: 18px;
-    line-height: 22px;
-  }
-}
-
 .hero {
-  background-image: url("../images/hero-home-small.jpg");
   background-position: center center;
+  background-image: url("/images/hero-home-wings-small.jpg");
+  background-image: image-set(
+    url(/images/hero-home-wings-small.jpg) 1x,
+    url(/images/hero-home-wings-small@2x.jpg) 2x
+  );
+  height: 200px;
 }
 
-.hero h1 {
-  margin-top: 20px;
+.intro h1 {
+  font: normal italic 19px/23px droid-serif, serif;
+  background: rgba(0, 0, 0, 0.85);
+  text-align: right;
+  width: 50%;
+  padding: 8px 8px 8px 0;
+  box-sizing: border-box;
+}
+.madlib {
+  font: normal 19px/23px "Architects Daughter", cursive;
+  color: #ef1f66;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  width: 100px;
 }
 
-.sectionHeader {
-  margin-left: -20px;
-  margin-right: -20px;
+.tagline {
+  text-align: center;
+  position: relative;
+  max-width: fit-content;
+  margin: -28px auto 35px;
+  background: white;
+  padding: 6px 20px;
 }
+.tagline span {
+  font-family: mostra-nuova, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  color: #754995;
+}
+.tagline strong {
+  white-space: nowrap;
+  display: block;
+}
+
+.card {
+  margin: 20px 20px 40px;
+  padding: 20px;
+}
+
+.button {
+  max-width: fit-content;
+}
+
+.icon img {
+  max-height: 60px;
+  float: right;
+}
+
 .sectionHeader:before,
 .sectionHeader:after {
   background: #c5e3ee;
 }
 
 .ourGoals article {
-  padding: 0 0 40px;
-}
-.subheader {
-  margin: 20px 0 16px;
-  display: flex;
-  align-items: center;
-}
-.subheader:before {
-  height: 35px;
-  width: 35px;
-  margin-right: 12px;
-  flex-shrink: 0;
-}
-
-.icon_heart {
-  composes: subheader;
-}
-.icon_person {
-  composes: subheader;
-}
-.icon_earth {
-  composes: subheader;
-}
-.icon_heart:before {
-  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016.001%2016%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h16v16H0z%22%2F%3E%3Cpath%20d%3D%22M14.722%202.275a4.3%204.3%200%2000-6.119%200l-.6.6-.6-.6a4.331%204.331%200%2000-6.127%206.123l6.721%206.721%206.721-6.721a4.3%204.3%200%20000-6.119%22%20fill%3D%22%23754995%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
-}
-.icon_person:before {
-  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%2016v-2c0-2.2%203.6-4%208-4s8%201.8%208%204v2zM4%204a4%204%200%20114%204%204%204%200%2001-4-4z%22%20fill%3D%22%23754995%22%2F%3E%3C%2Fsvg%3E");
-}
-.icon_earth:before {
-  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M12.72%2012.32a1.635%201.635%200%2000-1.52-1.12h-.8V8.8a.756.756%200%2000-.8-.8H4.8V6.4h1.6a.756.756%200%2000.8-.8V4h1.6a1.6%201.6%200%20001.6-1.6v-.32a6.48%206.48%200%20014%205.92%206.326%206.326%200%2001-1.68%204.32m-5.52%202A6.456%206.456%200%20011.6%208a8.815%208.815%200%2001.16-1.44L5.6%2010.4v.8a1.6%201.6%200%20001.6%201.6M8%200a8%208%200%20108%208%208.024%208.024%200%2000-8-8z%22%20fill%3D%22%23754995%22%2F%3E%3C%2Fsvg%3E");
+  padding: 0 0 30px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero-home-small@2x.jpg");
+    height: 330px;
+    background-image: url("/images/hero-home-wings-medium.jpg");
+    background-image: image-set(
+      url(/images/hero-home-wings-medium.jpg) 1x,
+      url(/images/hero-home-wings-medium@2x.jpg) 2x
+    );
   }
-  .hero h1 {
-    margin-top: 50px;
+  .intro h1 {
+    margin-top: 60px;
+    font-size: 35px;
+    line-height: 40px;
   }
-
+  .madlib {
+    font-size: 35px;
+    line-height: 40px;
+    width: 200px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 20px auto 55px;
+    padding: 0 20px;
+    max-width: 956px;
+  }
+  .card {
+    width: calc(50% - 24px);
+    box-sizing: border-box;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr max-content;
+    gap: 1px 1px;
+    grid-template-areas: "copy" "button";
+  }
+  .copy {
+    grid-area: copy;
+  }
+  .button {
+    grid-area: button;
+  }
+  .icon img {
+    max-height: 96px;
+  }
   .ourGoals {
-    padding: 80px 24px 44px;
+    padding: 20px 20px 44px;
   }
   .ourGoals section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    margin: 0 10px 0;
+    grid-column-gap: 20px;
   }
   .ourGoals article {
     padding-bottom: 0;
   }
-  .subheader {
-    align-items: normal;
-  }
-  .subheader:before {
-    margin-top: 6px;
-  }
+
   .ourGoals .nowrap {
     white-space: nowrap;
   }
@@ -90,13 +135,44 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .sectionHeader:first-child {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .hero {
-    background-image: url("../images/hero-home-large.jpg");
+    height: 490px;
+    background-image: url("/images/hero-home-wings-large.jpg");
+    background-image: image-set(
+      url(/images/hero-home-wings-large.jpg) 1x,
+      url(/images/hero-home-wings-large@2x.jpg) 2x
+    );
   }
-
+  .intro h1 {
+    font-size: 60px;
+    line-height: 70px;
+    width: auto;
+    padding-left: calc(50vw - 50% + 124px);
+    margin-left: calc(50% - 50vw);
+  }
+  .madlib {
+    font-size: 60px;
+    line-height: 70px;
+    right: 30px;
+    width: 330px;
+  }
+  .tagline {
+    background: none;
+    margin-top: 30px;
+  }
+  .tagline span {
+    font-size: 36px;
+    line-height: 30px;
+  }
+  .tagline strong {
+    display: inline;
+  }
   .ourGoals section {
     grid-column-gap: 44px;
   }
@@ -110,21 +186,30 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .hero {
+    height: 420px;
+  }
+  .hero h1 {
+    margin-top: 55px;
+  }
   .ourGoals section {
-    width: 1156px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 26px;
+    margin-right: 26px;
   }
   .ourGoals article {
-    padding: 20px;
+    padding: 0;
   }
   .ourGoals article p:last-child {
     margin-bottom: 0;
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1441px) {
   .hero {
-    background-image: url("../images/hero-home-large@2x.jpg");
+    height: 500px;
+    background-image: url("/images/hero-home-wings-large@2x.jpg");
+  }
+  .hero h1 {
+    margin-top: 95px;
   }
 }
