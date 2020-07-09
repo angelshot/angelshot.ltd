@@ -40,12 +40,12 @@ h6 {
 }
 
 .title {
-  font: normal italic 22px/25px droid-serif, serif;
+  font: italic 22px/25px droid-serif, serif;
   color: #487194;
 }
 
 .subtitle {
-  font: normal italic 18px/21px droid-serif, serif;
+  font: italic 18px/21px droid-serif, serif;
   color: #243645;
 }
 
@@ -128,7 +128,7 @@ label {
 }
 
 .title {
-  font: normal italic 22px/25px droid-serif, serif;
+  font: italic 22px/25px droid-serif, serif;
   color: #487194;
 }
 
