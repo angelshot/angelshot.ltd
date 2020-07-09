@@ -8,7 +8,10 @@ import Button from "../../components/button"
 import InputCheckbox from "../../components/inputCheckbox"
 import InputText, { InlineInputText } from "../../components/inputText"
 
-import styles from "./volunteer.module.css"
+import parentStyles from "../get-involved-header.module.css"
+import pageStyles from "./volunteer.module.css"
+let styles = {}
+Object.assign(styles, parentStyles, pageStyles)
 
 export default () => (
   <Layout>

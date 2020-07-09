@@ -9,7 +9,6 @@ import { Card } from "../components/card"
 
 import headerStyles from "./get-involved-header.module.css"
 import pageStyles from "./get-involved.module.css"
-
 let styles = {}
 Object.assign(styles, headerStyles, pageStyles)
 

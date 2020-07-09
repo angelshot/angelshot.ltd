@@ -4,7 +4,10 @@ import Intro from "../components/intro"
 import Hero from "../components/hero"
 import Floral from "../components/floral"
 
-import styles from "./volunteer-ty.module.css"
+import headerStyles from "./get-involved-header.module.css"
+import pageStyles from "./volunteer-ty.module.css"
+let styles = {}
+Object.assign(styles, headerStyles, pageStyles)
 
 export default () => (
   <Layout>

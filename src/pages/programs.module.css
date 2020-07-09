@@ -1,5 +1,9 @@
 .hero {
-  background-image: url("../images/programs-hero-small.jpg");
+  background-image: url("/images/programs-hero-small.jpg");
+  background-image: image-set(
+    url(/images/programs-hero-small.jpg) 1x,
+    url(/images/programs-hero-small@2x.jpg) 2x
+  );
 }
 
 .quote {
@@ -44,7 +48,11 @@
     margin-left: 87px;
   }
   .hero {
-    background-image: url("../images/programs-hero-small@2x.jpg");
+    background-image: url("/images/programs-hero-medium.jpg");
+    background-image: image-set(
+      url(/images/programs-hero-medium.jpg) 1x,
+      url(/images/programs-hero-medium@2x.jpg) 2x
+    );
   }
   .section {
     flex-direction: row;
@@ -53,7 +61,11 @@
 
 @media only screen and (min-width: 1024px) {
   .hero {
-    background-image: url("../images/programs-hero-large.jpg");
+    background-image: url("/images/programs-hero-large.jpg");
+    background-image: image-set(
+      url(/images/programs-hero-large.jpg) 1x,
+      url(/images/programs-hero-large@2x.jpg) 2x
+    );
   }
   .quote {
     max-width: 380px;
@@ -61,7 +73,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .hero {
-    background-image: url("../images/programs-hero-large@2x.jpg");
+    background-image: url("/images/programs-hero-large@2x.jpg");
   }
   .quote {
     max-width: 508px;

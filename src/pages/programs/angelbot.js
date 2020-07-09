@@ -10,7 +10,10 @@ import Button from "../../components/button"
 import Cite from "../../components/cite"
 import { Link } from "gatsby"
 
-import styles from "./angelbot.module.css"
+import parentStyles from "../programs.module.css"
+import pageStyles from "./angelbot.module.css"
+let styles = {}
+Object.assign(styles, parentStyles, pageStyles)
 
 export default ({ location }) => (
   <Layout location={location}>
