@@ -1,5 +1,9 @@
 .hero {
-  background-image: url("../images/goal-hero-small.jpg");
+  background-image: url("/images/goal-hero-small.jpg");
+  background-image: image-set(
+    url(/images/goal-hero-small.jpg) 1x,
+    url(/images/goal-hero-small@2x.jpg) 2x
+  );
 }
 
 .quote {
@@ -125,7 +129,11 @@
     margin-top: 10px;
   }
   .hero {
-    background-image: url("../images/goal-hero-small@2x.jpg");
+    background-image: url("/images/goal-hero-medium.jpg");
+    background-image: image-set(
+      url(/images/goal-hero-medium.jpg) 1x,
+      url(/images/goal-hero-medium@2x.jpg) 2x
+    );
   }
 
   .future {
@@ -153,7 +161,11 @@
 
 @media only screen and (min-width: 1024px) {
   .hero {
-    background-image: url("../images/goal-hero-large.jpg");
+    background-image: url("/images/goal-hero-large.jpg");
+    background-image: image-set(
+      url(/images/goal-hero-large.jpg) 1x,
+      url(/images/goal-hero-large@2x.jpg) 2x
+    );
   }
   .slider {
     margin: 0 auto;
@@ -207,7 +219,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .hero {
-    background-image: url("../images/goal-hero-large@2x.jpg");
+    background-image: url("/images/goal-hero-large@2x.jpg");
   }
   .quote {
     max-width: 508px;
