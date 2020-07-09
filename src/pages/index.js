@@ -1,11 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Intro from "../components/intro"
 import Floral from "../components/floral"
 import SectionHeader from "../components/sectionHeader"
+import Button from "../components/button"
+import { Card } from "../components/card"
+import Cite from "../components/cite"
 
 import styles from "./index.module.css"
 
@@ -18,15 +19,80 @@ const Home = () => (
         <span className={styles.madlib}>FREE</span>
         ____________.
       </Intro>
+      <Cite
+        author="Josh Howard"
+        authorURL="https://unsplash.com/@thejoshhoward?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        site="Unsplash"
+        siteURL="https://unsplash.com/@thejoshhoward?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      />
     </Hero>
     <section id="home">
+      <div className={styles.tagline}>
+        <span>
+          Together, we can <strong>end sexual violence</strong> against women.
+        </span>
+      </div>
+      <div className={styles.cards}>
+        <Card className={styles.card}>
+          <div className={styles.copy}>
+            <picture className={styles.icon}>
+              <source
+                media="(max-width: 1023px)"
+                srcSet="/images/angelbot.png, /images/angelbot@2x.png 2x"
+              />
+              <img src="/images/angelbot.png" alt="AngelBot" />
+            </picture>
+            <h3 className={`subheader ${styles.subheader}`}>
+              Keep an Angel in <span className="nowrap">your pocket.</span>
+            </h3>
+            <p>
+              <strong>AngelBot</strong> is a free, mobile safety application
+              that discreetly bails you out of bad situations.
+            </p>
+            <p>
+              Do you want to help improve the future of women's safety? Sign up
+              to be a part of the AngelBot Beta program!
+            </p>
+          </div>
+          <Button href="/programs/angelbot" className={styles.button}>
+            Get your invite
+          </Button>
+        </Card>
+
+        <Card className={styles.card}>
+          <div className={styles.copy}>
+            <picture className={styles.icon}>
+              <source
+                media="(max-width: 1023px)"
+                srcSet="/images/logo-wings.png, /images/logo-wings@2x.png 2x"
+              />
+              <img src="/images/logo-wings.png" alt="WINGS" />
+            </picture>
+            <h3 className={`subheader ${styles.subheader}`}>
+              Make an impact. <span className="nowrap">Get involved.</span>
+            </h3>
+            <p>
+              You can make a difference to improve the safety of women
+              everywhere!
+            </p>
+            <p>
+              By volunteering your time, there are many ways you can help
+              further our mission to engage communities and increase
+              accountability.
+            </p>
+          </div>
+          <Button href="/get-involved" className={styles.button}>
+            Join the movement
+          </Button>
+        </Card>
+      </div>
       <Floral withHero className={styles.ourGoals}>
         <SectionHeader className={styles.sectionHeader}>
           Our Goals
         </SectionHeader>
         <section>
           <article>
-            <h3 className={`subheader ${styles.icon_heart}`}>
+            <h3 className="subheader2">
               Increase community engagement & accountability
             </h3>
             <p>
@@ -36,12 +102,16 @@ const Home = () => (
               <strong>creating safe environments</strong> by championing
               transparency and accountability.
             </p>
-            <Link to="/about-us#community_engagement" className="learnMore">
+            <Button
+              href="/about-us#community_engagement"
+              buttonType="inline"
+              className="learnMore"
+            >
               Learn more
-            </Link>
+            </Button>
           </article>
           <article>
-            <h3 className={`subheader ${styles.icon_person}`}>
+            <h3 className="subheader2">
               Prevent incidents and encourage victims to seek help
             </h3>
             <p>
@@ -53,12 +123,16 @@ const Home = () => (
               </strong>{" "}
               get out of it.
             </p>
-            <Link to="/about-us#seek_help" className="learnMore">
+            <Button
+              href="/about-us#seek_help"
+              className="learnMore"
+              buttonType="inline"
+            >
               Learn more
-            </Link>
+            </Button>
           </article>
           <article>
-            <h3 className={`subheader ${styles.icon_earth}`}>
+            <h3 className="subheader2">
               Prevent violence by ending "Rape Culture"
             </h3>
             <p>
@@ -68,9 +142,13 @@ const Home = () => (
               experiences, we <strong>create an outlet</strong> for those who
               have been a victim of sexual violence.
             </p>
-            <Link to="/about-us#prevent_violence" className="learnMore">
+            <Button
+              href="/about-us#prevent_violence"
+              className="learnMore"
+              buttonType="inline"
+            >
               Learn more
-            </Link>
+            </Button>
           </article>
         </section>
       </Floral>

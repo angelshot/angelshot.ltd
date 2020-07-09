@@ -94,3 +94,12 @@
   background: #92879a;
   color: #d0d5db;
 }
+
+.inline {
+  font: normal 17px/20px mostra-nuova, sans-serif;
+  text-decoration: none;
+}
+.inline:hover {
+  text-decoration: none;
+  color: #ef1f66;
+}

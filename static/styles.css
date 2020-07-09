@@ -16,7 +16,7 @@ body,
   flex-direction: column;
   min-height: 100vh;
   color: #243645;
-  font: 16px/21px droid-serif, serif;
+  font: 14px/21px droid-serif, serif;
 }
 
 ::-moz-selection {
