@@ -10,6 +10,7 @@
   margin: auto;
   display: block;
   text-decoration: none;
+  cursor: pointer;
 }
 .button:hover {
   box-shadow: 0px 3px 6px #243645;

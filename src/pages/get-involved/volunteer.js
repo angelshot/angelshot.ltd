@@ -55,11 +55,19 @@ export default () => (
           such as website updates, user management, privacy &amp; security, and
           improving upon our infrastructure.
         </p>
-        <h3 className="subheader">Outreach &amp; Fundraising</h3>
+        <h3 className="subheader">Social Media Marketing</h3>
+        <p>
+          Help us establish our social media presence and gain an online
+          following! Flex your influencing skills for a good cause. Help us
+          create a marketing strategy that aligns with our fundraising
+          campaigns. We’re looking for someone who wants to experiment with
+          fresh ideas while maintaining our integrity and authenticity.
+        </p>
+        <h3 className="subheader">Fundraising</h3>
         <p>
           As a non-profit, grants and donations are our main sources of funding.
           We are seeking volunteers who can help us organize fundraising
-          campaigns, and apply for grants.
+          campaigns and apply for grants.
         </p>
         <h3 className="subheader">Other</h3>
         <p>
@@ -91,7 +99,7 @@ export default () => (
             labelBody="Email"
           />
           <h4 className={`subheader2 ${styles.subheader}`}>
-            I am interested in volunteering my services to:
+            I am interested in helping with:
           </h4>
           <InputCheckbox
             type="checkbox"
@@ -111,17 +119,25 @@ export default () => (
           </InputCheckbox>
           <InputCheckbox
             type="checkbox"
-            value="outreach"
-            name="group[70176][3]"
-            id="group_3"
+            value="social media"
+            name="group[70176][16]"
+            id="group_16"
           >
-            Outreach &amp; Fundraising
+            Social Media Marketing
+          </InputCheckbox>
+          <InputCheckbox
+            type="checkbox"
+            value="fundraising"
+            name="group[70176][4]"
+            id="group_4"
+          >
+            Fundraising
           </InputCheckbox>
           <InputCheckbox
             type="checkbox"
             value="other"
-            name="group[70176][4]"
-            id="group_4"
+            name="group[70176][8]"
+            id="group_8"
           >
             Other
             <InlineInputText type="text" name="OTHER" inline />
@@ -131,8 +147,9 @@ export default () => (
             buttonType="buttonWide"
             type="submit"
             tagName="button"
-            children="Volunteer"
-          />
+          >
+            Count me in!
+          </Button>
         </form>
       </div>
     </Floral>
