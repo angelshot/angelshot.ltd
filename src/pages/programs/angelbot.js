@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Layout from "../../components/layout"
 import Intro from "../../components/intro"
 import Floral from "../../components/floral"
@@ -13,6 +14,13 @@ import styles from "./angelbot.module.css"
 
 export default ({ location }) => (
   <Layout location={location}>
+    <Helmet>
+      <title>AngelBot</title>
+      <meta
+        name="description"
+        content="Discreetly bails you out of bad situations."
+      />
+    </Helmet>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}

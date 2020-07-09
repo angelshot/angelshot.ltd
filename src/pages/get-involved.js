@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Hero from "../components/hero"
@@ -14,6 +15,13 @@ Object.assign(styles, headerStyles, pageStyles)
 
 export default () => (
   <Layout>
+    <Helmet>
+      <title>Get Involved</title>
+      <meta
+        name="description"
+        content="You can make a real impact to improve the safety of women everywhere! By volunteering your time, there are many ways you can help further our cause."
+      />
+    </Helmet>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}

@@ -9,7 +9,7 @@ export default ({ children, location }) => (
   <>
     <Helmet
       defaultTitle="AngelShot | Engaging communities to help protect women."
-      titleTemplate="%s - AngelShot"
+      titleTemplate="%s – AngelShot"
     >
       <link rel="canonical" href="https://www.angelshot.ltd" />
       <meta name="referrer" content="origin" />

@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Intro from "../components/intro"
@@ -12,6 +13,12 @@ import styles from "./index.module.css"
 
 const Home = () => (
   <Layout>
+    <Helmet>
+      <meta
+        name="description"
+        content="AngelShot's mission is to provide tools and knowledge that empower women to safeguard themselves and encourage communities to act as havens for them."
+      />
+    </Helmet>
     <Hero className={styles.hero}>
       <Intro className={styles.intro}>
         Safety should be
