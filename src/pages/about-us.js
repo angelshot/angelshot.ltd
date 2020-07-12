@@ -135,7 +135,7 @@ export default () => (
         </OverlayItem>
         <OverlayItem>
           <strong>Fewer</strong> than 1 in 5 female victims{" "}
-          <strong>received assistance</strong>
+          <strong>received assistance</strong>{" "}
           from a victim services agency.
         </OverlayItem>
       </Overlay>
