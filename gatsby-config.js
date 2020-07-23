@@ -5,6 +5,9 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://www.angelshot.org`
+  },
   plugins: [
     "gatsby-plugin-react-helmet",
     {
