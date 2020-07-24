@@ -1,10 +1,5 @@
-# Tools
+# Website for AngelShot Ltd
 
-## svgo
+Built on Gatsby.js
 
-Node.js tool for optimizing SVG files
-https://github.com/svg/svgo
-
-**Usage:**
-
-`svgo *.svg --enable=removeXMLNS,cleanupNumericValues,removeDimensions --datauri=enc`
+Deployed to Fastly via Gatsby Cloud
