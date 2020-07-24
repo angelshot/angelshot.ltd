@@ -36,7 +36,9 @@ const Home = () => (
     <section id="home">
       <div className={styles.tagline}>
         <span>
-          Together, we can <strong>end the social and cultural norms</strong> that underlie the acceptance of sexual violence <strong>against women</strong>.
+          Together, we can <strong>end the social and cultural norms</strong>{" "}
+          that underlie the acceptance of sexual violence{" "}
+          <strong>against women.</strong>
         </span>
       </div>
       <div className={styles.cards}>
