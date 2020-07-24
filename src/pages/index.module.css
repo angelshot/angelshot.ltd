@@ -33,17 +33,17 @@
   margin: -28px auto 35px;
   background: white;
   padding: 6px 20px;
+  max-width: 300px;
 }
 .tagline span {
   font-family: mostra-nuova, sans-serif;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 20px;
   color: #754995;
 }
 .tagline strong {
   white-space: nowrap;
-  display: block;
 }
 
 .card {
@@ -87,6 +87,9 @@
     font-size: 35px;
     line-height: 40px;
     width: 200px;
+  }
+  .tagline {
+    max-width: 500px;
   }
   .cards {
     display: flex;
@@ -165,9 +168,10 @@
   .tagline {
     background: none;
     margin-top: 30px;
+    max-width: 755px;
   }
   .tagline span {
-    font-size: 36px;
+    font-size: 26px;
     line-height: 30px;
   }
   .tagline strong {
