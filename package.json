@@ -1,21 +1,21 @@
 {
-  "name": "angelshot.org",
+  "name": "angelshot-web",
   "version": "1.0.0",
-  "description": "angelshot.org",
+  "description": "Website for AngelShot Ltd",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angelshot/angelshot.org.git"
+    "url": "git+https://github.com/angelshot/angelshot.ltd.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/angelshot/angelshot.org/issues"
+    "url": "https://github.com/angelshot/angelshot.ltd/issues"
   },
-  "homepage": "https://github.com/angelshot/angelshot.org#readme",
+  "homepage": "https://github.com/angelshot/angelshot.ltd#readme",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.22.17",
