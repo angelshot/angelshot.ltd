@@ -612,7 +612,7 @@ export default () => (
         <p>
           In order to resolve a complaint regarding our Services or to receive
           further information regarding use of our Services, please contact us
-          at: hi@angelshot.org
+          at: hi<span>@</span>angelshot.org
         </p>
       </div>
     </Floral>

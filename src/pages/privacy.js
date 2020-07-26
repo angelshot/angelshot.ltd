@@ -15,7 +15,7 @@ export default () => (
     </Hero>
     <Floral withHero>
       <div className="col-2">
-        <p>Effective date: 05/31/2020</p>
+        <p>Effective date: 07/26/2020</p>
 
         <h2 className="subheader">1. Introduction</h2>
 
@@ -25,14 +25,14 @@ export default () => (
 
         <p>
           ANGELSHOT LTD ("us", "we", or "our")
-          operates https://angelshot.org (hereinafter referred to as "{" "}
+          operates https://www.angelshot.org (hereinafter referred to as "{" "}
           <strong>Service</strong>
           ").
         </p>
 
         <p>
-          Our Privacy Policy governs your visit to https://angelshot.org, and
-          explains how we collect, safeguard and disclose information that
+          Our Privacy Policy governs your visit to https://www.angelshot.org,
+          and explains how we collect, safeguard and disclose information that
           results from your use of our Service.
         </p>
 
@@ -52,7 +52,7 @@ export default () => (
         <h2 className="subheader">2. Definitions</h2>
 
         <p>
-          <strong>SERVICE</strong> means the website https://angelshot.org
+          <strong>SERVICE</strong> means the website https://www.angelshot.org
           operated by ANGELSHOT LTD.
         </p>
 
@@ -129,7 +129,7 @@ export default () => (
           marketing or promotional materials and other information that may be
           of interest to you. You may opt out of receiving any, or all, of these
           communications from us by following the unsubscribe link or by
-          emailing at privacy@angelshot.org.
+          emailing at privacy<span>@</span>angelshot.org.
         </p>
         <h3 className="subheader2">Usage Data</h3>
         <p>
@@ -360,7 +360,7 @@ export default () => (
           </li>
           <li>
             users are able to change their personal information by emailing us
-            at privacy@angelshot.org.
+            at privacy<span>@</span>angelshot.org.
           </li>
         </ol>
 
