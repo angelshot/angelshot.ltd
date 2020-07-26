@@ -25,13 +25,13 @@ export default () => (
 
         <p>
           ANGELSHOT LTD ("us", "we", or "our")
-          operates https://angelshot.ltd (hereinafter referred to as "{" "}
+          operates https://angelshot.org (hereinafter referred to as "{" "}
           <strong>Service</strong>
           ").
         </p>
 
         <p>
-          Our Privacy Policy governs your visit to https://angelshot.ltd, and
+          Our Privacy Policy governs your visit to https://angelshot.org, and
           explains how we collect, safeguard and disclose information that
           results from your use of our Service.
         </p>
@@ -52,7 +52,7 @@ export default () => (
         <h2 className="subheader">2. Definitions</h2>
 
         <p>
-          <strong>SERVICE</strong> means the website https://angelshot.ltd
+          <strong>SERVICE</strong> means the website https://angelshot.org
           operated by ANGELSHOT LTD.
         </p>
 
@@ -129,7 +129,7 @@ export default () => (
           marketing or promotional materials and other information that may be
           of interest to you. You may opt out of receiving any, or all, of these
           communications from us by following the unsubscribe link or by
-          emailing at privacy@angelshot.ltd.
+          emailing at privacy@angelshot.org.
         </p>
         <h3 className="subheader2">Usage Data</h3>
         <p>
@@ -360,7 +360,7 @@ export default () => (
           </li>
           <li>
             users are able to change their personal information by emailing us
-            at privacy@angelshot.ltd.
+            at privacy@angelshot.org.
           </li>
         </ol>
 
@@ -541,7 +541,7 @@ export default () => (
         <h2 className="subheader">18. Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy, please contact us
-          at: hi<span>@</span>angelshot.ltd.
+          at: hi<span>@</span>angelshot.org.
         </p>
       </div>
     </Floral>

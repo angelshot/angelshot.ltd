@@ -11,7 +11,7 @@ export default ({ children, location }) => (
       defaultTitle="AngelShot | Engaging communities to help protect women."
       titleTemplate="%s – AngelShot"
     >
-      <link rel="canonical" href="https://www.angelshot.ltd" />
+      <link rel="canonical" href="https://www.angelshot.org" />
       <meta name="referrer" content="origin" />
       <meta charSet="utf-8" />
 

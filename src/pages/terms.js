@@ -26,7 +26,7 @@ export default () => (
           Terms govern and apply to your access and use of the programs offered
           by AngelShot Ltd (&ldquo;AngelShot&rdquo;, &quot;Company&quot;,
           &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) via the
-          AngelShot website <Link to="/">https://www.angelshot.ltd/</Link>{" "}
+          AngelShot website <Link to="/">https://www.angelshot.org/</Link>{" "}
           (&ldquo;Site&rdquo;) and AngelShot text messaging service
           (&ldquo;AngelBot&rdquo;) (all hereinafter collectively,
           &quot;AngelShot Services&quot;, &ldquo;Services&rdquo;) and any
@@ -392,7 +392,7 @@ export default () => (
         <h2 className="subheader">Privacy Policy</h2>
         <p>
           We care about data privacy and security. Please review our Privacy
-          Policy: <Link to="/privacy">https://www.angelshot.ltd/privacy</Link>.
+          Policy: <Link to="/privacy">https://www.angelshot.org/privacy</Link>.
           By using our Services, you agree to be bound by our Privacy Policy,
           which is incorporated into these Terms of Use. Please be advised our
           Services are hosted in the United States. If you access our Services
@@ -612,7 +612,7 @@ export default () => (
         <p>
           In order to resolve a complaint regarding our Services or to receive
           further information regarding use of our Services, please contact us
-          at: hi@angelshot.ltd
+          at: hi@angelshot.org
         </p>
       </div>
     </Floral>
