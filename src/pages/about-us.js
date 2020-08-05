@@ -135,8 +135,7 @@ export default () => (
         </OverlayItem>
         <OverlayItem>
           <strong>Fewer</strong> than 1 in 5 female victims{" "}
-          <strong>received assistance</strong>{" "}
-          from a victim services agency.
+          <strong>received assistance</strong> from a victim services agency.
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
@@ -291,8 +290,8 @@ export default () => (
           companies on design of modern cloud based customer experience delivery
           platforms. She is passionate about democratizing access to information
           and using technology for positive social impact. She balances her time
-          between bytes outdoors biking, hiking and getting her hands dirty with
-          sustainable backyard gardening.
+          working with bytes by getting outdoors; biking, hiking and getting her
+          hands dirty with sustainable backyard gardening.
         </p>
       </section>
     </Floral>

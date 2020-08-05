@@ -101,11 +101,23 @@
   text-align: center;
   position: relative;
   width: 256px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin: auto;
 }
+.photo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 20px;
+  right: 0;
+  z-index: 1;
+  mix-blend-mode: color;
+  background: linear-gradient(#aad9e3 0%, #a7a7d9 100%);
+}
 .teammate h4 {
-  font: 100 16px/19px mostra-nuova, sans-serif;
+  font: 16px/19px mostra-nuova, sans-serif;
   color: #fff;
   width: 200px;
   box-sizing: border-box;
@@ -114,11 +126,12 @@
   position: absolute;
   bottom: 0;
   left: 80px;
+  z-index: 2;
 }
 .teammate img {
   border-radius: 6px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  display: inline-block;
+  display: block;
   margin: auto;
 }
 
