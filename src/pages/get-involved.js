@@ -81,8 +81,7 @@ export default () => (
           <p>
             Join our team to make a big impact in your community. We have a wide
             range of opportunities with different commitment levels where you
-            can
-            <strong>flex your expertise and learn new skills</strong> with a
+            can <strong>flex your expertise and learn new skills</strong> with a
             shared sense of purpose.
           </p>
           <Button href="/get-involved/volunteer" className={styles.button}>
