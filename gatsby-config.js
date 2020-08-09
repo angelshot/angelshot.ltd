@@ -6,7 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.angelshot.org`
+    title: "AngelShot",
+    description:
+      "AngelShot is a 501(c)(3) charitable organization on a mission to provide tools and knowledge that empower women to safeguard themselves and encourage communities to act as havens for them.",
+    url: "`https://www.angelshot.org`",
+    image: "/images/logo.png",
+    twitterUsername: "@angelshot_org",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
