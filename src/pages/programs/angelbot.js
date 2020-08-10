@@ -92,7 +92,7 @@ export default ({ location }) => (
           />
           <InputCheckbox value="EULA" name="EULA" required>
             I have ready and agree to the{" "}
-            <Link to="/terms">End User License Agreement</Link>.
+            <Link to="/eula">End User License Agreement</Link>.
           </InputCheckbox>
           <h4 className={`subheader2 ${styles.subheader2}`}>
             Demographics (Optional):
