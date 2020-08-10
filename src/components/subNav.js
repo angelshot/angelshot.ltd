@@ -16,6 +16,9 @@ const SubNav = ({ footer, style }) => (
     <li>
       <Link to="/terms">Terms &amp; Conditions</Link>
     </li>
+    <li>
+      <Link to="/eula">End User License Agreement</Link>
+    </li>
   </ul>
 )
 
