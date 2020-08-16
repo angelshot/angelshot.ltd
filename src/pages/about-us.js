@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Cite from "../components/cite"
@@ -15,12 +14,14 @@ import {
 import SectionHeader from "../components/sectionHeader"
 import Floral from "../components/floral"
 import styles from "./about-us.module.css"
+import SEO from "../components/seo"
 
 export default () => (
   <Layout>
-    <Helmet>
-      <title>About Us</title>
-    </Helmet>
+    <SEO
+      title="About Us - AngelShot"
+      description="AngelShot is a nonprofit working on a mission of providing free and accessible tools to prevent sexual violence. Learn more about our goals, milestones and founders."
+    />
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}

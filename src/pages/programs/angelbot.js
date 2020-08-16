@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../../components/layout"
 import Intro from "../../components/intro"
 import Floral from "../../components/floral"
@@ -8,6 +7,7 @@ import InputText from "../../components/inputText"
 import InputCheckbox from "../../components/inputCheckbox"
 import Button from "../../components/button"
 import Cite from "../../components/cite"
+import SEO from "../../components/seo"
 import { Link } from "gatsby"
 
 import parentStyles from "../programs.module.css"
@@ -17,13 +17,10 @@ Object.assign(styles, parentStyles, pageStyles)
 
 export default ({ location }) => (
   <Layout location={location}>
-    <Helmet>
-      <title>AngelBot</title>
-      <meta
-        name="description"
-        content="Discreetly bails you out of bad situations."
+      <SEO
+        title="Sign up for AngelBot - AngelShot"
+        description="AngelBot is a free, mobile safety application that discreetly bails you out of bad situations. Join the beta program to get early access and help improve the future of women's safety."
       />
-    </Helmet>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}

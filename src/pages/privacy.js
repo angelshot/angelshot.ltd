@@ -1,15 +1,15 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Floral from "../components/floral"
 import Hero from "../components/hero"
+import SEO from "../components/seo"
 
 export default () => (
   <Layout>
-    <Helmet>
-      <title>Privacy Policy</title>
-    </Helmet>
+    <SEO
+      title="Privacy Policy - AngelShot"
+    />
     <Hero noImage>
       <Intro>Privacy Policy</Intro>
     </Hero>

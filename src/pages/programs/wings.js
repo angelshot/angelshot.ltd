@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../../components/layout"
 import Intro from "../../components/intro"
 import Hero from "../../components/hero"
@@ -8,6 +7,7 @@ import Floral from "../../components/floral"
 import Button from "../../components/button"
 import InputCheckbox from "../../components/inputCheckbox"
 import InputText, { InlineInputText } from "../../components/inputText"
+import SEO from "../../components/seo"
 
 import parentStyles from "../programs.module.css"
 import pageStyles from "./wings.module.css"
@@ -17,13 +17,10 @@ Object.assign(styles, parentStyles, pageStyles)
 export default () => {
   return (
     <Layout>
-      <Helmet>
-        <title>WINGS Program</title>
-        <meta
-          name="description"
-          content="Engaging communities to help protect women."
-        />
-      </Helmet>
+      <SEO
+        title="Join the WINGS Program - AngelShot"
+        description="As part of the WINGS Program, you can work within communities to help prevent sexual violence by hosting events, becoming an abassador or creating a haven."
+      />
       <Hero className={styles.hero}>
         <Intro
           quoteStyles={styles.quote}

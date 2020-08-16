@@ -1,17 +1,17 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Floral from "../components/floral"
 import Hero from "../components/hero"
 import CTA from "../components/cta"
+import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 export default () => (
   <Layout>
-    <Helmet>
-      <title>Terms of Use</title>
-    </Helmet>
+    <SEO
+      title="Terms of Use - AngelShot"
+    />
     <Hero noImage>
       <Intro>Terms of Use</Intro>
     </Hero>
