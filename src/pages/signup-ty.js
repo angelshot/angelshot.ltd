@@ -10,18 +10,9 @@ let styles = {}
 Object.assign(styles, headerStyles, pageStyles)
 
 class SignUpTy extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      signupType: "default",
-    }
-  }
-  componentDidMount() {
-    const type = new URLSearchParams(window.location.search).get("type")
-    let signupType = type ? type : "default"
-
-    this.setState({ signupType })
-  }
+  constructor(props) {
+    super(props)    
+  }  
   render() {
     return (
       <Layout>
@@ -41,7 +32,7 @@ class SignUpTy extends React.Component {
     )
   }
   _getType() {
-    switch (this.state.signupType) {
+    switch (this.props.signupType) {
       case "angelbot":
         return (
           <p>

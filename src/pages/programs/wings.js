@@ -58,10 +58,17 @@ export default () => {
             </h4>
             <InputText
               type="text"
-              name="NAME"
-              placeholder="Name"
+              name="FNAME"
+              placeholder="First Name"
               required
-              labelBody="Name"
+              labelBody="First Name"
+            />
+            <InputText
+              type="text"
+              name="LNAME"
+              placeholder="Last Name"
+              required
+              labelBody="Last Name"
             />
             <InputText
               type="email"
