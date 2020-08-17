@@ -1,11 +1,11 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Hero from "../components/hero"
 import Floral from "../components/floral"
 import Button from "../components/button"
 import { Card } from "../components/card"
+import SEO from "../components/seo"
 
 import headerStyles from "./get-involved-header.module.css"
 import pageStyles from "./get-involved.module.css"
@@ -14,13 +14,10 @@ Object.assign(styles, headerStyles, pageStyles)
 
 export default () => (
   <Layout>
-    <Helmet>
-      <title>Get Involved</title>
-      <meta
-        name="description"
-        content="You can make a real impact to improve the safety of women everywhere! By volunteering your time, there are many ways you can help further our cause."
+      <SEO
+        title="Get Involved - AngelShot"
+        description="Join the Movement. Learn about the different ways you can help prevent sexual violence against women."
       />
-    </Helmet>
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}

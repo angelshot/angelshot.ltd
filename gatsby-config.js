@@ -6,7 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.angelshot.org`
+    siteUrl: "https://www.angelshot.org",
+    title:"AngelShot | Safety should be FREE.",
+    description:"AngelShot is a 501(c)(3) charitable organization on a mission to provide tools and knowledge that empower women to safeguard themselves and encourage communities to act as havens for them.",
+    author:"@angelshot_org",
+    keywords:["angelshot", "safety"],
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Hero from "../components/hero"
 import Floral from "../components/floral"
+import SEO from "../components/seo"
 
 import headerStyles from "./get-involved-header.module.css"
 import pageStyles from "./volunteer-ty.module.css"
@@ -11,6 +12,10 @@ Object.assign(styles, headerStyles, pageStyles)
 
 export default () => (
   <Layout>
+    <SEO
+      title="Volunteer with Us - AngelShot"
+      description="You can make a real impact to improve the safety of women everywhere! By volunteering your time, there are many ways you can help further our cause."
+    />
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}

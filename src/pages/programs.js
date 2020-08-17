@@ -1,19 +1,20 @@
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Hero from "../components/hero"
 import { Card, CardBody, CardImage } from "../components/card"
 import Cite from "../components/cite"
 import Button from "../components/button"
+import SEO from "../components/seo"
 
 import styles from "./programs.module.css"
 
 export default () => (
   <Layout>
-    <Helmet>
-      <title>Our Programs</title>
-    </Helmet>
+    <SEO
+      title="Our Programs - AngelShot"
+      description="Learn about AngelShot's programs working to end the social and cultural norms that underlie the acceptance of violence against women."
+    />
     <Hero className={styles.hero}>
       <Intro
         quoteStyles={styles.quote}
