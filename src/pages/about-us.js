@@ -15,6 +15,7 @@ import SectionHeader from "../components/sectionHeader"
 import Floral from "../components/floral"
 import styles from "./about-us.module.css"
 import SEO from "../components/seo"
+import { Card } from "../components/card"
 
 export default () => (
   <Layout>
@@ -54,10 +55,10 @@ export default () => (
         <p>
           <strong>Sexual violence affects everyone.</strong> According to the
           CDC, 1 in 3 women and 1 in 4 men experienced sexual violence involving
-          physical contact during their lifetimes. More than half of sexual
-          assault incidents occurs while the victim is pursuing leisure
-          activities away from home, and instances of rape within colleges are
-          severely under-reported.
+          physical contact during their lifetimes.<sup><a href = "#citations">1</a></sup> More 
+          than half of sexual assault incidents occurs while the victim is 
+          pursuing leisure activities away from home, and instances of rape within colleges are
+          severely under-reported.<sup><a href = "#citations">2</a></sup>
         </p>
         <h3 className="subheader2">THIS IS NOT OKAY.</h3>
         <p>
@@ -82,11 +83,11 @@ export default () => (
         <OverlayItem>
           51% of student rape and sexual assault{" "}
           <strong>victimizations occurred</strong> while the victim was pursuing
-          leisure activities <strong>away from home</strong>.
+          leisure activities <strong>away from home</strong>.<sup><a href = "#citations">2</a></sup>
         </OverlayItem>
         <OverlayItem>
-          89% of college campuses <strong>reported zero incidents</strong> of
-          rape in 2016.
+          College women are <strong>twice as likely</strong> to be
+          sexually assaulted than robbed.<sup><a href = "#citations">3</a></sup>
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
@@ -132,11 +133,11 @@ export default () => (
         <OverlayItem>
           80% of rape and <strong>sexual assault victimizations</strong> of
           students and 67% of non-students go{" "}
-          <strong>unreported to police</strong>.
+          <strong>unreported to police</strong>.<sup><a href = "#citations">2</a></sup>
         </OverlayItem>
         <OverlayItem>
           <strong>Fewer</strong> than 1 in 5 female victims{" "}
-          <strong>received assistance</strong> from a victim services agency.
+          <strong>received assistance</strong> from a victim services agency.<sup><a href = "#citations">2</a></sup>
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
@@ -182,12 +183,12 @@ export default () => (
       <Overlay>
         <OverlayItem>
           In about 80% of rape and sexual assault victimizations, the{" "}
-          <strong>offender was known</strong> to the victim.
+          <strong>offender was known</strong> to the victim.<sup><a href = "#citations">2</a></sup>
         </OverlayItem>
         <OverlayItem>
           About a quarter of victims who did not report to police believed the
           incident was a personal matter, and 1 in 5 stated a{" "}
-          <strong>fear of reprisal</strong>.
+          <strong>fear of reprisal</strong>.<sup><a href = "#citations">2,3</a></sup>
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
@@ -296,5 +297,17 @@ export default () => (
         </p>
       </section>
     </Floral>
+
+    <div id="citations" className={styles.citations}>
+          <p>
+            <ol>
+              <li>"Preventing Sexual Violence." <i>Centers for Disease Control and Prevention</i>, 17 January 2020, https://www.cdc.gov/violenceprevention/sexualviolence/fastfact.html.</li><br/>
+              <li>Sinozich, Sofi and Lynn Langton, Ph.D. “Rape And Sexual Assault Among College-Age Females, 1995-2013.” <i>Bureau of Justice Statistics</i>, 11 December 2014, https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5176.</li><br/>
+              <li>“Campus Sexual Violence: Statistics.” <i>Rape, Abuse, & Incest National Network</i>, 2020, https://www.rainn.org/statistics/campus-sexual-violence.</li>
+            </ol>
+          </p>
+      </div>
+
+        
   </Layout>
 )

@@ -37,6 +37,12 @@
 .title {
   margin: 20px 0 16px;
 }
+sup a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+}
+li sup a:link, a:visited, a:hover, a:active{
+  color: #fff;
+}
 
 @media only screen and (min-width: 1024px) {
   .cardWithOverlay {
