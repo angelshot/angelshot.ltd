@@ -15,7 +15,6 @@ import SectionHeader from "../components/sectionHeader"
 import Floral from "../components/floral"
 import styles from "./about-us.module.css"
 import SEO from "../components/seo"
-import { Card } from "../components/card"
 
 export default () => (
   <Layout>
