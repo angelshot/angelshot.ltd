@@ -322,6 +322,6 @@ export default () => (
           hands dirty with sustainable backyard gardening.
         </p>
       </section>
-    </Floral>        
+    </Floral>
   </Layout>
 )
