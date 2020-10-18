@@ -7,7 +7,7 @@ Deployed to Fastly via Gatsby Cloud
 ## Getting Started
 1. Install node and npm here: https://nodejs.org/en/. Run `node -v` to confirm node installation and `npm -v` to confirm npm installation.
 1. Install Gatsby CLI by running `npm install -g gatsby-cli`
-1. To start a development after you've cloned the repo, run `gatsby build`. Go to http://localhost:8000 to view the website.
+1. To start a development after you've cloned the repo, run `gatsby develop`. Go to http://localhost:8000 to view the website.
 More details about Gatsby can be found in the Gatsby Quick Start guide: https://www.gatsbyjs.com/docs/quick-start/
 
 ## Helpful Documentation
