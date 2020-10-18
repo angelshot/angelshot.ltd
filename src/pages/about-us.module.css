@@ -238,3 +238,12 @@
     max-width: 508px;
   }
 }
+.citations{
+  align-self: center;
+  width: 100%;
+  font-size: smaller;
+  max-width: 1244px;
+  margin: 10px 20px;
+  display: flex;
+  overflow-x: auto;
+}
