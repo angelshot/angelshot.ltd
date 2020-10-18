@@ -191,6 +191,33 @@ export default () => (
         </OverlayItem>
       </Overlay>
     </CardWithOverlay>
+
+    <div id="citations" className={styles.citations}>
+          <p>
+            <ol>
+              <li>
+                "Preventing Sexual Violence." <i>Centers for Disease Control and Prevention</i>, 17 January 2020, 
+                <a href = "https://www.cdc.gov/violenceprevention/sexualviolence/fastfact.html" target = "_blank">
+                  https://www.cdc.gov/violenceprevention/sexualviolence/fastfact.html
+                  </a>.
+                </li>
+                <br/>
+              <li>Sinozich, Sofi and Lynn Langton, Ph.D. “Rape And Sexual Assault Among College-Age Females, 1995-2013.” 
+                <i>Bureau of Justice Statistics</i>, 11 December 2014, 
+                <a href ="https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5176" target ="_blank">
+                  https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5176
+                  </a>.
+                  </li>
+                  <br/>
+              <li>“Campus Sexual Violence: Statistics.” <i>Rape, Abuse, & Incest National Network</i>, 2020, 
+              <a href = "https://www.rainn.org/statistics/campus-sexual-violence" target = "_blank">
+                https://www.rainn.org/statistics/campus-sexual-violence
+                </a>.
+                </li>
+            </ol>
+          </p>
+      </div>
+
     <SectionHeader className={styles.milestoneHeader}>Milestones</SectionHeader>
     <div className={styles.slider}>
       <div className={styles.milestones}>
@@ -295,18 +322,6 @@ export default () => (
           hands dirty with sustainable backyard gardening.
         </p>
       </section>
-    </Floral>
-
-    <div id="citations" className={styles.citations}>
-          <p>
-            <ol>
-              <li>"Preventing Sexual Violence." <i>Centers for Disease Control and Prevention</i>, 17 January 2020, https://www.cdc.gov/violenceprevention/sexualviolence/fastfact.html.</li><br/>
-              <li>Sinozich, Sofi and Lynn Langton, Ph.D. “Rape And Sexual Assault Among College-Age Females, 1995-2013.” <i>Bureau of Justice Statistics</i>, 11 December 2014, https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5176.</li><br/>
-              <li>“Campus Sexual Violence: Statistics.” <i>Rape, Abuse, & Incest National Network</i>, 2020, https://www.rainn.org/statistics/campus-sexual-violence.</li>
-            </ol>
-          </p>
-      </div>
-
-        
+    </Floral>        
   </Layout>
 )

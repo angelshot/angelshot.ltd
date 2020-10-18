@@ -17,6 +17,10 @@
   margin: 20px;
   font: 100 18px/22px mostra-nuova, sans-serif;
 }
+.overlayItem sup a:visited, .overlayItem sup a:link, .overlayItem sup a:hover, .overlayItem sup a:active{
+  color: #fff;
+  font: 12px/1 droid-serif,serif;
+}
 .overlayItem:first-child {
   margin-top: 0;
 }
@@ -36,12 +40,6 @@
 }
 .title {
   margin: 20px 0 16px;
-}
-sup a:link, a:visited, a:hover, a:active{
-  text-decoration: none;
-}
-li sup a:link, a:visited, a:hover, a:active{
-  color: #fff;
 }
 
 @media only screen and (min-width: 1024px) {

@@ -241,8 +241,8 @@
 .citations{
   align-self: center;
   width: 100%;
+  font-size: smaller;
   max-width: 1244px;
-  background: #fff;
   margin: 10px 20px;
   display: flex;
   overflow-x: auto;
