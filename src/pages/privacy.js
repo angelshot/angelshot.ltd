@@ -458,7 +458,7 @@ export default () => (
         <p>Gatsby Cloud is provided by Gatsby, Inc.</p>
 
         <p>
-          Gatsby Cloud is a cloud computing services provider that helps developers extend their core cloud infrastructure to the edge of the network, closer to users.
+          Gatsby Cloud is a commercial platform of tools that enable web creators to build websites.
         </p>
 
         <p>
