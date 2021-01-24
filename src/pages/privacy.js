@@ -25,7 +25,8 @@ export default () => (
 
         <p>
           ANGELSHOT LTD ("us", "we", or "our")
-          operates https://www.angelshot.org (hereinafter referred to as "{" "}
+          operates https://www.angelshot.org (hereinafter referred to as{" "}
+          "
           <strong>Service</strong>
           ").
         </p>
@@ -40,8 +41,8 @@ export default () => (
           We use your data to provide and improve Service. By using Service, you
           agree to the collection and use of information in accordance with this
           policy. Unless otherwise defined in this Privacy Policy, the terms
-          used in this Privacy Policy have the same meanings as in our <a href="https://www.angelshot.org/terms">Terms and
-          Conditions</a>.
+          used in this Privacy Policy have the same meanings as in our{" "}
+          <a href="https://www.angelshot.org/terms">Terms and Conditions</a>.
         </p>
 
         <p>
@@ -413,22 +414,6 @@ export default () => (
         <p>
           We also encourage you to review Google's policy for safeguarding your
           data: https://support.google.com/analytics/answer/6004245.
-        </p>
-
-        <h3 className="subheader2">Firebase</h3>
-        <p>Firebase is an analytics service provided by Google Inc.</p>
-
-        <p>
-          You may opt-out of certain Firebase features through your mobile
-          device settings, such as your device advertising settings or by
-          following the instructions provided by Google in their Privacy Policy:
-          https://policies.google.com/privacy?hl=en
-        </p>
-
-        <p>
-          For more information on what type of information Firebase collects,
-          please visit the Google Privacy Terms web page:
-          https://policies.google.com/privacy?hl=en
         </p>
 
         <h2 className="subheader">13. CI/CD tools</h2>
