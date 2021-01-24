@@ -24,11 +24,7 @@ export default () => (
         </p>
 
         <p>
-          ANGELSHOT LTD ("us", "we", or "our")
-          operates https://www.angelshot.org (hereinafter referred to as{" "}
-          "
-          <strong>Service</strong>
-          ").
+          ANGELSHOT LTD ("us", "we", or "our") operates https://www.angelshot.org and AngelBot (together, hereinafter referred to as "<strong>Service</strong>").
         </p>
 
         <p>
