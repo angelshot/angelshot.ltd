@@ -441,6 +441,30 @@ export default () => (
           .
         </p>
 
+        <h3 className="subheader2">Fastly</h3>
+
+        <p>Fastly is provided by Fastly, Inc.</p>
+
+        <p>
+          Fastly is a cloud computing services provider that helps developers extend their core cloud infrastructure to the edge of the network, closer to users.
+        </p>
+
+        <p>
+          For more information on what data Fastly collects for what purpose and how the protection of the data is ensured, please visit the <a href="https://www.fastly.com/privacy/">Fastly Privacy Policy page</a>.
+        </p>
+
+        <h3 className="subheader2">Gatsby Cloud</h3>
+
+        <p>Gatsby Cloud is provided by Gatsby, Inc.</p>
+
+        <p>
+          Gatsby Cloud is a cloud computing services provider that helps developers extend their core cloud infrastructure to the edge of the network, closer to users.
+        </p>
+
+        <p>
+          For more information on what data Gatsby collects for what purpose and how the protection of the data is ensured, please visit the <a href="https://gatsbyjs.com/privacy-policy/">Gatsby Privacy Policy page</a>.
+        </p>
+
         <h2 className="subheader">14. Payments</h2>
 
         <p>
