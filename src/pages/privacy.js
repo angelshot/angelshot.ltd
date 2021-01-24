@@ -15,7 +15,7 @@ export default () => (
     </Hero>
     <Floral withHero>
       <div className="col-2">
-        <p>Effective date: 07/26/2020</p>
+        <p>Effective date: 01/24/2021</p>
 
         <h2 className="subheader">1. Introduction</h2>
 
@@ -40,8 +40,8 @@ export default () => (
           We use your data to provide and improve Service. By using Service, you
           agree to the collection and use of information in accordance with this
           policy. Unless otherwise defined in this Privacy Policy, the terms
-          used in this Privacy Policy have the same meanings as in our Terms and
-          Conditions.
+          used in this Privacy Policy have the same meanings as in our <a href="https://www.angelshot.org/terms">Terms and
+          Conditions</a>.
         </p>
 
         <p>
@@ -178,21 +178,16 @@ export default () => (
 
         <ol type="a">
           <li>
-            <strong>Session Cookies:</strong> We use Session Cookies to operate
+            <strong>Session Cookies:</strong> We may use Session Cookies to operate
             our Service.
           </li>
           <li>
-            <strong>Preference Cookies:</strong> We use Preference Cookies to
+            <strong>Preference Cookies:</strong> We may use Preference Cookies to
             remember your preferences and various settings.
           </li>
           <li>
-            <strong>Security Cookies:</strong> We use Security Cookies for
+            <strong>Security Cookies:</strong> We may use Security Cookies for
             security purposes.
-          </li>
-          <li>
-            <strong>Advertising Cookies:</strong> Advertising Cookies are used
-            to serve you with advertisements that may be relevant to you and
-            your interests.
           </li>
         </ol>
 
@@ -454,7 +449,7 @@ export default () => (
 
         <p>
           For more information on what data GitHub collects for what purpose and
-          how the protection of the data is ensured, please visit the
+          how the protection of the data is ensured, please visit the{" "}
           <a href="https://help.github.com/en/articles/github-privacy-statement">
             GitHub Privacy Policy page
           </a>
@@ -481,6 +476,14 @@ export default () => (
         </p>
 
         <p>The payment processors we work with are:</p>
+
+        <h3 className="subheader2">PayPal:</h3>
+        <p>
+          Their Privacy Policy can be viewed at:{" "}
+          <a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full">
+            https://www.paypal.com/us/webapps/mpp/ua/privacy-full
+          </a>
+        </p>
 
         <h3 className="subheader2">Stripe:</h3>
         <p>
