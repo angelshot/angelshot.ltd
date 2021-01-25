@@ -14,7 +14,7 @@ const SubNav = ({ footer, style }) => (
       <Link to="/privacy">Privacy Policy</Link>
     </li>
     <li>
-      <Link to="/terms">Terms &amp; Conditions</Link>
+      <Link to="/terms">Terms of Use</Link>
     </li>
     <li>
       <Link to="/eula">End User License Agreement</Link>
