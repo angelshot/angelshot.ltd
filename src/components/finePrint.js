@@ -3,6 +3,7 @@ import styles from "./finePrint.module.css"
 
 const FinePrint = () => (
   <section className={styles.fine_print}>
+    <p className={styles.emergency}>If you are in a life threatening situation - don’t use this site. Call 911 to get immediate help.</p>
     <div className={styles.container}>
       <p className={styles.status501c3}>
         AngelShot Ltd. is a registered 501(c)(3) nonprofit charitable
