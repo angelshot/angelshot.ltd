@@ -4,6 +4,11 @@
   margin: 20px 0;
 }
 
+.emergency {
+  color: #fff;
+  font-size: larger;
+}
+
 .backToTop {
   color: transparent;
   display: block;
