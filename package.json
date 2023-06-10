@@ -18,7 +18,7 @@
   "homepage": "https://github.com/angelshot/angelshot.ltd#readme",
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.31.1",
+    "gatsby": "^4.25.7",
     "gatsby-cli": "^2.18.0",
     "gatsby-plugin-google-gtag": "^2.1.13",
     "gatsby-plugin-manifest": "^2.11.0",
